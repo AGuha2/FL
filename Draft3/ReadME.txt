@@ -1,0 +1,1 @@
+The SHAP values are sent to the server rather than being printed in the client. Initially the SHAP values was complied using the global weights in the evaluate. This version it uses the train samples to calculate the SHAP values inside the fit in the client and the top 5 features of each client for each round is printed in the server too.
