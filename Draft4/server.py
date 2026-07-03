@@ -39,9 +39,9 @@ def compute_SHAP_weights(all_shap, feature_names):
     total = S_w.sum()
     weights = S_w / total if total > 0 else np.ones(num_clients) / num_clients
 
-    return {client_ids[i]: float(weights[i]) for i in range(num_clients)}
+    return {client_ids[i]: float(S_w[i]) for i in range(num_clients)}
 
-class SaveModelStrategy(fl.server.strategy.FedProx):
+class SaveModelStrategy(fl.server.strategy.FedAvg):
 
 
     def aggregate_fit(self, server_round, results, failures):
@@ -80,7 +80,7 @@ class SaveModelStrategy(fl.server.strategy.FedProx):
 
 # Create strategy and run server
 strategy = SaveModelStrategy(
-    proximal_mu=1.0, 
+    #proximal_mu=1.0, 
     min_fit_clients=3,
     min_evaluate_clients=3,
     min_available_clients=3,
