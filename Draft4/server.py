@@ -39,7 +39,7 @@ def compute_SHAP_weights(all_shap, feature_names):
     total = S_w.sum()
     weights = S_w / total if total > 0 else np.ones(num_clients) / num_clients
 
-    return {client_ids[i]: float(S_w[i]) for i in range(num_clients)}
+    return {client_ids[i]: float(S_w[i]) for i in range(num_clients)}  # this is a change that was made instead of weights[i] S_w[i] is given in the second iteration whose results will be recorded again
 
 class SaveModelStrategy(fl.server.strategy.FedAvg):
 
