@@ -1,0 +1,1820 @@
+(fl-env) PS D:\fl_flower> python server.py 8080         
+INFO flwr 2026-07-08 04:24:55,035 | app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=20, round_timeout=None)
+INFO flwr 2026-07-08 04:24:55,057 | app.py:168 | Flower ECE: gRPC server running (20 rounds), SSL is disabled
+INFO flwr 2026-07-08 04:24:55,058 | server.py:86 | Initializing global parameters
+INFO flwr 2026-07-08 04:24:55,058 | server.py:273 | Requesting initial parameters from one random client
+INFO flwr 2026-07-08 04:25:08,524 | server.py:277 | Received initial parameters from one random client
+INFO flwr 2026-07-08 04:25:08,524 | server.py:88 | Evaluating initial parameters
+INFO flwr 2026-07-08 04:25:08,524 | server.py:101 | FL starting
+DEBUG flwr 2026-07-08 04:25:18,860 | server.py:218 | fit_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:27:14,701 | server.py:232 | fit_round 1 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:27:14,717 | server.py:168 | evaluate_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:27:17,179 | server.py:182 | evaluate_round 1 received 5 results and 0 failures
+WARNING flwr 2026-07-08 04:27:17,179 | fedavg.py:274 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2026-07-08 04:27:17,179 | server.py:218 | fit_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:29:09,827 | server.py:232 | fit_round 2 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:29:09,836 | server.py:168 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:29:12,273 | server.py:182 | evaluate_round 2 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:29:12,278 | server.py:218 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:31:59,074 | server.py:232 | fit_round 3 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:31:59,085 | server.py:168 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:32:02,402 | server.py:182 | evaluate_round 3 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:32:02,402 | server.py:218 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:34:24,124 | server.py:232 | fit_round 4 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:34:24,136 | server.py:168 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:34:27,068 | server.py:182 | evaluate_round 4 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:34:27,068 | server.py:218 | fit_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:36:18,727 | server.py:232 | fit_round 5 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:36:18,747 | server.py:168 | evaluate_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:36:21,148 | server.py:182 | evaluate_round 5 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:36:21,148 | server.py:218 | fit_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:38:11,797 | server.py:232 | fit_round 6 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:38:11,807 | server.py:168 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:38:14,334 | server.py:182 | evaluate_round 6 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:38:14,335 | server.py:218 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:40:03,668 | server.py:232 | fit_round 7 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:40:03,680 | server.py:168 | evaluate_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:40:06,030 | server.py:182 | evaluate_round 7 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:40:06,030 | server.py:218 | fit_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:41:59,094 | server.py:232 | fit_round 8 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:41:59,110 | server.py:168 | evaluate_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:42:01,606 | server.py:182 | evaluate_round 8 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:42:01,606 | server.py:218 | fit_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:43:56,561 | server.py:232 | fit_round 9 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:43:56,579 | server.py:168 | evaluate_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:43:58,910 | server.py:182 | evaluate_round 9 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:43:58,910 | server.py:218 | fit_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:45:53,386 | server.py:232 | fit_round 10 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:45:53,396 | server.py:168 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:45:55,890 | server.py:182 | evaluate_round 10 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:45:55,890 | server.py:218 | fit_round 11: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:47:52,706 | server.py:232 | fit_round 11 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:47:52,713 | server.py:168 | evaluate_round 11: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:47:54,893 | server.py:182 | evaluate_round 11 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:47:54,893 | server.py:218 | fit_round 12: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:49:46,287 | server.py:232 | fit_round 12 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:49:46,299 | server.py:168 | evaluate_round 12: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:49:48,541 | server.py:182 | evaluate_round 12 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:49:48,541 | server.py:218 | fit_round 13: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:51:40,818 | server.py:232 | fit_round 13 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:51:40,833 | server.py:168 | evaluate_round 13: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:51:43,098 | server.py:182 | evaluate_round 13 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:51:43,098 | server.py:218 | fit_round 14: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:53:34,779 | server.py:232 | fit_round 14 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:53:34,786 | server.py:168 | evaluate_round 14: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:53:36,998 | server.py:182 | evaluate_round 14 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:53:36,998 | server.py:218 | fit_round 15: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:55:28,111 | server.py:232 | fit_round 15 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:55:28,123 | server.py:168 | evaluate_round 15: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:55:30,458 | server.py:182 | evaluate_round 15 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:55:30,458 | server.py:218 | fit_round 16: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:57:23,712 | server.py:232 | fit_round 16 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:57:23,723 | server.py:168 | evaluate_round 16: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:57:26,432 | server.py:182 | evaluate_round 16 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:57:26,432 | server.py:218 | fit_round 17: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:59:17,223 | server.py:232 | fit_round 17 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:59:17,231 | server.py:168 | evaluate_round 17: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 04:59:19,539 | server.py:182 | evaluate_round 17 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 04:59:19,539 | server.py:218 | fit_round 18: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 05:01:11,793 | server.py:232 | fit_round 18 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 05:01:11,825 | server.py:168 | evaluate_round 18: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 05:01:14,320 | server.py:182 | evaluate_round 18 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 05:01:14,320 | server.py:218 | fit_round 19: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 05:03:50,425 | server.py:232 | fit_round 19 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 05:03:50,432 | server.py:168 | evaluate_round 19: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 05:03:52,361 | server.py:182 | evaluate_round 19 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 05:03:52,362 | server.py:218 | fit_round 20: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 05:05:39,958 | server.py:232 | fit_round 20 received 5 results and 0 failures
+DEBUG flwr 2026-07-08 05:05:39,970 | server.py:168 | evaluate_round 20: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-08 05:05:42,231 | server.py:182 | evaluate_round 20 received 5 results and 0 failures
+INFO flwr 2026-07-08 05:05:42,232 | server.py:147 | FL finished in 2433.707793700043
+INFO flwr 2026-07-08 05:05:42,241 | app.py:218 | app_fit: losses_distributed [(1, 3.594181685097019), (2, 4.895186425088124), (3, 3.5877778241554528), (4, 3.715196353961657), (5, 25.91844986356541), (6, 4.284147106925069), (7, 5.83859913908721), (8, 5.610695121935274), (9, 6.3213161299800396), (10, 4.564178485253188), (11, 7.29797194547107), (12, 5.01612784587079), (13, 5.516911159514677), (14, 6.307124914919396), (15, 6.21040795726214), (16, 5.778032725456673), (17, 7.681077920565764), (18, 6.334711010071384), (19, 7.696261998875861), (20, 8.41395818250342)]
+INFO flwr 2026-07-08 05:05:42,242 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-08 05:05:42,242 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-08 05:05:42,242 | app.py:221 | app_fit: losses_centralized []
+INFO flwr 2026-07-08 05:05:42,242 | app.py:222 | app_fit: metrics_centralized {}
+(fl-env) PS D:\fl_flower> 
+
+012
+Rate                               0.000005
+Header_Length                      0.000002
+AVG                                0.000002
+IPv                                0.000002
+Min                                0.000001
+Tot sum                            0.000000
+[Client 1] --- ROUND 12 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 3.5932 | accuracy: 0.2314
+[Client 1] --- ROUND 13 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 1.1614 | accuracy: 0.6806
+
+[Client 1] SHAP Feature Importances (Round 13):
+Feature                         Mean |SHAP|
+--------------------------------------------
+IRC                                0.114554
+ack_count                          0.050128
+syn_count                          0.045131
+SMTP                               0.021969
+rst_flag_number                    0.007923
+fin_count                          0.007116
+SSH                                0.006149
+ece_flag_number                    0.005309
+rst_count                          0.005168
+ack_flag_number                    0.005047
+TCP                                0.002246
+DHCP                               0.002098
+UDP                                0.002034
+Protocol Type                      0.001778
+ARP                                0.001314
+Telnet                             0.001126
+psh_flag_number                    0.000674
+fin_flag_number                    0.000536
+DNS                                0.000467
+Max                                0.000401
+HTTP                               0.000339
+LLC                                0.000219
+ICMP                               0.000207
+IGMP                               0.000122
+syn_flag_number                    0.000085
+cwr_flag_number                    0.000082
+Rate                               0.000006
+HTTPS                              0.000005
+Header_Length                      0.000003
+Time_To_Live                       0.000003
+Tot sum                            0.000002
+AVG                                0.000001
+IPv                                0.000000
+Min                                0.000000
+[Client 1] --- ROUND 13 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 4.0712 | accuracy: 0.2567
+[Client 1] --- ROUND 14 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 1.1185 | accuracy: 0.6708
+
+[Client 1] SHAP Feature Importances (Round 14):
+Feature                         Mean |SHAP|
+--------------------------------------------
+IRC                                0.024595
+ece_flag_number                    0.014465
+rst_flag_number                    0.011046
+fin_count                          0.007945
+syn_count                          0.007080
+SSH                                0.006752
+ack_count                          0.006670
+ack_flag_number                    0.006074
+rst_count                          0.005544
+SMTP                               0.004387
+TCP                                0.003411
+UDP                                0.003088
+DHCP                               0.002966
+Protocol Type                      0.001969
+ARP                                0.000866
+psh_flag_number                    0.000458
+DNS                                0.000428
+HTTP                               0.000427
+Max                                0.000322
+fin_flag_number                    0.000308
+syn_flag_number                    0.000171
+ICMP                               0.000132
+LLC                                0.000095
+IGMP                               0.000090
+Telnet                             0.000081
+cwr_flag_number                    0.000069
+Time_To_Live                       0.000015
+HTTPS                              0.000013
+Rate                               0.000008
+Header_Length                      0.000005
+AVG                                0.000004
+Tot sum                            0.000003
+IPv                                0.000003
+Min                                0.000002
+[Client 1] --- ROUND 14 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 5.1805 | accuracy: 0.2564
+[Client 1] --- ROUND 15 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 0.8365 | accuracy: 0.7148
+
+[Client 1] SHAP Feature Importances (Round 15):
+Feature                         Mean |SHAP|
+--------------------------------------------
+rst_flag_number                    0.012177
+IRC                                0.009662
+fin_count                          0.007848
+syn_count                          0.005950
+rst_count                          0.005811
+ack_flag_number                    0.005641
+ece_flag_number                    0.004902
+ack_count                          0.004755
+SSH                                0.004153
+SMTP                               0.003916
+TCP                                0.003367
+UDP                                0.002939
+Protocol Type                      0.002534
+DHCP                               0.002394
+ARP                                0.002393
+Max                                0.000692
+psh_flag_number                    0.000602
+DNS                                0.000578
+HTTP                               0.000453
+LLC                                0.000449
+ICMP                               0.000431
+IGMP                               0.000371
+fin_flag_number                    0.000307
+Telnet                             0.000097
+syn_flag_number                    0.000045
+cwr_flag_number                    0.000033
+HTTPS                              0.000012
+Time_To_Live                       0.000010
+Tot sum                            0.000006
+Rate                               0.000006
+Header_Length                      0.000005
+AVG                                0.000004
+Min                                0.000001
+IPv                                0.000001
+[Client 1] --- ROUND 15 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 5.7747 | accuracy: 0.2490
+[Client 1] --- ROUND 16 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 1.0291 | accuracy: 0.7181
+
+[Client 1] SHAP Feature Importances (Round 16):
+Feature                         Mean |SHAP|
+--------------------------------------------
+IRC                                0.023839
+rst_count                          0.012913
+UDP                                0.012808
+rst_flag_number                    0.009281
+fin_count                          0.007849
+ece_flag_number                    0.007593
+ack_count                          0.007261
+syn_count                          0.007062
+SSH                                0.005373
+ack_flag_number                    0.005128
+SMTP                               0.004857
+TCP                                0.003304
+DHCP                               0.003140
+psh_flag_number                    0.001641
+Protocol Type                      0.001329
+HTTP                               0.000992
+ARP                                0.000923
+fin_flag_number                    0.000640
+DNS                                0.000444
+Max                                0.000323
+ICMP                               0.000165
+LLC                                0.000139
+IGMP                               0.000119
+Telnet                             0.000080
+syn_flag_number                    0.000029
+cwr_flag_number                    0.000028
+Time_To_Live                       0.000022
+HTTPS                              0.000019
+Rate                               0.000012
+IPv                                0.000011
+Header_Length                      0.000011
+Tot sum                            0.000008
+AVG                                0.000006
+Min                                0.000003
+[Client 1] --- ROUND 16 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 4.9943 | accuracy: 0.2685
+[Client 1] --- ROUND 17 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 0.9904 | accuracy: 0.7125
+
+[Client 1] SHAP Feature Importances (Round 17):
+Feature                         Mean |SHAP|
+--------------------------------------------
+rst_flag_number                    0.010457
+SSH                                0.009883
+IRC                                0.008808
+fin_count                          0.008648
+rst_count                          0.008333
+syn_count                          0.006073
+ack_count                          0.005769
+ack_flag_number                    0.005696
+SMTP                               0.005666
+ece_flag_number                    0.005606
+UDP                                0.003475
+TCP                                0.003414
+Protocol Type                      0.002749
+DHCP                               0.002589
+psh_flag_number                    0.001746
+ARP                                0.001611
+DNS                                0.000855
+Max                                0.000786
+HTTP                               0.000616
+fin_flag_number                    0.000531
+Telnet                             0.000355
+IGMP                               0.000141
+cwr_flag_number                    0.000139
+ICMP                               0.000125
+LLC                                0.000079
+syn_flag_number                    0.000067
+HTTPS                              0.000008
+Time_To_Live                       0.000007
+Rate                               0.000003
+Header_Length                      0.000002
+IPv                                0.000001
+AVG                                0.000001
+Tot sum                            0.000001
+Min                                0.000000
+[Client 1] --- ROUND 17 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 8.9279 | accuracy: 0.2449
+[Client 1] --- ROUND 18 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 1.0977 | accuracy: 0.7168
+
+[Client 1] SHAP Feature Importances (Round 18):
+Feature                         Mean |SHAP|
+--------------------------------------------
+IRC                                0.011598
+rst_count                          0.009124
+rst_flag_number                    0.008259
+DHCP                               0.007976
+ece_flag_number                    0.006135
+fin_count                          0.006043
+ack_flag_number                    0.005620
+SSH                                0.005312
+TCP                                0.004164
+ack_count                          0.004107
+syn_count                          0.003995
+UDP                                0.003478
+SMTP                               0.003082
+Protocol Type                      0.001725
+psh_flag_number                    0.000595
+ARP                                0.000594
+HTTP                               0.000396
+DNS                                0.000375
+fin_flag_number                    0.000281
+Max                                0.000270
+Telnet                             0.000110
+ICMP                               0.000069
+IGMP                               0.000060
+LLC                                0.000049
+syn_flag_number                    0.000016
+cwr_flag_number                    0.000016
+HTTPS                              0.000008
+Rate                               0.000007
+Time_To_Live                       0.000005
+Header_Length                      0.000004
+AVG                                0.000003
+Tot sum                            0.000002
+Min                                0.000001
+IPv                                0.000000
+[Client 1] --- ROUND 18 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 5.8791 | accuracy: 0.2981
+[Client 1] --- ROUND 19 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 0.8246 | accuracy: 0.7170
+
+[Client 1] SHAP Feature Importances (Round 19):
+Feature                         Mean |SHAP|
+--------------------------------------------
+IRC                                0.013315
+DHCP                               0.009803
+rst_flag_number                    0.008761
+UDP                                0.008251
+ack_flag_number                    0.008106
+fin_count                          0.006219
+ece_flag_number                    0.005735
+rst_count                          0.005411
+syn_count                          0.005133
+ack_count                          0.004860
+SSH                                0.004502
+SMTP                               0.003985
+TCP                                0.003162
+Protocol Type                      0.001519
+ARP                                0.000747
+psh_flag_number                    0.000536
+Max                                0.000521
+ICMP                               0.000342
+HTTP                               0.000278
+fin_flag_number                    0.000266
+DNS                                0.000242
+IGMP                               0.000120
+LLC                                0.000114
+Telnet                             0.000069
+syn_flag_number                    0.000017
+HTTPS                              0.000016
+Time_To_Live                       0.000010
+Rate                               0.000009
+cwr_flag_number                    0.000009
+Header_Length                      0.000008
+Tot sum                            0.000005
+AVG                                0.000004
+Min                                0.000001
+IPv                                0.000001
+[Client 1] --- ROUND 19 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 9.9250 | accuracy: 0.2324
+[Client 1] --- ROUND 20 (FIT) ---
+[Client 1] LOCAL VAL   → loss: 0.7328 | accuracy: 0.7105
+
+[Client 1] SHAP Feature Importances (Round 20):
+Feature                         Mean |SHAP|
+--------------------------------------------
+IRC                                0.085118
+SSH                                0.023171
+fin_count                          0.022117
+ack_count                          0.020726
+syn_count                          0.018113
+SMTP                               0.011370
+rst_count                          0.009043
+rst_flag_number                    0.007991
+ece_flag_number                    0.006258
+ack_flag_number                    0.004611
+DHCP                               0.004106
+UDP                                0.003423
+TCP                                0.002944
+Protocol Type                      0.001495
+ARP                                0.001166
+psh_flag_number                    0.000653
+HTTP                               0.000459
+fin_flag_number                    0.000449
+Max                                0.000430
+DNS                                0.000402
+ICMP                               0.000147
+IGMP                               0.000134
+LLC                                0.000115
+Telnet                             0.000072
+cwr_flag_number                    0.000021
+HTTPS                              0.000012
+Time_To_Live                       0.000010
+syn_flag_number                    0.000009
+Rate                               0.000004
+AVG                                0.000003
+Tot sum                            0.000003
+Header_Length                      0.000003
+IPv                                0.000002
+Min                                0.000001
+[Client 1] --- ROUND 20 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 14.1529 | accuracy: 0.2511
+DEBUG flwr 2026-07-08 05:05:42,257 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-08 05:05:42,262 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+IRC                                0.320393
+TCP                                0.133267
+SMTP                               0.118157
+UDP                                0.113028
+fin_count                          0.076997
+DHCP                               0.070060
+syn_count                          0.035791
+ack_count                          0.019681
+ece_flag_number                    0.012446
+rst_count                          0.012249
+rst_flag_number                    0.008820
+ack_flag_number                    0.002046
+Protocol Type                      0.001754
+psh_flag_number                    0.001326
+HTTP                               0.000913
+fin_flag_number                    0.000716
+ARP                                0.000666
+LLC                                0.000438
+Max                                0.000428
+Telnet                             0.000368
+IGMP                               0.000330
+DNS                                0.000312
+ICMP                               0.000252
+cwr_flag_number                    0.000061
+syn_flag_number                    0.000014
+HTTPS                              0.000005
+Time_To_Live                       0.000000
+Rate                               0.000000
+Tot sum                            0.000000
+AVG                                0.000000
+IPv                                0.000000
+Header_Length                      0.000000
+Min                                0.000000
+[Client 2] --- ROUND 12 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 2.5971 | accuracy: 0.4214
+[Client 2] --- ROUND 13 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.5961 | accuracy: 0.8152
+IRC                                0.467601
+SMTP                               0.276622
+SSH                                0.131401
+TCP                                0.113633
+syn_count                          0.066001
+UDP                                0.052621
+fin_count                          0.049478
+ack_count                          0.030552
+rst_count                          0.015587
+DHCP                               0.013296
+rst_flag_number                    0.007103
+ack_flag_number                    0.006543
+ece_flag_number                    0.006470
+ICMP                               0.002135
+Protocol Type                      0.001835
+LLC                                0.001617
+IGMP                               0.001237
+ARP                                0.001156
+Max                                0.001028
+Telnet                             0.000889
+psh_flag_number                    0.000567
+DNS                                0.000455
+HTTP                               0.000412
+fin_flag_number                    0.000351
+cwr_flag_number                    0.000243
+syn_flag_number                    0.000031
+HTTPS                              0.000027
+AVG                                0.000005
+Tot sum                            0.000004
+Time_To_Live                       0.000004
+Rate                               0.000004
+Min                                0.000002
+IPv                                0.000002
+Header_Length                      0.000002
+[Client 2] --- ROUND 13 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 3.0659 | accuracy: 0.4074
+[Client 2] --- ROUND 14 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.5036 | accuracy: 0.8286
+IRC                                0.274240
+SMTP                               0.185843
+SSH                                0.153255
+fin_count                          0.038176
+syn_count                          0.033502
+ack_count                          0.022477
+rst_flag_number                    0.014893
+DHCP                               0.009457
+ece_flag_number                    0.008626
+rst_count                          0.006507
+ack_flag_number                    0.004815
+psh_flag_number                    0.001094
+TCP                                0.001061
+fin_flag_number                    0.001001
+UDP                                0.000899
+HTTP                               0.000848
+ARP                                0.000731
+Telnet                             0.000676
+Protocol Type                      0.000601
+Max                                0.000220
+LLC                                0.000146
+IGMP                               0.000123
+ICMP                               0.000103
+DNS                                0.000101
+cwr_flag_number                    0.000064
+syn_flag_number                    0.000021
+HTTPS                              0.000001
+Time_To_Live                       0.000000
+AVG                                0.000000
+Tot sum                            0.000000
+Rate                               0.000000
+IPv                                0.000000
+Header_Length                      0.000000
+Min                                0.000000
+[Client 2] --- ROUND 14 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 3.2516 | accuracy: 0.4161
+[Client 2] --- ROUND 15 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.5133 | accuracy: 0.8272
+SSH                                0.134860
+IRC                                0.126152
+SMTP                               0.106212
+fin_count                          0.085637
+DHCP                               0.034376
+ack_flag_number                    0.028958
+syn_count                          0.025567
+rst_count                          0.013678
+TCP                                0.009828
+rst_flag_number                    0.009781
+ece_flag_number                    0.008756
+UDP                                0.007517
+ack_count                          0.005017
+Protocol Type                      0.004301
+psh_flag_number                    0.001574
+fin_flag_number                    0.001505
+HTTP                               0.001395
+ARP                                0.001337
+Telnet                             0.000831
+ICMP                               0.000820
+LLC                                0.000616
+IGMP                               0.000545
+DNS                                0.000435
+Max                                0.000331
+cwr_flag_number                    0.000058
+syn_flag_number                    0.000023
+HTTPS                              0.000008
+IPv                                0.000002
+Tot sum                            0.000001
+AVG                                0.000001
+Time_To_Live                       0.000001
+Rate                               0.000000
+Header_Length                      0.000000
+Min                                0.000000
+[Client 2] --- ROUND 15 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 3.7299 | accuracy: 0.3432
+[Client 2] --- ROUND 16 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.4808 | accuracy: 0.8347
+SMTP                               0.300422
+SSH                                0.292181
+IRC                                0.255627
+Telnet                             0.096133
+ack_flag_number                    0.082759
+fin_count                          0.069414
+rst_flag_number                    0.031765
+DHCP                               0.031154
+TCP                                0.029131
+UDP                                0.025500
+ece_flag_number                    0.020708
+syn_count                          0.018961
+Protocol Type                      0.014671
+rst_count                          0.010825
+ack_count                          0.010024
+ARP                                0.001961
+fin_flag_number                    0.001915
+cwr_flag_number                    0.001752
+psh_flag_number                    0.001454
+syn_flag_number                    0.001080
+Max                                0.000762
+HTTP                               0.000578
+LLC                                0.000380
+DNS                                0.000336
+ICMP                               0.000332
+IGMP                               0.000297
+HTTPS                              0.000002
+Tot sum                            0.000000
+IPv                                0.000000
+Time_To_Live                       0.000000
+Rate                               0.000000
+AVG                                0.000000
+Header_Length                      0.000000
+Min                                0.000000
+[Client 2] --- ROUND 16 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 3.2268 | accuracy: 0.3228
+[Client 2] --- ROUND 17 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.4932 | accuracy: 0.8318
+IRC                                0.397502
+ack_flag_number                    0.282955
+SSH                                0.061609
+SMTP                               0.045603
+fin_count                          0.014148
+rst_flag_number                    0.011919
+syn_count                          0.010824
+ack_count                          0.010694
+DHCP                               0.007770
+rst_count                          0.006692
+TCP                                0.003777
+UDP                                0.002406
+psh_flag_number                    0.001433
+ece_flag_number                    0.001262
+fin_flag_number                    0.001139
+ARP                                0.001028
+HTTP                               0.001025
+Protocol Type                      0.000952
+Telnet                             0.000557
+DNS                                0.000402
+ICMP                               0.000402
+LLC                                0.000348
+Max                                0.000336
+IGMP                               0.000224
+cwr_flag_number                    0.000053
+HTTPS                              0.000013
+syn_flag_number                    0.000012
+Tot sum                            0.000004
+Time_To_Live                       0.000003
+AVG                                0.000003
+Rate                               0.000001
+Header_Length                      0.000001
+IPv                                0.000001
+Min                                0.000001
+[Client 2] --- ROUND 17 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 4.6367 | accuracy: 0.3392
+[Client 2] --- ROUND 18 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.4956 | accuracy: 0.8340
+IRC                                0.068842
+SMTP                               0.034899
+SSH                                0.030720
+fin_count                          0.008481
+syn_count                          0.006970
+ack_count                          0.006416
+rst_flag_number                    0.005292
+ARP                                0.003352
+ack_flag_number                    0.003325
+rst_count                          0.002849
+DHCP                               0.002113
+Telnet                             0.002096
+TCP                                0.001427
+ece_flag_number                    0.001326
+UDP                                0.000899
+Protocol Type                      0.000657
+HTTP                               0.000462
+ICMP                               0.000371
+psh_flag_number                    0.000279
+fin_flag_number                    0.000272
+Max                                0.000185
+LLC                                0.000173
+IGMP                               0.000132
+DNS                                0.000074
+syn_flag_number                    0.000029
+cwr_flag_number                    0.000028
+HTTPS                              0.000002
+Tot sum                            0.000001
+Time_To_Live                       0.000001
+IPv                                0.000000
+AVG                                0.000000
+Rate                               0.000000
+Header_Length                      0.000000
+Min                                0.000000
+[Client 2] --- ROUND 18 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 3.3894 | accuracy: 0.3514
+[Client 2] --- ROUND 19 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.4364 | accuracy: 0.8419
+IRC                                0.108876
+SSH                                0.077911
+SMTP                               0.025805
+fin_count                          0.010303
+syn_count                          0.007514
+ack_count                          0.007369
+rst_flag_number                    0.005346
+TCP                                0.003387
+DHCP                               0.003193
+UDP                                0.002845
+rst_count                          0.002101
+ack_flag_number                    0.001763
+ece_flag_number                    0.001175
+Max                                0.001144
+Protocol Type                      0.000800
+ARP                                0.000728
+psh_flag_number                    0.000479
+Telnet                             0.000385
+HTTP                               0.000324
+fin_flag_number                    0.000305
+DNS                                0.000130
+LLC                                0.000114
+IGMP                               0.000112
+ICMP                               0.000101
+syn_flag_number                    0.000013
+cwr_flag_number                    0.000007
+HTTPS                              0.000002
+Tot sum                            0.000001
+Time_To_Live                       0.000001
+AVG                                0.000000
+IPv                                0.000000
+Header_Length                      0.000000
+Rate                               0.000000
+Min                                0.000000
+[Client 2] --- ROUND 19 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 4.7009 | accuracy: 0.4007
+[Client 2] --- ROUND 20 (FIT) ---
+[Client 2] LOCAL VAL   → loss: 0.4834 | accuracy: 0.8365
+SSH                                0.158515
+IRC                                0.149267
+SMTP                               0.038012
+fin_count                          0.035673
+rst_flag_number                    0.018275
+rst_count                          0.011656
+ece_flag_number                    0.007311
+syn_count                          0.005481
+TCP                                0.004177
+DHCP                               0.004044
+psh_flag_number                    0.003967
+ack_count                          0.003678
+UDP                                0.003373
+HTTP                               0.002725
+ack_flag_number                    0.002025
+fin_flag_number                    0.001830
+Protocol Type                      0.001277
+ARP                                0.000716
+Max                                0.000509
+LLC                                0.000470
+DNS                                0.000355
+Telnet                             0.000298
+ICMP                               0.000241
+IGMP                               0.000194
+IPv                                0.000036
+HTTPS                              0.000020
+syn_flag_number                    0.000016
+AVG                                0.000013
+Tot sum                            0.000011
+Time_To_Live                       0.000011
+Min                                0.000009
+cwr_flag_number                    0.000008
+Rate                               0.000007
+Header_Length                      0.000005
+[Client 2] --- ROUND 20 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 6.0893 | accuracy: 0.2915
+DEBUG flwr 2026-07-08 05:05:42,253 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-08 05:05:42,257 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+UDP                                0.220632
+rst_flag_number                    0.105780
+IRC                                0.091859
+rst_count                          0.084614
+DHCP                               0.068413
+ece_flag_number                    0.022116
+ack_flag_number                    0.011933
+syn_count                          0.007040
+ack_count                          0.006105
+psh_flag_number                    0.004858
+SMTP                               0.004586
+fin_count                          0.004512
+SSH                                0.003423
+Protocol Type                      0.001324
+Max                                0.000496
+ICMP                               0.000416
+syn_flag_number                    0.000361
+DNS                                0.000236
+ARP                                0.000217
+IGMP                               0.000217
+Telnet                             0.000184
+LLC                                0.000169
+cwr_flag_number                    0.000038
+HTTPS                              0.000025
+AVG                                0.000022
+Rate                               0.000017
+Time_To_Live                       0.000012
+Header_Length                      0.000012
+Min                                0.000009
+HTTP                               0.000007
+IPv                                0.000005
+fin_flag_number                    0.000005
+Tot sum                            0.000004
+[Client 3] --- ROUND 12 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 6.1244 | accuracy: 0.1409
+[Client 3] --- ROUND 13 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.4717 | accuracy: 0.7995
+TCP                                0.208203
+DHCP                               0.094207
+ack_flag_number                    0.046147
+rst_count                          0.044916
+ack_count                          0.028734
+syn_count                          0.028273
+IRC                                0.026928
+UDP                                0.020429
+SMTP                               0.016573
+ece_flag_number                    0.013144
+rst_flag_number                    0.010480
+fin_count                          0.003884
+SSH                                0.002659
+Protocol Type                      0.002466
+syn_flag_number                    0.001132
+Max                                0.001038
+ARP                                0.000725
+Telnet                             0.000698
+IGMP                               0.000552
+ICMP                               0.000476
+DNS                                0.000435
+LLC                                0.000382
+cwr_flag_number                    0.000318
+psh_flag_number                    0.000161
+HTTPS                              0.000031
+fin_flag_number                    0.000023
+HTTP                               0.000022
+Rate                               0.000021
+Time_To_Live                       0.000021
+AVG                                0.000019
+Header_Length                      0.000006
+IPv                                0.000004
+Min                                0.000002
+Tot sum                            0.000002
+[Client 3] --- ROUND 13 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 6.0991 | accuracy: 0.1068
+[Client 3] --- ROUND 14 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.4089 | accuracy: 0.7920
+TCP                                0.256951
+UDP                                0.142348
+ece_flag_number                    0.132103
+DHCP                               0.091931
+syn_count                          0.017540
+ack_count                          0.016126
+rst_flag_number                    0.015884
+ack_flag_number                    0.014066
+rst_count                          0.010737
+SMTP                               0.010300
+IRC                                0.005969
+Protocol Type                      0.001934
+fin_count                          0.001559
+SSH                                0.001219
+Max                                0.001036
+ICMP                               0.000695
+syn_flag_number                    0.000657
+IGMP                               0.000473
+LLC                                0.000449
+psh_flag_number                    0.000416
+Telnet                             0.000397
+ARP                                0.000328
+DNS                                0.000309
+HTTPS                              0.000079
+cwr_flag_number                    0.000056
+AVG                                0.000032
+Rate                               0.000030
+Header_Length                      0.000029
+Time_To_Live                       0.000027
+Tot sum                            0.000016
+IPv                                0.000013
+Min                                0.000011
+fin_flag_number                    0.000010
+HTTP                               0.000006
+[Client 3] --- ROUND 14 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 6.3079 | accuracy: 0.1247
+[Client 3] --- ROUND 15 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.3773 | accuracy: 0.8307
+TCP                                0.418440
+rst_count                          0.201137
+IRC                                0.152767
+DHCP                               0.059443
+UDP                                0.021758
+ece_flag_number                    0.008991
+fin_count                          0.006407
+ack_flag_number                    0.005757
+rst_flag_number                    0.005297
+ack_count                          0.003937
+syn_count                          0.003906
+SSH                                0.003386
+SMTP                               0.002567
+Protocol Type                      0.001412
+Max                                0.000547
+ARP                                0.000467
+syn_flag_number                    0.000389
+Telnet                             0.000241
+ICMP                               0.000222
+IGMP                               0.000214
+LLC                                0.000207
+DNS                                0.000203
+psh_flag_number                    0.000141
+cwr_flag_number                    0.000055
+HTTPS                              0.000023
+Time_To_Live                       0.000011
+AVG                                0.000011
+HTTP                               0.000010
+fin_flag_number                    0.000008
+Rate                               0.000007
+Header_Length                      0.000003
+IPv                                0.000002
+Tot sum                            0.000001
+Min                                0.000001
+[Client 3] --- ROUND 15 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 6.0490 | accuracy: 0.1309
+[Client 3] --- ROUND 16 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.5354 | accuracy: 0.7146
+TCP                                0.126727
+DHCP                               0.072790
+ece_flag_number                    0.021190
+rst_count                          0.019660
+IRC                                0.014912
+UDP                                0.012030
+ack_flag_number                    0.009606
+rst_flag_number                    0.009026
+syn_count                          0.005406
+ack_count                          0.005298
+SMTP                               0.003635
+fin_count                          0.002822
+Protocol Type                      0.002520
+SSH                                0.002242
+Max                                0.001361
+ARP                                0.001057
+DNS                                0.000539
+Telnet                             0.000537
+IGMP                               0.000503
+syn_flag_number                    0.000491
+LLC                                0.000469
+ICMP                               0.000364
+psh_flag_number                    0.000195
+cwr_flag_number                    0.000163
+HTTP                               0.000087
+Time_To_Live                       0.000072
+HTTPS                              0.000071
+fin_flag_number                    0.000052
+Rate                               0.000048
+AVG                                0.000027
+IPv                                0.000022
+Header_Length                      0.000018
+Min                                0.000009
+Tot sum                            0.000002
+[Client 3] --- ROUND 16 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 5.8313 | accuracy: 0.0837
+[Client 3] --- ROUND 17 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.5075 | accuracy: 0.8237
+TCP                                0.530739
+ece_flag_number                    0.423012
+UDP                                0.192303
+ack_flag_number                    0.128402
+psh_flag_number                    0.047765
+rst_flag_number                    0.026824
+DHCP                               0.021468
+syn_count                          0.008406
+ack_count                          0.007402
+SMTP                               0.004340
+rst_count                          0.004095
+IRC                                0.002743
+Protocol Type                      0.001912
+fin_count                          0.001494
+SSH                                0.001254
+Max                                0.000720
+ICMP                               0.000448
+syn_flag_number                    0.000381
+ARP                                0.000232
+DNS                                0.000215
+Telnet                             0.000207
+IGMP                               0.000203
+LLC                                0.000177
+AVG                                0.000069
+HTTPS                              0.000065
+Rate                               0.000049
+cwr_flag_number                    0.000040
+Header_Length                      0.000035
+Time_To_Live                       0.000028
+IPv                                0.000017
+Tot sum                            0.000017
+Min                                0.000011
+HTTP                               0.000006
+fin_flag_number                    0.000004
+[Client 3] --- ROUND 17 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 5.2168 | accuracy: 0.0717
+[Client 3] --- ROUND 18 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.3592 | accuracy: 0.8103
+TCP                                0.333478
+UDP                                0.180934
+ack_flag_number                    0.170728
+DHCP                               0.069106
+rst_flag_number                    0.015388
+ece_flag_number                    0.007580
+syn_count                          0.004838
+ack_count                          0.004785
+SMTP                               0.002708
+rst_count                          0.002337
+fin_count                          0.001802
+IRC                                0.001534
+SSH                                0.001390
+Protocol Type                      0.001260
+Max                                0.000650
+ICMP                               0.000617
+syn_flag_number                    0.000478
+Telnet                             0.000403
+IGMP                               0.000358
+LLC                                0.000317
+psh_flag_number                    0.000213
+DNS                                0.000176
+ARP                                0.000168
+cwr_flag_number                    0.000066
+HTTPS                              0.000032
+AVG                                0.000031
+Rate                               0.000024
+Time_To_Live                       0.000014
+Header_Length                      0.000011
+IPv                                0.000009
+fin_flag_number                    0.000008
+Min                                0.000006
+Tot sum                            0.000005
+HTTP                               0.000005
+[Client 3] --- ROUND 18 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 5.4489 | accuracy: 0.1317
+[Client 3] --- ROUND 19 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.5911 | accuracy: 0.7541
+TCP                                0.312776
+DHCP                               0.287070
+IRC                                0.020440
+rst_count                          0.015075
+ece_flag_number                    0.010481
+UDP                                0.008538
+ack_flag_number                    0.005568
+rst_flag_number                    0.003762
+fin_count                          0.003112
+SSH                                0.002795
+SMTP                               0.002499
+syn_count                          0.002118
+ack_count                          0.001949
+Protocol Type                      0.000982
+Telnet                             0.000454
+Max                                0.000308
+syn_flag_number                    0.000283
+ARP                                0.000282
+ICMP                               0.000242
+psh_flag_number                    0.000207
+IGMP                               0.000193
+LLC                                0.000170
+DNS                                0.000151
+cwr_flag_number                    0.000093
+fin_flag_number                    0.000068
+HTTP                               0.000049
+AVG                                0.000025
+HTTPS                              0.000023
+Time_To_Live                       0.000015
+Rate                               0.000014
+Header_Length                      0.000010
+IPv                                0.000005
+Min                                0.000004
+Tot sum                            0.000003
+[Client 3] --- ROUND 19 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 5.4831 | accuracy: 0.0709
+[Client 3] --- ROUND 20 (FIT) ---
+[Client 3] LOCAL VAL   → loss: 0.4113 | accuracy: 0.8386
+DHCP                               0.077150
+TCP                                0.072472
+IRC                                0.015188
+rst_count                          0.008275
+Protocol Type                      0.008155
+UDP                                0.005229
+ece_flag_number                    0.005117
+syn_count                          0.004764
+ack_count                          0.004557
+rst_flag_number                    0.003256
+fin_count                          0.003110
+SMTP                               0.002928
+ack_flag_number                    0.002655
+SSH                                0.001733
+ARP                                0.001623
+Max                                0.001532
+IGMP                               0.001169
+LLC                                0.000962
+Telnet                             0.000962
+ICMP                               0.000875
+DNS                                0.000681
+syn_flag_number                    0.000520
+psh_flag_number                    0.000192
+HTTPS                              0.000167
+cwr_flag_number                    0.000165
+Rate                               0.000133
+Time_To_Live                       0.000121
+fin_flag_number                    0.000100
+AVG                                0.000090
+HTTP                               0.000083
+IPv                                0.000070
+Header_Length                      0.000062
+Min                                0.000035
+Tot sum                            0.000003
+[Client 3] --- ROUND 20 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 5.4777 | accuracy: 0.1037
+DEBUG flwr 2026-07-08 05:05:42,258 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-08 05:05:42,265 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+LLC                                0.005887
+ICMP                               0.005517
+ece_flag_number                    0.005245
+syn_count                          0.004816
+IGMP                               0.004737
+rst_count                          0.004488
+fin_count                          0.003603
+IRC                                0.003311
+ack_flag_number                    0.003286
+ack_count                          0.003167
+SSH                                0.002360
+Protocol Type                      0.001650
+SMTP                               0.001560
+DHCP                               0.001226
+Max                                0.001088
+ARP                                0.000688
+TCP                                0.000530
+UDP                                0.000388
+psh_flag_number                    0.000365
+fin_flag_number                    0.000318
+DNS                                0.000275
+HTTP                               0.000180
+IPv                                0.000122
+syn_flag_number                    0.000073
+Telnet                             0.000047
+HTTPS                              0.000025
+cwr_flag_number                    0.000015
+Tot sum                            0.000014
+Rate                               0.000009
+Time_To_Live                       0.000007
+AVG                                0.000006
+Header_Length                      0.000003
+Min                                0.000002
+[Client 4] --- ROUND 12 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 5.0080 | accuracy: 0.0835
+[Client 4] --- ROUND 13 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.7599 | accuracy: 0.6683
+rst_flag_number                    0.006451
+ece_flag_number                    0.005066
+IGMP                               0.004786
+rst_count                          0.004662
+ICMP                               0.004568
+IRC                                0.003830
+LLC                                0.003770
+fin_count                          0.003383
+syn_count                          0.003379
+ack_flag_number                    0.003249
+ack_count                          0.002876
+SSH                                0.002524
+SMTP                               0.001650
+Protocol Type                      0.001452
+DHCP                               0.001294
+ARP                                0.001074
+Max                                0.000572
+UDP                                0.000490
+TCP                                0.000359
+psh_flag_number                    0.000335
+HTTP                               0.000317
+DNS                                0.000284
+fin_flag_number                    0.000224
+IPv                                0.000109
+cwr_flag_number                    0.000082
+syn_flag_number                    0.000043
+Telnet                             0.000039
+HTTPS                              0.000035
+Tot sum                            0.000019
+Rate                               0.000011
+Time_To_Live                       0.000011
+AVG                                0.000011
+Header_Length                      0.000004
+Min                                0.000002
+[Client 4] --- ROUND 13 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 5.8735 | accuracy: 0.1109
+[Client 4] --- ROUND 14 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.8568 | accuracy: 0.6693
+rst_flag_number                    0.006349
+rst_count                          0.004209
+ece_flag_number                    0.004115
+ICMP                               0.003910
+IGMP                               0.003417
+syn_count                          0.003319
+ack_flag_number                    0.003269
+fin_count                          0.003205
+IRC                                0.003164
+LLC                                0.002865
+ack_count                          0.002698
+SSH                                0.002517
+SMTP                               0.002054
+DHCP                               0.001288
+Protocol Type                      0.001191
+ARP                                0.000510
+TCP                                0.000471
+Max                                0.000408
+psh_flag_number                    0.000371
+UDP                                0.000331
+HTTP                               0.000312
+fin_flag_number                    0.000235
+DNS                                0.000224
+IPv                                0.000200
+HTTPS                              0.000049
+Telnet                             0.000031
+cwr_flag_number                    0.000024
+syn_flag_number                    0.000023
+Time_To_Live                       0.000014
+Tot sum                            0.000010
+Rate                               0.000007
+AVG                                0.000004
+Header_Length                      0.000003
+Min                                0.000001
+[Client 4] --- ROUND 14 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 11.5054 | accuracy: 0.1881
+[Client 4] --- ROUND 15 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.7994 | accuracy: 0.6692
+rst_flag_number                    0.006279
+rst_count                          0.004645
+ece_flag_number                    0.004260
+ICMP                               0.004072
+fin_count                          0.003437
+syn_count                          0.003405
+IGMP                               0.003330
+ack_flag_number                    0.003244
+LLC                                0.003019
+ack_count                          0.002947
+IRC                                0.002856
+SSH                                0.002242
+SMTP                               0.001559
+DHCP                               0.001306
+Protocol Type                      0.001165
+Max                                0.000466
+TCP                                0.000427
+ARP                                0.000401
+psh_flag_number                    0.000395
+UDP                                0.000282
+fin_flag_number                    0.000265
+HTTP                               0.000245
+DNS                                0.000182
+IPv                                0.000172
+syn_flag_number                    0.000082
+Telnet                             0.000052
+cwr_flag_number                    0.000029
+HTTPS                              0.000023
+Tot sum                            0.000016
+Time_To_Live                       0.000008
+Rate                               0.000007
+AVG                                0.000006
+Header_Length                      0.000005
+Min                                0.000002
+[Client 4] --- ROUND 15 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 6.6897 | accuracy: 0.2035
+[Client 4] --- ROUND 16 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.7433 | accuracy: 0.6668
+IGMP                               0.007112
+rst_flag_number                    0.006533
+ICMP                               0.006441
+fin_count                          0.005395
+IRC                                0.005247
+rst_count                          0.004427
+LLC                                0.004203
+ece_flag_number                    0.003770
+SSH                                0.003600
+ack_flag_number                    0.003248
+syn_count                          0.003010
+ack_count                          0.002797
+DHCP                               0.001753
+SMTP                               0.001611
+Protocol Type                      0.001085
+psh_flag_number                    0.000542
+Max                                0.000489
+UDP                                0.000370
+TCP                                0.000350
+ARP                                0.000320
+DNS                                0.000245
+fin_flag_number                    0.000221
+HTTP                               0.000196
+IPv                                0.000139
+HTTPS                              0.000081
+Telnet                             0.000074
+AVG                                0.000055
+syn_flag_number                    0.000028
+Time_To_Live                       0.000021
+cwr_flag_number                    0.000016
+Tot sum                            0.000014
+Rate                               0.000008
+Header_Length                      0.000003
+Min                                0.000001
+[Client 4] --- ROUND 16 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 6.8397 | accuracy: 0.1046
+[Client 4] --- ROUND 17 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.7389 | accuracy: 0.6668
+IGMP                               0.007255
+rst_flag_number                    0.006332
+ICMP                               0.005321
+rst_count                          0.004596
+LLC                                0.004261
+ece_flag_number                    0.004181
+syn_count                          0.003327
+ack_flag_number                    0.003219
+fin_count                          0.003160
+IRC                                0.002913
+ack_count                          0.002841
+SSH                                0.002609
+Protocol Type                      0.001664
+SMTP                               0.001657
+DHCP                               0.001326
+Max                                0.000596
+ARP                                0.000439
+UDP                                0.000399
+psh_flag_number                    0.000395
+TCP                                0.000304
+IPv                                0.000279
+fin_flag_number                    0.000273
+DNS                                0.000250
+HTTP                               0.000230
+Telnet                             0.000028
+HTTPS                              0.000026
+syn_flag_number                    0.000023
+Tot sum                            0.000022
+cwr_flag_number                    0.000022
+AVG                                0.000011
+Time_To_Live                       0.000009
+Rate                               0.000009
+Header_Length                      0.000005
+Min                                0.000001
+[Client 4] --- ROUND 17 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 15.9654 | accuracy: 0.1739
+[Client 4] --- ROUND 18 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.9117 | accuracy: 0.6786
+rst_flag_number                    0.006343
+ece_flag_number                    0.004551
+rst_count                          0.004523
+ICMP                               0.003944
+IGMP                               0.003591
+syn_count                          0.003461
+fin_count                          0.003314
+ack_flag_number                    0.003267
+IRC                                0.003083
+LLC                                0.002997
+ack_count                          0.002946
+SSH                                0.002511
+Protocol Type                      0.002338
+SMTP                               0.001921
+DHCP                               0.001325
+Max                                0.000539
+IPv                                0.000489
+ARP                                0.000476
+TCP                                0.000379
+psh_flag_number                    0.000364
+UDP                                0.000322
+fin_flag_number                    0.000312
+HTTP                               0.000275
+DNS                                0.000212
+Tot sum                            0.000045
+syn_flag_number                    0.000026
+Telnet                             0.000024
+HTTPS                              0.000022
+cwr_flag_number                    0.000018
+AVG                                0.000013
+Time_To_Live                       0.000007
+Rate                               0.000007
+Header_Length                      0.000004
+Min                                0.000002
+[Client 4] --- ROUND 18 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 11.3308 | accuracy: 0.3045
+[Client 4] --- ROUND 19 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.7788 | accuracy: 0.6728
+rst_flag_number                    0.006655
+ICMP                               0.004805
+rst_count                          0.004751
+ece_flag_number                    0.004476
+fin_count                          0.003719
+IGMP                               0.003634
+syn_count                          0.003515
+ack_flag_number                    0.003287
+IRC                                0.003193
+ack_count                          0.002978
+LLC                                0.002869
+SSH                                0.002530
+SMTP                               0.001936
+DHCP                               0.001443
+Protocol Type                      0.001325
+Max                                0.000518
+TCP                                0.000388
+ARP                                0.000358
+psh_flag_number                    0.000341
+UDP                                0.000337
+HTTP                               0.000304
+fin_flag_number                    0.000250
+DNS                                0.000213
+IPv                                0.000104
+Telnet                             0.000055
+cwr_flag_number                    0.000045
+syn_flag_number                    0.000038
+HTTPS                              0.000024
+Time_To_Live                       0.000011
+Tot sum                            0.000010
+Rate                               0.000007
+AVG                                0.000005
+Header_Length                      0.000003
+Min                                0.000001
+[Client 4] --- ROUND 19 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 10.9041 | accuracy: 0.1036
+[Client 4] --- ROUND 20 (FIT) ---
+[Client 4] LOCAL VAL   → loss: 0.8525 | accuracy: 0.6735
+rst_flag_number                    0.006994
+ICMP                               0.004938
+rst_count                          0.004349
+ece_flag_number                    0.004120
+LLC                                0.004039
+IGMP                               0.003928
+IRC                                0.003735
+fin_count                          0.003678
+ack_flag_number                    0.003289
+syn_count                          0.003237
+ack_count                          0.002865
+SSH                                0.002229
+SMTP                               0.001690
+Protocol Type                      0.001539
+DHCP                               0.001319
+psh_flag_number                    0.000651
+Max                                0.000425
+TCP                                0.000424
+ARP                                0.000377
+UDP                                0.000264
+fin_flag_number                    0.000234
+DNS                                0.000216
+HTTP                               0.000138
+Telnet                             0.000095
+IPv                                0.000095
+syn_flag_number                    0.000026
+cwr_flag_number                    0.000019
+HTTPS                              0.000017
+Tot sum                            0.000010
+Time_To_Live                       0.000006
+Rate                               0.000005
+AVG                                0.000004
+Header_Length                      0.000002
+Min                                0.000001
+[Client 4] --- ROUND 20 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 5.0285 | accuracy: 0.1343
+DEBUG flwr 2026-07-08 05:05:42,257 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-08 05:05:42,258 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+Max                                0.019186
+ARP                                0.018969
+DNS                                0.010654
+rst_flag_number                    0.003087
+rst_count                          0.002404
+ack_flag_number                    0.001760
+ece_flag_number                    0.001717
+IRC                                0.001395
+ack_count                          0.001192
+syn_count                          0.001138
+fin_count                          0.001089
+ICMP                               0.000917
+DHCP                               0.000818
+SMTP                               0.000804
+HTTPS                              0.000766
+SSH                                0.000708
+Rate                               0.000521
+Time_To_Live                       0.000497
+Tot sum                            0.000431
+psh_flag_number                    0.000404
+AVG                                0.000256
+TCP                                0.000227
+UDP                                0.000181
+Header_Length                      0.000176
+IGMP                               0.000140
+fin_flag_number                    0.000136
+HTTP                               0.000134
+LLC                                0.000103
+Min                                0.000100
+Telnet                             0.000018
+IPv                                0.000006
+cwr_flag_number                    0.000001
+syn_flag_number                    0.000001
+[Client 5] --- ROUND 12 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 8.4443 | accuracy: 0.1473
+[Client 5] --- ROUND 13 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6125 | accuracy: 0.7531
+Protocol Type                      0.025977
+ARP                                0.015203
+DNS                                0.012584
+Max                                0.012416
+rst_flag_number                    0.003092
+rst_count                          0.002456
+ece_flag_number                    0.001728
+ack_flag_number                    0.001710
+IRC                                0.001208
+syn_count                          0.001135
+fin_count                          0.001105
+ack_count                          0.001080
+HTTPS                              0.001019
+DHCP                               0.000815
+SMTP                               0.000777
+Time_To_Live                       0.000707
+SSH                                0.000678
+psh_flag_number                    0.000417
+Tot sum                            0.000333
+AVG                                0.000312
+Header_Length                      0.000292
+Rate                               0.000289
+TCP                                0.000226
+IGMP                               0.000187
+UDP                                0.000175
+fin_flag_number                    0.000138
+Min                                0.000136
+HTTP                               0.000136
+ICMP                               0.000102
+LLC                                0.000082
+Telnet                             0.000026
+IPv                                0.000004
+syn_flag_number                    0.000002
+cwr_flag_number                    0.000000
+[Client 5] --- ROUND 13 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.4706 | accuracy: 0.0272
+[Client 5] --- ROUND 14 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6116 | accuracy: 0.7549
+Protocol Type                      0.022867
+ARP                                0.012420
+Max                                0.010638
+DNS                                0.009753
+rst_flag_number                    0.003214
+rst_count                          0.002350
+ece_flag_number                    0.001808
+ack_flag_number                    0.001706
+IRC                                0.001270
+syn_count                          0.001203
+ack_count                          0.001115
+fin_count                          0.001077
+HTTPS                              0.001012
+DHCP                               0.000807
+SSH                                0.000697
+SMTP                               0.000692
+psh_flag_number                    0.000427
+Tot sum                            0.000293
+Time_To_Live                       0.000287
+Rate                               0.000258
+TCP                                0.000218
+AVG                                0.000216
+UDP                                0.000192
+IGMP                               0.000181
+LLC                                0.000141
+fin_flag_number                    0.000137
+HTTP                               0.000137
+Header_Length                      0.000122
+ICMP                               0.000099
+Min                                0.000058
+Telnet                             0.000038
+IPv                                0.000002
+syn_flag_number                    0.000001
+cwr_flag_number                    0.000000
+[Client 5] --- ROUND 14 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.0338 | accuracy: 0.1090
+[Client 5] --- ROUND 15 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6088 | accuracy: 0.7543
+Protocol Type                      0.021651
+Max                                0.014242
+ARP                                0.009697
+DNS                                0.005961
+rst_flag_number                    0.003349
+rst_count                          0.002356
+ack_flag_number                    0.001704
+ece_flag_number                    0.001695
+IRC                                0.001281
+syn_count                          0.001217
+fin_count                          0.001134
+ack_count                          0.001081
+HTTPS                              0.001058
+Time_To_Live                       0.001024
+DHCP                               0.000825
+SMTP                               0.000700
+SSH                                0.000662
+psh_flag_number                    0.000446
+Tot sum                            0.000246
+UDP                                0.000205
+TCP                                0.000200
+Rate                               0.000182
+LLC                                0.000168
+Header_Length                      0.000155
+AVG                                0.000144
+HTTP                               0.000142
+fin_flag_number                    0.000141
+IGMP                               0.000101
+ICMP                               0.000074
+Min                                0.000061
+Telnet                             0.000021
+IPv                                0.000002
+syn_flag_number                    0.000001
+cwr_flag_number                    0.000001
+[Client 5] --- ROUND 15 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.7832 | accuracy: 0.0867
+[Client 5] --- ROUND 16 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6112 | accuracy: 0.7543
+Protocol Type                      0.030645
+ARP                                0.018848
+Max                                0.013770
+DNS                                0.008780
+IGMP                               0.003670
+rst_flag_number                    0.003287
+rst_count                          0.002335
+ece_flag_number                    0.002029
+ack_flag_number                    0.001690
+IRC                                0.001315
+syn_count                          0.001217
+ack_count                          0.001126
+fin_count                          0.001116
+DHCP                               0.000828
+Rate                               0.000763
+HTTPS                              0.000754
+SMTP                               0.000720
+SSH                                0.000658
+Time_To_Live                       0.000630
+psh_flag_number                    0.000437
+Tot sum                            0.000353
+AVG                                0.000303
+Header_Length                      0.000240
+TCP                                0.000236
+UDP                                0.000167
+ICMP                               0.000145
+HTTP                               0.000138
+fin_flag_number                    0.000136
+Min                                0.000134
+LLC                                0.000103
+Telnet                             0.000009
+IPv                                0.000004
+cwr_flag_number                    0.000001
+syn_flag_number                    0.000000
+[Client 5] --- ROUND 16 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.3384 | accuracy: 0.0349
+[Client 5] --- ROUND 17 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6095 | accuracy: 0.7540
+Protocol Type                      0.034035
+ARP                                0.021659
+Max                                0.017476
+DNS                                0.012441
+rst_flag_number                    0.003145
+rst_count                          0.002453
+ece_flag_number                    0.001758
+ack_flag_number                    0.001726
+IRC                                0.001513
+syn_count                          0.001233
+ack_count                          0.001068
+fin_count                          0.001030
+HTTPS                              0.000987
+Tot sum                            0.000914
+SMTP                               0.000833
+DHCP                               0.000818
+SSH                                0.000748
+Time_To_Live                       0.000721
+IGMP                               0.000652
+Rate                               0.000591
+Header_Length                      0.000477
+psh_flag_number                    0.000415
+AVG                                0.000369
+Min                                0.000314
+TCP                                0.000259
+ICMP                               0.000187
+UDP                                0.000180
+LLC                                0.000154
+fin_flag_number                    0.000136
+HTTP                               0.000135
+Telnet                             0.000026
+IPv                                0.000004
+syn_flag_number                    0.000003
+cwr_flag_number                    0.000001
+[Client 5] --- ROUND 17 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 8.9572 | accuracy: 0.0926
+[Client 5] --- ROUND 18 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6071 | accuracy: 0.7560
+Protocol Type                      0.024066
+ARP                                0.018692
+Time_To_Live                       0.015021
+Max                                0.013642
+DNS                                0.013446
+rst_flag_number                    0.003249
+rst_count                          0.002418
+ece_flag_number                    0.001763
+ack_flag_number                    0.001716
+IRC                                0.001290
+ack_count                          0.001173
+syn_count                          0.001126
+fin_count                          0.001098
+HTTPS                              0.000962
+DHCP                               0.000838
+SMTP                               0.000739
+SSH                                0.000691
+psh_flag_number                    0.000436
+AVG                                0.000427
+Tot sum                            0.000344
+Rate                               0.000254
+TCP                                0.000237
+ICMP                               0.000217
+UDP                                0.000179
+LLC                                0.000153
+Header_Length                      0.000152
+HTTP                               0.000150
+IGMP                               0.000142
+fin_flag_number                    0.000139
+Min                                0.000091
+Telnet                             0.000066
+IPv                                0.000023
+syn_flag_number                    0.000004
+cwr_flag_number                    0.000001
+[Client 5] --- ROUND 18 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.2507 | accuracy: 0.1357
+[Client 5] --- ROUND 19 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6026 | accuracy: 0.7551
+Protocol Type                      0.032705
+ARP                                0.018121
+DNS                                0.017648
+Max                                0.014701
+ece_flag_number                    0.003313
+rst_flag_number                    0.003234
+rst_count                          0.002522
+ack_flag_number                    0.001699
+syn_count                          0.001293
+IRC                                0.001172
+fin_count                          0.001097
+ack_count                          0.001096
+DHCP                               0.000827
+SMTP                               0.000776
+SSH                                0.000683
+HTTPS                              0.000631
+AVG                                0.000470
+psh_flag_number                    0.000443
+Rate                               0.000337
+Time_To_Live                       0.000314
+Tot sum                            0.000249
+TCP                                0.000230
+UDP                                0.000174
+HTTP                               0.000147
+Header_Length                      0.000144
+fin_flag_number                    0.000140
+IGMP                               0.000111
+Min                                0.000107
+ICMP                               0.000100
+LLC                                0.000095
+Telnet                             0.000031
+IPv                                0.000002
+syn_flag_number                    0.000001
+cwr_flag_number                    0.000000
+[Client 5] --- ROUND 19 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.7830 | accuracy: 0.0921
+[Client 5] --- ROUND 20 (FIT) ---
+[Client 5] LOCAL VAL   → loss: 0.6078 | accuracy: 0.7558
+Protocol Type                      0.020393
+Max                                0.013175
+ARP                                0.008831
+DNS                                0.008722
+rst_flag_number                    0.003467
+rst_count                          0.002323
+ece_flag_number                    0.001863
+ack_flag_number                    0.001741
+IRC                                0.001370
+syn_count                          0.001210
+ack_count                          0.001191
+fin_count                          0.001133
+DHCP                               0.000817
+SMTP                               0.000722
+HTTPS                              0.000652
+SSH                                0.000644
+Time_To_Live                       0.000416
+psh_flag_number                    0.000402
+Rate                               0.000372
+Tot sum                            0.000361
+Header_Length                      0.000268
+AVG                                0.000267
+UDP                                0.000221
+TCP                                0.000194
+IGMP                               0.000148
+LLC                                0.000144
+HTTP                               0.000138
+fin_flag_number                    0.000133
+ICMP                               0.000115
+Min                                0.000102
+Telnet                             0.000027
+syn_flag_number                    0.000003
+IPv                                0.000002
+cwr_flag_number                    0.000001
+[Client 5] --- ROUND 20 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 9.2946 | accuracy: 0.0380
+DEBUG flwr 2026-07-08 05:05:42,253 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-08 05:05:42,257 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
