@@ -1,0 +1,93 @@
+Loading CSVs...
+Total rows: 3,579,561
+Classes: 34
+
+Building 5 Dirichlet(α=0.5) splits...
+
+✓ Client 1 → D:\CAPSTONE\Dir_Client1.csv  (300,000 rows)
+✓ Client 2 → D:\CAPSTONE\Dir_Client2.csv  (300,000 rows)
+✓ Client 3 → D:\CAPSTONE\Dir_Client3.csv  (300,000 rows)
+✓ Client 4 → D:\CAPSTONE\Dir_Client4.csv  (300,000 rows)
+✓ Client 5 → D:\CAPSTONE\Dir_Client5.csv  (300,000 rows)
+
+===========================================================================
+DIAGNOSTIC — Dirichlet α=0.5
+===========================================================================
+client                   Client1  Client2  Client3  Client4  Client5  het_score
+label                                                                          
+MIRAI-GREIP_FLOOD          34316     1715     1662      555      251   1.933979
+MITM-ARPSPOOFING            1202     8758       78       55        3   1.881175
+DDOS-SLOWLORIS                 0       22       50       18      618   1.871790
+DOS-UDP_FLOOD               2196     8412     3961     2455    88806   1.790238
+DDOS-UDP_FLOOD               488     6643     3911   107661     9684   1.789662
+XSS                          171       20        0        4       15   1.687529
+DDOS-PSHACK_FLOOD           8116   102455       88     1857    17343   1.666562
+UPLOADING_ATTACK               2        2        0        4       30   1.465301
+COMMANDINJECTION             138        0        2       53        5   1.459305
+MIRAI-UDPPLAIN               176      773    18451     5090     1860   1.443508
+DDOS-ICMP_FRAGMENTATION      257       65      414     3917     8294   1.376413
+VULNERABILITYSCAN              0      124      604     6028     2797   1.341077
+DDOS-ACK_FRAGMENTATION      2450      201      341      555     6427   1.322754
+DDOS-RSTFINFLOOD            7019     1350    32024    65151      154   1.314054
+RECON-OSSCAN                 164     1677     1139       90        6   1.217766
+RECON-PINGSWEEP               36        0        5        0       48   1.201468
+DDOS-UDP_FRAGMENTATION      2096      909     5824      619      343   1.154552
+DOS-SYN_FLOOD               9382     5965    38871    10129      499   1.154184
+DOS-TCP_FLOOD               5509    32270     3220    32202      152   1.100576
+SQLINJECTION                 117        0       17       16       70   1.080352
+DOS-HTTP_FLOOD                 1      734      372       27     1169   1.074308
+DDOS-SYNONYMOUSIP_FLOOD    12793     1711     2887    48188    35083   1.024325
+BENIGN                      1361     3706    18679     5670     4252   1.018011
+RECON-HOSTDISCOVERY          487       40      232     1274     2002   1.010660
+DNS_SPOOFING                  63      410     2390      427     2212   1.005417
+RECON-PORTSCAN              1516       65      470       73     1095   0.997675
+BACKDOOR_MALWARE              58        0        6       33       19   0.959977
+DICTIONARYBRUTEFORCE           1       34       85      177       51   0.952575
+DDOS-TCP_FLOOD             15979    30083    76620      318    27321   0.949281
+DDOS-ICMP_FLOOD           132415    86509    36994     3605    22485   0.929708
+DDOS-SYN_FLOOD             44632     1455    46260      108    57258   0.903828
+MIRAI-GREETH_FLOOD         16697     3731     4252     3336     9346   0.763064
+DDOS-HTTP_FLOOD               81      120       56      295      259   0.661785
+BROWSERHIJACKING              81       41       35       10       43   0.592453
+
+===========================================================================
+DATASET SIZES
+===========================================================================
+Client 1:  300,000 rows
+Client 2:  300,000 rows
+Client 3:  300,000 rows
+Client 4:  300,000 rows
+Client 5:  300,000 rows
+
+===========================================================================
+TOP 3 CLASSES PER CLIENT
+===========================================================================
+
+Client 1:
+  DDOS-ICMP_FLOOD                      132,415
+  DDOS-SYN_FLOOD                        44,632
+  MIRAI-GREIP_FLOOD                     34,316
+
+Client 2:
+  DDOS-PSHACK_FLOOD                    102,455
+  DDOS-ICMP_FLOOD                       86,509
+  DOS-TCP_FLOOD                         32,270
+
+Client 3:
+  DDOS-TCP_FLOOD                        76,620
+  DDOS-SYN_FLOOD                        46,260
+  DOS-SYN_FLOOD                         38,871
+
+Client 4:
+  DDOS-UDP_FLOOD                       107,661
+  DDOS-RSTFINFLOOD                      65,151
+  DDOS-SYNONYMOUSIP_FLOOD               48,188
+
+Client 5:
+  DOS-UDP_FLOOD                         88,806
+  DDOS-SYN_FLOOD                        57,258
+  DDOS-SYNONYMOUSIP_FLOOD               35,083
+
+Done. Update client CSV paths to Dir_Client*.csv
+To run stronger non-IID, change ALPHA to 0.1 and rerun.
+PS C:\Users\AKSH\AppData\Local\Programs\Microsoft VS Code> 
