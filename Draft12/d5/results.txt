@@ -1,0 +1,1066 @@
+cnn model used
+
+
+[Server] Round 25 — per-client LOCAL eval:
+  client_2: accuracy=0.5766 | precision=0.3822 | recall=0.4191 | f1=0.3509
+  client_5: accuracy=0.4710 | precision=0.3374 | recall=0.3972 | f1=0.2923
+  client_4: accuracy=0.8587 | precision=0.3839 | recall=0.3962 | f1=0.3582
+  client_3: accuracy=0.7291 | precision=0.4151 | recall=0.4279 | f1=0.3866
+  client_1: accuracy=0.8523 | precision=0.3631 | recall=0.3985 | f1=0.3559
+DEBUG flwr 2026-07-24 05:25:13,670 | server.py:218 | fit_round 26: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 05:48:12,864 | server.py:232 | fit_round 26 received 5 results and 0 failures
+INFO flwr 2026-07-24 05:48:37,092 | server.py:119 | fit progress: (26, 0.5700019598007202, {'accuracy': 0.7252600201702458, 'precision': 0.4181251106856371, 'recall': 0.3960593596008163, 'f1': 0.36302793068493205}, 37994.14033970004)
+DEBUG flwr 2026-07-24 05:48:37,092 | server.py:168 | evaluate_round 26: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 05:49:06,636 | server.py:182 | evaluate_round 26 received 5 results and 0 failures
+DEBUG flwr 2026-07-24 05:49:06,636 | server.py:218 | fit_round 27: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 06:10:56,514 | server.py:232 | fit_round 27 received 5 results and 0 failures
+INFO flwr 2026-07-24 06:11:20,913 | server.py:119 | fit progress: (27, 0.5808666944503784, {'accuracy': 0.7247264305649066, 'precision': 0.3823316069072877, 'recall': 0.3839677059199489, 'f1': 0.3469296687618877}, 39357.96229350002)
+DEBUG flwr 2026-07-24 06:11:20,914 | server.py:168 | evaluate_round 27: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 06:11:51,105 | server.py:182 | evaluate_round 27 received 5 results and 0 failures
+DEBUG flwr 2026-07-24 06:11:51,105 | server.py:218 | fit_round 28: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 06:35:00,802 | server.py:232 | fit_round 28 received 5 results and 0 failures
+INFO flwr 2026-07-24 06:35:24,651 | server.py:119 | fit progress: (28, 0.5677869319915771, {'accuracy': 0.7257042125642194, 'precision': 0.40502986384258566, 'recall': 0.40237739138078904, 'f1': 0.3660936992771294}, 40801.70059230004)
+DEBUG flwr 2026-07-24 06:35:24,652 | server.py:168 | evaluate_round 28: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 06:35:49,930 | server.py:182 | evaluate_round 28 received 5 results and 0 failures
+DEBUG flwr 2026-07-24 06:35:49,930 | server.py:218 | fit_round 29: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 06:58:14,292 | server.py:232 | fit_round 29 received 5 results and 0 failures
+INFO flwr 2026-07-24 06:58:38,980 | server.py:119 | fit progress: (29, 0.682739794254303, {'accuracy': 0.6883166225733546, 'precision': 0.31901944362967377, 'recall': 0.31004250558619356, 'f1': 0.285115405091982}, 42196.028162400005)
+DEBUG flwr 2026-07-24 06:58:38,980 | server.py:168 | evaluate_round 29: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 06:59:06,794 | server.py:182 | evaluate_round 29 received 5 results and 0 failures
+DEBUG flwr 2026-07-24 06:59:06,795 | server.py:218 | fit_round 30: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 07:21:44,984 | server.py:232 | fit_round 30 received 5 results and 0 failures
+
+[Server] SHAP Weights (Round 30):
+  client_4: 0.2334
+  client_3: 0.2194
+  client_1: 0.1905
+  client_5: 0.1504
+  client_2: 0.2062
+
+[Server] === CENTRALIZED TEST SET (Round 30) ===
+  loss: 1.0015 | accuracy: 0.6571 | precision(macro): 0.2646 | recall(macro): 0.2441 | f1(macro): 0.2102
+
+[Server] Computing SHAP on the final aggregated global model...
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+INFO flwr 2026-07-24 07:25:48,384 | server.py:119 | fit progress: (30, 1.0014728307724, {'accuracy': 0.6570918528410155, 'precision': 0.2645945235053783, 'recall': 0.24409969785329289, 'f1': 0.21024694460716606}, 43825.43306360004)
+DEBUG flwr 2026-07-24 07:25:48,385 | server.py:168 | evaluate_round 30: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-24 07:26:17,923 | server.py:182 | evaluate_round 30 received 5 results and 0 failures
+
+[Server] Round 30 — per-client LOCAL eval:
+  client_4: accuracy=0.8034 | precision=0.2352 | recall=0.2496 | f1=0.2077
+  client_3: accuracy=0.6618 | precision=0.2650 | recall=0.2542 | f1=0.2090
+  client_2: accuracy=0.5212 | precision=0.2377 | recall=0.2696 | f1=0.1896
+  client_1: accuracy=0.7729 | precision=0.2485 | recall=0.2499 | f1=0.2231
+  client_5: accuracy=0.4141 | precision=0.2204 | recall=0.2503 | f1=0.1591
+
+
+============================================================
+GLOBAL ACCURACY OF ALL CLIENTS (local eval)
+============================================================
+       client_1  ...  client_5
+Round            ...          
+1        0.2837  ...    0.2084
+2        0.4820  ...    0.4029
+3        0.4029  ...    0.3089
+4        0.5126  ...    0.4486
+5        0.5296  ...    0.4612
+6        0.8638  ...    0.4499
+7        0.8610  ...    0.4723
+8        0.7578  ...    0.3888
+9        0.7564  ...    0.3914
+10       0.8154  ...    0.4081
+11       0.7814  ...    0.3920
+12       0.8203  ...    0.4191
+13       0.8553  ...    0.4647
+14       0.8773  ...    0.4687
+15       0.8574  ...    0.4667
+16       0.8456  ...    0.4697
+17       0.7824  ...    0.4095
+18       0.8075  ...    0.4120
+19       0.8739  ...    0.4664
+20       0.8111  ...    0.4119
+21       0.8582  ...    0.4753
+22       0.8153  ...    0.4226
+23       0.8184  ...    0.4171
+24       0.8646  ...    0.4694
+25       0.8523  ...    0.4710
+26       0.8745  ...    0.4697
+27       0.8762  ...    0.4743
+28       0.8674  ...    0.4741
+29       0.8255  ...    0.4375
+30       0.7729  ...    0.4141
+
+[30 rows x 5 columns]
+
+============================================================
+GLOBAL PRECISION (macro) OF ALL CLIENTS (local eval)
+============================================================
+       client_1  ...  client_5
+Round            ...          
+1        0.1121  ...    0.0982
+2        0.2836  ...    0.2193
+3        0.1510  ...    0.1243
+4        0.3560  ...    0.3422
+5        0.3534  ...    0.3536
+6        0.3719  ...    0.3209
+7        0.3769  ...    0.3495
+8        0.2001  ...    0.1491
+9        0.1963  ...    0.1439
+10       0.3006  ...    0.2812
+11       0.2322  ...    0.1773
+12       0.2814  ...    0.2748
+13       0.3496  ...    0.3518
+14       0.3858  ...    0.3634
+15       0.3482  ...    0.3046
+16       0.3520  ...    0.3118
+17       0.2477  ...    0.2031
+18       0.2486  ...    0.2032
+19       0.3828  ...    0.3594
+20       0.2740  ...    0.2046
+21       0.3800  ...    0.3517
+22       0.2799  ...    0.2208
+23       0.2854  ...    0.2611
+24       0.3552  ...    0.3078
+25       0.3631  ...    0.3374
+26       0.3844  ...    0.3433
+27       0.3734  ...    0.3284
+28       0.3610  ...    0.3396
+29       0.2923  ...    0.2848
+30       0.2485  ...    0.2204
+
+[30 rows x 5 columns]
+
+============================================================
+GLOBAL RECALL (macro) OF ALL CLIENTS (local eval)
+============================================================
+       client_1  ...  client_5
+Round            ...          
+1        0.1156  ...    0.1146
+2        0.2491  ...    0.2500
+3        0.1684  ...    0.1673
+4        0.3542  ...    0.3526
+5        0.3561  ...    0.3521
+6        0.3501  ...    0.3526
+7        0.3867  ...    0.3840
+8        0.2072  ...    0.2170
+9        0.2050  ...    0.2142
+10       0.3215  ...    0.3245
+11       0.2232  ...    0.2229
+12       0.3181  ...    0.3171
+13       0.4022  ...    0.4030
+14       0.4061  ...    0.4041
+15       0.4026  ...    0.4014
+16       0.4031  ...    0.4004
+17       0.2641  ...    0.2665
+18       0.2528  ...    0.2505
+19       0.4004  ...    0.4011
+20       0.2695  ...    0.2697
+21       0.4031  ...    0.3999
+22       0.2738  ...    0.2705
+23       0.3066  ...    0.3055
+24       0.4100  ...    0.4093
+25       0.3985  ...    0.3972
+26       0.4111  ...    0.4087
+27       0.3981  ...    0.3937
+28       0.4134  ...    0.4137
+29       0.3208  ...    0.3190
+30       0.2499  ...    0.2503
+
+[30 rows x 5 columns]
+
+============================================================
+GLOBAL F1 (macro) OF ALL CLIENTS (local eval)
+============================================================
+       client_1  ...  client_5
+Round            ...          
+1        0.0706  ...    0.0825
+2        0.1989  ...    0.1680
+3        0.1245  ...    0.1119
+4        0.2926  ...    0.2671
+5        0.3035  ...    0.2750
+6        0.3311  ...    0.2549
+7        0.3456  ...    0.2865
+8        0.1807  ...    0.1244
+9        0.1789  ...    0.1254
+10       0.2728  ...    0.2092
+11       0.1964  ...    0.1266
+12       0.2734  ...    0.2225
+13       0.3435  ...    0.2870
+14       0.3598  ...    0.2964
+15       0.3451  ...    0.2874
+16       0.3444  ...    0.2909
+17       0.2330  ...    0.1738
+18       0.2430  ...    0.1717
+19       0.3554  ...    0.2910
+20       0.2488  ...    0.1762
+21       0.3532  ...    0.2963
+22       0.2563  ...    0.1865
+23       0.2851  ...    0.2087
+24       0.3569  ...    0.2933
+25       0.3559  ...    0.2923
+26       0.3688  ...    0.3033
+27       0.3558  ...    0.2947
+28       0.3619  ...    0.3023
+29       0.2918  ...    0.2352
+30       0.2231  ...    0.1591
+
+[30 rows x 5 columns]
+============================================================
+
+============================================================
+CENTRALIZED SERVER TEST SET METRICS (all rounds)
+============================================================
+         loss  ...      f1
+Round          ...        
+0      3.6098  ...  0.0156
+1      2.8503  ...  0.0707
+2      1.1695  ...  0.1997
+3      1.2645  ...  0.1246
+4      0.8235  ...  0.3059
+5      0.7848  ...  0.3121
+6      0.7582  ...  0.3219
+7      0.6914  ...  0.3420
+8      1.0748  ...  0.1724
+9      1.0746  ...  0.1711
+10     0.6949  ...  0.2772
+11     0.8150  ...  0.1856
+12     0.6724  ...  0.2770
+13     0.5944  ...  0.3529
+14     0.5921  ...  0.3639
+15     0.5863  ...  0.3494
+16     0.5884  ...  0.3480
+17     0.7800  ...  0.2232
+18     0.9009  ...  0.2238
+19     0.5753  ...  0.3552
+20     0.7756  ...  0.2361
+21     0.5806  ...  0.3505
+22     0.7504  ...  0.2443
+23     0.7214  ...  0.2710
+24     0.5708  ...  0.3580
+25     0.6033  ...  0.3525
+26     0.5700  ...  0.3630
+27     0.5809  ...  0.3469
+28     0.5678  ...  0.3661
+29     0.6827  ...  0.2851
+30     1.0015  ...  0.2102
+
+[31 rows x 5 columns]
+============================================================
+INFO flwr 2026-07-24 07:26:17,991 | server.py:147 | FL finished in 43855.0389015
+INFO flwr 2026-07-24 07:26:17,991 | app.py:218 | app_fit: losses_distributed [(1, 2.8503536798190123), (2, 1.169652942319876), (3, 1.2650465700710734), (4, 0.8237051629070157), (5, 0.7851154328364284), (6, 0.7587277549278829), (7, 0.6916381273610631), (8, 1.0755655593779176), (9, 1.0752924687684027), (10, 0.6950975280599891), (11, 0.8154546393444866), (12, 0.6725811755322427), (13, 0.5944983571785106), (14, 0.592269533712223), (15, 0.58642407646158), (16, 0.5885369731897176), (17, 0.7800522798664623), (18, 0.9010276954371802), (19, 0.5753625175417245), (20, 0.7755512920602675), (21, 0.5806773487187198), (22, 0.750397413263203), (23, 0.7211507060353746), (24, 0.5708302074563556), (25, 0.603224752762477), (26, 0.570088225037472), (27, 0.5809927654780092), (28, 0.5677683611732174), (29, 0.6826612820052391), (30, 1.001353564614317)]
+INFO flwr 2026-07-24 07:26:17,991 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-24 07:26:17,991 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-24 07:26:17,991 | app.py:221 | app_fit: losses_centralized [(0, 3.609828233718872), (1, 2.8502824306488037), (2, 1.1695358753204346), (3, 1.2644814252853394), (4, 0.8234668970108032), (5, 0.7848169207572937), (6, 0.7582495808601379), (7, 0.6914065480232239), (8, 1.0748372077941895), (9, 1.0745669603347778), (10, 0.6949335336685181), (11, 0.8149713277816772), (12, 0.6723503470420837), (13, 0.5943556427955627), (14, 0.5920981764793396), (15, 0.586347758769989), (16, 0.5884057879447937), (17, 0.780005156993866), (18, 0.9008638858795166), (19, 0.5753394365310669), (20, 0.7756306529045105), (21, 0.5805535912513733), (22, 0.7503747940063477), (23, 0.721420168876648), (24, 0.5708344578742981), (25, 0.6032552719116211), (26, 0.5700019598007202), (27, 0.5808666944503784), (28, 0.5677869319915771), (29, 0.682739794254303), (30, 1.0014728307724)]
+INFO flwr 2026-07-24 07:26:17,991 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.00633044002983632), (1, 0.28804619600897324), (2, 0.5921727154123586), (3, 0.5339444005218562), (4, 0.6208580456093398), (5, 0.62413221847561), (6, 0.7076208329026437), (7, 0.7136774939726724), (8, 0.6442437973700458), (9, 0.643889002187438), (10, 0.6886490684531209), (11, 0.653080152980978), (12, 0.689537453241068), (13, 0.7202761256366059), (14, 0.7253829413358737), (15, 0.7206644447734758), (16, 0.718362466580808), (17, 0.660793456124128), (18, 0.6641011529446603), (19, 0.7235614731542968), (20, 0.6682525359474568), (21, 0.7214047654300983), (22, 0.6709847382198222), (23, 0.6817207845722763), (24, 0.7238715697312217), (25, 0.7193877408486589), (26, 0.7252600201702458), (27, 0.7247264305649066), (28, 0.7257042125642194), (29, 0.6883166225733546), (30, 0.6570918528410155)], 'precision': [(0, 0.012762840827864568), (1, 0.11210677483318635), (2, 0.2977500787243132), (3, 0.154103186680535), (4, 0.388247784163645), (5, 0.3864404379543588), (6, 0.3952014137521684), (7, 0.40361031021103877), (8, 0.1817647103042725), (9, 0.17959883443762453), (10, 0.3368100425421857), (11, 0.2151455734236854), (12, 0.31876407776976096), (13, 0.40426926554089143), (14, 0.42530230226307425), (15, 0.381544232652147), (16, 0.38357479182248433), (17, 0.24970610399519372), (18, 0.2569154998810719), (19, 0.42134125953350793), (20, 0.2821713553984617), (21, 0.40773627424912356), (22, 0.2903289950911897), (23, 0.3048047140077048), (24, 0.3840665285432308), (25, 0.38861811044614736), (26, 0.4181251106856371), (27, 0.3823316069072877), (28, 0.40502986384258566), (29, 0.31901944362967377), (30, 0.2645945235053783)], 'recall': [(0, 0.03912514623244617), (1, 0.11116608567183792), (2, 0.2426368576673902), (3, 0.16316250748548095), (4, 0.3416384422501201), (5, 0.3421263681729254), (6, 0.3418072652002093), (7, 0.37090872480496384), (8, 0.2077407362396635), (9, 0.20491885901044285), (10, 0.31376454817144517), (11, 0.21772602636812707), (12, 0.30846078014628864), (13, 0.3904085381719451), (14, 0.3933595996378573), (15, 0.38786258427253406), (16, 0.3884567876823045), (17, 0.2566781094228133), (18, 0.24537493556237985), (19, 0.3878222195400829), (20, 0.26205752499674956), (21, 0.3875617688767725), (22, 0.26673987238040286), (23, 0.2980979334389778), (24, 0.3951841174860653), (25, 0.38578788652493), (26, 0.3960593596008163), (27, 0.3839677059199489), (28, 0.40237739138078904), (29, 0.31004250558619356), (30, 0.24409969785329289)], 'f1': [(0, 0.015598063910081306), (1, 0.07072842249673243), (2, 0.19965062969027123), (3, 0.12459202869342348), (4, 0.30590410310758187), (5, 0.3120911583543075), (6, 0.32187070548298874), (7, 0.34202394082456355), (8, 0.17236348535292773), (9, 0.1710503517327082), (10, 0.27716042059726753), (11, 0.18557632949090083), (12, 0.2769768007941905), (13, 0.35290905226110875), (14, 0.3639158670729481), (15, 0.3494131114647858), (16, 0.3480362619810328), (17, 0.2232209913829269), (18, 0.22380777775728086), (19, 0.3552139228961483), (20, 0.23605302834057837), (21, 0.350544308074467), (22, 0.24430234072387566), (23, 0.27102008460429683), (24, 0.35796721959164485), (25, 0.35247484520499034), (26, 0.36302793068493205), (27, 0.3469296687618877), (28, 0.3660936992771294), (29, 0.285115405091982), (30, 0.21024694460716606)]}
+
+============================================================
+FINAL-ROUND SHAP COMPARISON: clients vs. aggregated server model
+(top 20 features, ranked by server importance)
+============================================================
+                 client_4  ...  server
+feature                    ...        
+fin_count          0.0051  ...  0.0174
+rst_flag_number    0.0186  ...  0.0149
+SSH                0.0126  ...  0.0126
+rst_count          0.0197  ...  0.0098
+IRC                0.0063  ...  0.0098
+syn_count          0.0073  ...  0.0064
+ece_flag_number    0.0007  ...  0.0051
+ack_flag_number    0.0061  ...  0.0051
+SMTP               0.0082  ...  0.0042
+ack_count          0.0013  ...  0.0017
+Protocol Type      0.0019  ...  0.0013
+HTTP               0.0009  ...  0.0012
+Max                0.0029  ...  0.0009
+syn_flag_number    0.0023  ...  0.0008
+Header_Length      0.0065  ...  0.0006
+Min                0.0008  ...  0.0006
+ARP                0.0010  ...  0.0006
+Telnet             0.0025  ...  0.0006
+IGMP               0.0006  ...  0.0006
+LLC                0.0017  ...  0.0006
+
+[20 rows x 6 columns]
+
+Cosine similarity of each client's final SHAP profile to the server's:
+  client_4: 0.8372
+  client_3: 0.5029
+  client_1: 0.7662
+  client_5: 0.5644
+  client_2: 0.3178
+============================================================
+Saved: final_shap_comparison.csv, final_shap_client_server_similarity.csv
+(fl-env) PS D:\fl_flower> 
+
+
+    nection.py:39 | ChannelConnectivity.READY
+[Client 1] --- ROUND 1 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 2.2760 | accuracy: 0.4241 | precision(macro): 0.0407 | recall(macro): 0.0532 | f1(macro): 0.0399
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 1 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 2.8240 | accuracy: 0.2837 | precision(macro): 0.1121 | recall(macro): 0.1156 | f1(macro): 0.0706
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 5 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 0.3534 | accuracy: 0.9323 | precision(macro): 0.3629 | recall(macro): 0.3438 | f1(macro): 0.3253
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 5 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 0.7814 | accuracy: 0.5296 | precision(macro): 0.3534 | recall(macro): 0.3561 | f1(macro): 0.3035
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 10 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 0.2428 | accuracy: 0.9356 | precision(macro): 0.3980 | recall(macro): 0.3810 | f1(macro): 0.3710
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 10 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 0.5655 | accuracy: 0.8154 | precision(macro): 0.3006 | recall(macro): 0.3215 | f1(macro): 0.2728
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 15 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 0.2129 | accuracy: 0.9351 | precision(macro): 0.4192 | recall(macro): 0.3682 | f1(macro): 0.3574
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 15 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 0.4111 | accuracy: 0.8574 | precision(macro): 0.3482 | recall(macro): 0.4026 | f1(macro): 0.3451
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 20 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 0.2016 | accuracy: 0.9357 | precision(macro): 0.3994 | recall(macro): 0.3846 | f1(macro): 0.3724
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 20 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 0.6812 | accuracy: 0.8111 | precision(macro): 0.2740 | recall(macro): 0.2695 | f1(macro): 0.2488
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 25 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 0.4785 | accuracy: 0.8325 | precision(macro): 0.2950 | recall(macro): 0.2911 | f1(macro): 0.2815
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 25 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 0.4450 | accuracy: 0.8523 | precision(macro): 0.3631 | recall(macro): 0.3985 | f1(macro): 0.3559
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 30 (FIT) --- proximal_mu=0.1
+[Client 1] LOCAL VAL   → loss: 0.1913 | accuracy: 0.9375 | precision(macro): 0.4502 | recall(macro): 0.3935 | f1(macro): 0.3882
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] --- ROUND 30 (EVALUATE) ---
+[Client 1] GLOBAL → loss: 1.0797 | accuracy: 0.7729 | precision(macro): 0.2485 | recall(macro): 0.2499 | f1(macro): 0.2231
+DEBUG flwr 2026-07-24 07:26:18,016 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-24 07:26:18,018 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+    nection.py:39 | ChannelConnectivity.READY
+[Client 2] --- ROUND 1 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.9032 | accuracy: 0.6756 | precision(macro): 0.2272 | recall(macro): 0.2483 | f1(macro): 0.2074
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 1 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 2.9524 | accuracy: 0.1284 | precision(macro): 0.0814 | recall(macro): 0.1239 | f1(macro): 0.0605
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 5 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.7274 | accuracy: 0.6821 | precision(macro): 0.2864 | recall(macro): 0.3050 | f1(macro): 0.2795
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 5 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 1.0759 | accuracy: 0.4342 | precision(macro): 0.3602 | recall(macro): 0.3744 | f1(macro): 0.2879
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 10 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.5674 | accuracy: 0.7224 | precision(macro): 0.4322 | recall(macro): 0.3869 | f1(macro): 0.3580
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 10 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 0.8888 | accuracy: 0.5547 | precision(macro): 0.3339 | recall(macro): 0.3443 | f1(macro): 0.2772
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 15 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.5443 | accuracy: 0.7276 | precision(macro): 0.4611 | recall(macro): 0.4181 | f1(macro): 0.3964
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 15 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 0.7948 | accuracy: 0.5740 | precision(macro): 0.3934 | recall(macro): 0.4254 | f1(macro): 0.3520
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 20 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.5397 | accuracy: 0.7315 | precision(macro): 0.4540 | recall(macro): 0.4400 | f1(macro): 0.4129
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 20 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 0.8833 | accuracy: 0.5218 | precision(macro): 0.2670 | recall(macro): 0.2898 | f1(macro): 0.2071
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 25 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.6118 | accuracy: 0.6973 | precision(macro): 0.3582 | recall(macro): 0.3374 | f1(macro): 0.3191
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 25 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 0.7625 | accuracy: 0.5766 | precision(macro): 0.3822 | recall(macro): 0.4191 | f1(macro): 0.3509
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 30 (FIT) --- proximal_mu=0.1
+[Client 2] LOCAL VAL   → loss: 0.6115 | accuracy: 0.6901 | precision(macro): 0.3495 | recall(macro): 0.3457 | f1(macro): 0.3226
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] --- ROUND 30 (EVALUATE) ---
+[Client 2] GLOBAL → loss: 0.9753 | accuracy: 0.5212 | precision(macro): 0.2377 | recall(macro): 0.2696 | f1(macro): 0.1896
+DEBUG flwr 2026-07-24 07:26:18,016 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-24 07:26:18,018 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+    nection.py:39 | ChannelConnectivity.READY
+[Client 3] --- ROUND 1 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.8017 | accuracy: 0.7533 | precision(macro): 0.2562 | recall(macro): 0.2826 | f1(macro): 0.2492
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 1 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 2.9590 | accuracy: 0.1350 | precision(macro): 0.0860 | recall(macro): 0.1228 | f1(macro): 0.0683
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 5 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.4802 | accuracy: 0.7935 | precision(macro): 0.3891 | recall(macro): 0.3628 | f1(macro): 0.3457
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 5 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 0.6232 | accuracy: 0.7036 | precision(macro): 0.3984 | recall(macro): 0.3722 | f1(macro): 0.3454
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 10 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.4369 | accuracy: 0.8062 | precision(macro): 0.4336 | recall(macro): 0.4122 | f1(macro): 0.3989
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 10 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 0.6301 | accuracy: 0.7007 | precision(macro): 0.3511 | recall(macro): 0.3388 | f1(macro): 0.3062
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 15 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.4298 | accuracy: 0.8063 | precision(macro): 0.4212 | recall(macro): 0.4102 | f1(macro): 0.3942
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 15 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 0.5404 | accuracy: 0.7321 | precision(macro): 0.4056 | recall(macro): 0.4348 | f1(macro): 0.3904
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 20 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.4183 | accuracy: 0.8111 | precision(macro): 0.4237 | recall(macro): 0.4182 | f1(macro): 0.4015
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 20 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 0.7636 | accuracy: 0.6648 | precision(macro): 0.2936 | recall(macro): 0.2798 | f1(macro): 0.2268
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 25 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.4122 | accuracy: 0.8112 | precision(macro): 0.4251 | recall(macro): 0.4203 | f1(macro): 0.4040
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 25 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 0.5942 | accuracy: 0.7291 | precision(macro): 0.4151 | recall(macro): 0.4279 | f1(macro): 0.3866
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 30 (FIT) --- proximal_mu=0.1
+[Client 3] LOCAL VAL   → loss: 0.4114 | accuracy: 0.8111 | precision(macro): 0.4283 | recall(macro): 0.4254 | f1(macro): 0.4050
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] --- ROUND 30 (EVALUATE) ---
+[Client 3] GLOBAL → loss: 1.0098 | accuracy: 0.6618 | precision(macro): 0.2650 | recall(macro): 0.2542 | f1(macro): 0.2090
+DEBUG flwr 2026-07-24 07:26:18,017 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-24 07:26:18,019 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+    nection.py:39 | ChannelConnectivity.READY
+[Client 4] --- ROUND 1 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.6764 | accuracy: 0.8363 | precision(macro): 0.2387 | recall(macro): 0.2324 | f1(macro): 0.2034
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 1 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 2.6737 | accuracy: 0.5893 | precision(macro): 0.0922 | recall(macro): 0.1136 | f1(macro): 0.0722
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 5 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.4131 | accuracy: 0.8578 | precision(macro): 0.3866 | recall(macro): 0.3324 | f1(macro): 0.3146
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 5 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 0.5930 | accuracy: 0.8534 | precision(macro): 0.3915 | recall(macro): 0.3529 | f1(macro): 0.3391
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 10 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.5053 | accuracy: 0.8517 | precision(macro): 0.2641 | recall(macro): 0.2507 | f1(macro): 0.2335
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 10 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 0.5312 | accuracy: 0.8427 | precision(macro): 0.3320 | recall(macro): 0.3242 | f1(macro): 0.2853
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 15 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.3077 | accuracy: 0.9025 | precision(macro): 0.4310 | recall(macro): 0.3848 | f1(macro): 0.3731
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 15 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 0.4146 | accuracy: 0.8623 | precision(macro): 0.3830 | recall(macro): 0.3990 | f1(macro): 0.3562
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 20 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.5593 | accuracy: 0.8483 | precision(macro): 0.2578 | recall(macro): 0.2552 | f1(macro): 0.2319
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 20 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 0.5578 | accuracy: 0.8176 | precision(macro): 0.2804 | recall(macro): 0.2670 | f1(macro): 0.2365
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 25 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.2920 | accuracy: 0.9056 | precision(macro): 0.4515 | recall(macro): 0.4004 | f1(macro): 0.3902
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 25 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 0.4349 | accuracy: 0.8587 | precision(macro): 0.3839 | recall(macro): 0.3962 | f1(macro): 0.3582
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 30 (FIT) --- proximal_mu=0.1
+[Client 4] LOCAL VAL   → loss: 0.6477 | accuracy: 0.8406 | precision(macro): 0.2469 | recall(macro): 0.2381 | f1(macro): 0.2062
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] --- ROUND 30 (EVALUATE) ---
+[Client 4] GLOBAL → loss: 0.7152 | accuracy: 0.8034 | precision(macro): 0.2352 | recall(macro): 0.2496 | f1(macro): 0.2077
+DEBUG flwr 2026-07-24 07:26:18,017 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-24 07:26:18,018 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+    nection.py:39 | ChannelConnectivity.READY
+[Client 5] --- ROUND 1 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.8580 | accuracy: 0.7148 | precision(macro): 0.1735 | recall(macro): 0.2101 | f1(macro): 0.1719
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 1 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 2.8905 | accuracy: 0.2084 | precision(macro): 0.0982 | recall(macro): 0.1146 | f1(macro): 0.0825
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 5 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.5359 | accuracy: 0.7848 | precision(macro): 0.3005 | recall(macro): 0.3067 | f1(macro): 0.2867
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 5 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 1.0177 | accuracy: 0.4612 | precision(macro): 0.3536 | recall(macro): 0.3521 | f1(macro): 0.2750
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 10 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.4985 | accuracy: 0.7889 | precision(macro): 0.3324 | recall(macro): 0.3434 | f1(macro): 0.3105
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 10 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 1.0098 | accuracy: 0.4081 | precision(macro): 0.2812 | recall(macro): 0.3245 | f1(macro): 0.2092
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 15 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.4801 | accuracy: 0.7916 | precision(macro): 0.3967 | recall(macro): 0.3585 | f1(macro): 0.3260
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 15 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 0.9251 | accuracy: 0.4667 | precision(macro): 0.3046 | recall(macro): 0.4014 | f1(macro): 0.2874
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 20 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.4692 | accuracy: 0.7939 | precision(macro): 0.3894 | recall(macro): 0.3643 | f1(macro): 0.3326
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 20 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 1.1660 | accuracy: 0.4119 | precision(macro): 0.2046 | recall(macro): 0.2697 | f1(macro): 0.1762
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 25 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.4790 | accuracy: 0.7942 | precision(macro): 0.4049 | recall(macro): 0.3895 | f1(macro): 0.3660
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 25 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 0.9172 | accuracy: 0.4710 | precision(macro): 0.3374 | recall(macro): 0.3972 | f1(macro): 0.2923
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 30 (FIT) --- proximal_mu=0.1
+[Client 5] LOCAL VAL   → loss: 0.4604 | accuracy: 0.7966 | precision(macro): 0.4002 | recall(macro): 0.3802 | f1(macro): 0.3527
+D:\fl-env\lib\site-packages\shap\explainers\_deep\deep_tf.py:94: UserWarning: Your TensorFlow version is newer than 2.4.0 and so graph support has been removed in eager mode and some static graphs may not be supported. See PR #1483 for discussion.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] --- ROUND 30 (EVALUATE) ---
+[Client 5] GLOBAL → loss: 1.4298 | accuracy: 0.4141 | precision(macro): 0.2204 | recall(macro): 0.2503 | f1(macro): 0.1591
+DEBUG flwr 2026-07-24 07:26:18,017 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-24 07:26:18,019 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
