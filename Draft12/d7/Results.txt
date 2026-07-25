@@ -1,4 +1,7 @@
- set loaded: 357,953 rows, 34 classes
+the focal loss was reduced to 1 from 2 rest were made the same
+
+
+set loaded: 357,953 rows, 34 classes
 INFO flwr 2026-07-25 20:43:14,378 | app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
 INFO flwr 2026-07-25 20:43:14,440 | app.py:168 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
 INFO flwr 2026-07-25 20:43:14,441 | server.py:86 | Initializing global parameters
