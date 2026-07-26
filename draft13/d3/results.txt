@@ -1,0 +1,1107 @@
+ower> $env:EXPERIMENT="E5" 
+(fl-env) PS D:\fl_flower> python server.py 8080
+[Server] Experiment E5: {'num_rounds': 10, 'local_epochs': 1, 'initial_lr': 0.0001, 'lr_decay': 0.95, 'batch_size': 256, 'max_class_weight': 5.0, 'min_samples_for_weighting': 20, 'shap_rounds': {1, 10, 5}, 'shap_background_size': 20, 'shap_sample_size': 50, 'shap_influence': 0.15, 'performance_influence': 0.15, 'proximal_mu': 0.01, 'model_type': 'mlp', 'validation_sample_size': 20000, 'use_class_weights': True, 'aggregation': 'hybrid', 'experiment': 'E5'}
+[Server] Loading centralized test set...
+[Server] Validation rows: 20,000; test rows: 337,953; features: 39
+INFO flwr 2026-07-26 17:41:56,673 | app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+INFO flwr 2026-07-26 17:41:56,680 | app.py:168 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+INFO flwr 2026-07-26 17:41:56,680 | server.py:86 | Initializing global parameters
+INFO flwr 2026-07-26 17:41:56,680 | server.py:273 | Requesting initial parameters from one random client
+INFO flwr 2026-07-26 17:42:00,731 | server.py:277 | Received initial parameters from one random client
+INFO flwr 2026-07-26 17:42:00,731 | server.py:88 | Evaluating initial parameters
+[Server] R0: val_f1=0.0100, test_acc=0.0333, test_bal_acc=0.0472, test_precision=0.0218, test_recall=0.0472, test_f1=0.0106
+INFO flwr 2026-07-26 17:42:03,216 | server.py:91 | initial parameters (loss, other metrics): 4.325889587402344, {'accuracy': 0.03334191440821653, 'balanced_accuracy': 0.047202628954110724, 'precision': 0.021766380473433378, 'recall': 0.047202628954110724, 'f1': 0.010645811760325379, 'val_f1': 0.00995582993772988}
+INFO flwr 2026-07-26 17:42:03,216 | server.py:101 | FL starting
+DEBUG flwr 2026-07-26 17:42:11,290 | server.py:218 | fit_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:44:04,599 | server.py:232 | fit_round 1 received 5 results and 0 failures
+[Server] R1 final weights: C1=0.188, C2=0.192, C3=0.223, C4=0.243, C5=0.154
+[Server] R1: val_f1=0.2003, test_acc=0.6232, test_bal_acc=0.2539, test_precision=0.2382, test_recall=0.2539, test_f1=0.1989
+INFO flwr 2026-07-26 17:44:06,566 | server.py:119 | fit progress: (1, 0.9881409406661987, {'accuracy': 0.623151740034857, 'balanced_accuracy': 0.2538762334815448, 'precision': 0.23819658786589848, 'recall': 0.2538762334815448, 'f1': 0.19890324353755365, 'val_f1': 0.20031785051190432}, 123.34493120003026)
+DEBUG flwr 2026-07-26 17:44:06,566 | server.py:168 | evaluate_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:44:08,112 | server.py:182 | evaluate_round 1 received 5 results and 0 failures
+[Server] R1 individual client metrics:
+  Client 1: loss=0.7972, acc=0.7194, bal_acc=0.2617, precision=0.2372, recall=0.2617, f1=0.1872
+  Client 2: loss=1.5133, acc=0.4199, bal_acc=0.2771, precision=0.1890, recall=0.2771, f1=0.1694
+  Client 3: loss=0.7068, acc=0.7419, bal_acc=0.2792, precision=0.2851, recall=0.2792, f1=0.2507
+  Client 4: loss=0.8595, acc=0.6591, bal_acc=0.2616, precision=0.2170, recall=0.2616, f1=0.1813
+  Client 5: loss=1.2486, acc=0.4991, bal_acc=0.2635, precision=0.2188, recall=0.2635, f1=0.1827
+WARNING flwr 2026-07-26 17:44:08,115 | fedavg.py:274 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2026-07-26 17:44:08,115 | server.py:218 | fit_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:45:43,013 | server.py:232 | fit_round 2 received 5 results and 0 failures
+[Server] R2 final weights: C1=0.187, C2=0.190, C3=0.221, C4=0.242, C5=0.160
+[Server] R2: val_f1=0.2054, test_acc=0.6382, test_bal_acc=0.2639, test_precision=0.2512, test_recall=0.2639, test_f1=0.2067
+INFO flwr 2026-07-26 17:45:45,106 | server.py:119 | fit progress: (2, 0.8898056149482727, {'accuracy': 0.6382218829245487, 'balanced_accuracy': 0.2639265885073981, 'precision': 0.25122795924073826, 'recall': 0.2639265885073981, 'f1': 0.20668804737632526, 'val_f1': 0.20544339927715075}, 221.88988150004297)
+DEBUG flwr 2026-07-26 17:45:45,106 | server.py:168 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:45:46,658 | server.py:182 | evaluate_round 2 received 5 results and 0 failures
+[Server] R2 individual client metrics:
+  Client 1: loss=0.7008, acc=0.7364, bal_acc=0.2721, precision=0.2196, recall=0.2721, f1=0.1950
+  Client 2: loss=1.3015, acc=0.4355, bal_acc=0.2868, precision=0.1954, recall=0.2868, f1=0.1765
+  Client 3: loss=0.6722, acc=0.7512, bal_acc=0.2903, precision=0.2925, recall=0.2903, f1=0.2626
+  Client 4: loss=0.7610, acc=0.6859, bal_acc=0.2724, precision=0.2152, recall=0.2724, f1=0.1943
+  Client 5: loss=1.1867, acc=0.4999, bal_acc=0.2713, precision=0.2392, recall=0.2713, f1=0.1815
+DEBUG flwr 2026-07-26 17:45:46,658 | server.py:218 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:47:24,340 | server.py:232 | fit_round 3 received 5 results and 0 failures
+[Server] R3 final weights: C1=0.188, C2=0.190, C3=0.220, C4=0.243, C5=0.160
+[Server] R3: val_f1=0.2156, test_acc=0.6478, test_bal_acc=0.2850, test_precision=0.2533, test_recall=0.2850, test_f1=0.2161
+INFO flwr 2026-07-26 17:47:26,421 | server.py:119 | fit progress: (3, 0.8248530626296997, {'accuracy': 0.647761671001589, 'balanced_accuracy': 0.28498759778355565, 'precision': 0.2533046615101235, 'recall': 0.28498759778355565, 'f1': 0.21613279160595356, 'val_f1': 0.2155727128438653}, 323.2011416000314)
+DEBUG flwr 2026-07-26 17:47:26,421 | server.py:168 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:47:27,907 | server.py:182 | evaluate_round 3 received 5 results and 0 failures
+[Server] R3 individual client metrics:
+  Client 1: loss=0.6348, acc=0.7476, bal_acc=0.2927, precision=0.2535, recall=0.2927, f1=0.2008
+  Client 2: loss=1.1787, acc=0.4467, bal_acc=0.3105, precision=0.2326, recall=0.3105, f1=0.1915
+  Client 3: loss=0.6464, acc=0.7585, bal_acc=0.3112, precision=0.2890, recall=0.3112, f1=0.2771
+  Client 4: loss=0.6973, acc=0.6912, bal_acc=0.2946, precision=0.2642, recall=0.2946, f1=0.2022
+  Client 5: loss=1.1378, acc=0.5193, bal_acc=0.2917, precision=0.2234, recall=0.2917, f1=0.1922
+DEBUG flwr 2026-07-26 17:47:27,909 | server.py:218 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:49:07,439 | server.py:232 | fit_round 4 received 5 results and 0 failures
+[Server] R4 final weights: C1=0.188, C2=0.191, C3=0.220, C4=0.242, C5=0.160
+[Server] R4: val_f1=0.2247, test_acc=0.6553, test_bal_acc=0.2878, test_precision=0.2525, test_recall=0.2878, test_f1=0.2240
+INFO flwr 2026-07-26 17:49:09,462 | server.py:119 | fit progress: (4, 0.787421703338623, {'accuracy': 0.6552775090027312, 'balanced_accuracy': 0.28781271687648724, 'precision': 0.25249210003695216, 'recall': 0.28781271687648724, 'f1': 0.2239639135855035, 'val_f1': 0.2246891949940839}, 426.25262310006656)
+DEBUG flwr 2026-07-26 17:49:09,462 | server.py:168 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:49:10,998 | server.py:182 | evaluate_round 4 received 5 results and 0 failures
+[Server] R4 individual client metrics:
+  Client 1: loss=0.5976, acc=0.7586, bal_acc=0.2961, precision=0.2536, recall=0.2961, f1=0.2173
+  Client 2: loss=1.1138, acc=0.4820, bal_acc=0.3129, precision=0.2298, recall=0.3129, f1=0.1979
+  Client 3: loss=0.6304, acc=0.7276, bal_acc=0.3159, precision=0.2827, recall=0.3159, f1=0.2792
+  Client 4: loss=0.6559, acc=0.7626, bal_acc=0.2987, precision=0.2245, recall=0.2987, f1=0.2224
+  Client 5: loss=1.1120, acc=0.4321, bal_acc=0.2950, precision=0.2289, recall=0.2950, f1=0.1898
+DEBUG flwr 2026-07-26 17:49:10,998 | server.py:218 | fit_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:51:11,539 | server.py:232 | fit_round 5 received 5 results and 0 failures
+[Server] R5 final weights: C1=0.189, C2=0.190, C3=0.220, C4=0.241, C5=0.160
+[Server] R5: val_f1=0.2170, test_acc=0.6524, test_bal_acc=0.2860, test_precision=0.2544, test_recall=0.2860, test_f1=0.2161
+INFO flwr 2026-07-26 17:51:13,542 | server.py:119 | fit progress: (5, 0.7640275359153748, {'accuracy': 0.6523776974904795, 'balanced_accuracy': 0.28599864763635124, 'precision': 0.2544399013917788, 'recall': 0.28599864763635124, 'f1': 0.21614202784749814, 'val_f1': 0.21701853635758706}, 550.3340422000038)
+DEBUG flwr 2026-07-26 17:51:13,542 | server.py:168 | evaluate_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:51:15,017 | server.py:182 | evaluate_round 5 received 5 results and 0 failures
+[Server] R5 individual client metrics:
+  Client 1: loss=0.5842, acc=0.7640, bal_acc=0.2949, precision=0.2491, recall=0.2949, f1=0.2172
+  Client 2: loss=1.0805, acc=0.5077, bal_acc=0.3132, precision=0.2256, recall=0.3132, f1=0.2041
+  Client 3: loss=0.6163, acc=0.6891, bal_acc=0.3136, precision=0.2590, recall=0.3136, f1=0.2665
+  Client 4: loss=0.6332, acc=0.8037, bal_acc=0.2972, precision=0.2328, recall=0.2972, f1=0.2251
+  Client 5: loss=1.0745, acc=0.3655, bal_acc=0.2939, precision=0.2300, recall=0.2939, f1=0.1754
+DEBUG flwr 2026-07-26 17:51:15,017 | server.py:218 | fit_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:52:48,803 | server.py:232 | fit_round 6 received 5 results and 0 failures
+[Server] R6 final weights: C1=0.189, C2=0.190, C3=0.221, C4=0.241, C5=0.159
+[Server] R6: val_f1=0.2268, test_acc=0.6521, test_bal_acc=0.2896, test_precision=0.2623, test_recall=0.2896, test_f1=0.2252
+INFO flwr 2026-07-26 17:52:50,906 | server.py:119 | fit progress: (6, 0.7486165165901184, {'accuracy': 0.6520995523046104, 'balanced_accuracy': 0.2895561975267307, 'precision': 0.26230680793951483, 'recall': 0.2895561975267307, 'f1': 0.22522150278402078, 'val_f1': 0.22680637581827404}, 647.6844960000599)
+DEBUG flwr 2026-07-26 17:52:50,906 | server.py:168 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:52:52,459 | server.py:182 | evaluate_round 6 received 5 results and 0 failures
+[Server] R6 individual client metrics:
+  Client 1: loss=0.5730, acc=0.7570, bal_acc=0.2992, precision=0.2784, recall=0.2992, f1=0.2116
+  Client 2: loss=1.0583, acc=0.4498, bal_acc=0.3165, precision=0.2226, recall=0.3165, f1=0.1922
+  Client 3: loss=0.6051, acc=0.7583, bal_acc=0.3164, precision=0.2786, recall=0.3164, f1=0.2783
+  Client 4: loss=0.6228, acc=0.6953, bal_acc=0.2992, precision=0.2389, recall=0.2992, f1=0.2138
+  Client 5: loss=1.0474, acc=0.5240, bal_acc=0.2975, precision=0.2260, recall=0.2975, f1=0.2053
+DEBUG flwr 2026-07-26 17:52:52,461 | server.py:218 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:54:30,613 | server.py:232 | fit_round 7 received 5 results and 0 failures
+[Server] R7 final weights: C1=0.189, C2=0.189, C3=0.222, C4=0.241, C5=0.160
+[Server] R7: val_f1=0.2202, test_acc=0.6540, test_bal_acc=0.2876, test_precision=0.2753, test_recall=0.2876, test_f1=0.2199
+INFO flwr 2026-07-26 17:54:32,682 | server.py:119 | fit progress: (7, 0.7334498167037964, {'accuracy': 0.6540347326403375, 'balanced_accuracy': 0.2876401946157105, 'precision': 0.27534482111129444, 'recall': 0.2876401946157105, 'f1': 0.21985782250814023, 'val_f1': 0.22024101853165717}, 749.4610533000669)
+DEBUG flwr 2026-07-26 17:54:32,682 | server.py:168 | evaluate_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:54:34,276 | server.py:182 | evaluate_round 7 received 5 results and 0 failures
+[Server] R7 individual client metrics:
+  Client 1: loss=0.5569, acc=0.7668, bal_acc=0.2967, precision=0.2660, recall=0.2967, f1=0.2215
+  Client 2: loss=1.0426, acc=0.5096, bal_acc=0.3165, precision=0.2559, recall=0.3165, f1=0.2040
+  Client 3: loss=0.6033, acc=0.6893, bal_acc=0.3132, precision=0.2531, recall=0.3035, f1=0.2589
+  Client 4: loss=0.6003, acc=0.8059, bal_acc=0.2971, precision=0.2388, recall=0.2971, f1=0.2278
+  Client 5: loss=1.0251, acc=0.3675, bal_acc=0.2948, precision=0.2324, recall=0.2948, f1=0.1793
+DEBUG flwr 2026-07-26 17:54:34,278 | server.py:218 | fit_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:56:12,074 | server.py:232 | fit_round 8 received 5 results and 0 failures
+[Server] R8 final weights: C1=0.188, C2=0.189, C3=0.222, C4=0.240, C5=0.160
+[Server] R8: val_f1=0.2219, test_acc=0.6555, test_bal_acc=0.2910, test_precision=0.2627, test_recall=0.2910, test_f1=0.2221
+INFO flwr 2026-07-26 17:56:14,074 | server.py:119 | fit progress: (8, 0.719270646572113, {'accuracy': 0.6555023923444976, 'balanced_accuracy': 0.2910165555494305, 'precision': 0.26267555995585573, 'recall': 0.2910165555494305, 'f1': 0.22205346726833436, 'val_f1': 0.2218998948009312}, 850.8539747000905)
+DEBUG flwr 2026-07-26 17:56:14,074 | server.py:168 | evaluate_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:56:15,741 | server.py:182 | evaluate_round 8 received 5 results and 0 failures
+[Server] R8 individual client metrics:
+  Client 1: loss=0.5487, acc=0.7675, bal_acc=0.2991, precision=0.2562, recall=0.2991, f1=0.2219
+  Client 2: loss=1.0137, acc=0.5136, bal_acc=0.3183, precision=0.2535, recall=0.3183, f1=0.2089
+  Client 3: loss=0.5987, acc=0.6888, bal_acc=0.3245, precision=0.2876, recall=0.3144, f1=0.2709
+  Client 4: loss=0.5976, acc=0.8034, bal_acc=0.3007, precision=0.2507, recall=0.3007, f1=0.2282
+  Client 5: loss=0.9859, acc=0.3760, bal_acc=0.2963, precision=0.2275, recall=0.2963, f1=0.1813
+DEBUG flwr 2026-07-26 17:56:15,741 | server.py:218 | fit_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:57:57,294 | server.py:232 | fit_round 9 received 5 results and 0 failures
+[Server] R9 final weights: C1=0.188, C2=0.189, C3=0.221, C4=0.241, C5=0.160
+[Server] R9: val_f1=0.2293, test_acc=0.6584, test_bal_acc=0.2930, test_precision=0.2667, test_recall=0.2930, test_f1=0.2279
+INFO flwr 2026-07-26 17:57:59,370 | server.py:119 | fit progress: (9, 0.7015337347984314, {'accuracy': 0.658378531926037, 'balanced_accuracy': 0.2929614546150016, 'precision': 0.266690678624198, 'recall': 0.2929614546150016, 'f1': 0.22785055987387293, 'val_f1': 0.22932037035629396}, 956.1494057000382)
+DEBUG flwr 2026-07-26 17:57:59,370 | server.py:168 | evaluate_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 17:58:00,962 | server.py:182 | evaluate_round 9 received 5 results and 0 failures
+[Server] R9 individual client metrics:
+  Client 1: loss=0.5424, acc=0.7737, bal_acc=0.3001, precision=0.2550, recall=0.3001, f1=0.2254
+  Client 2: loss=0.9935, acc=0.5153, bal_acc=0.3227, precision=0.2547, recall=0.3227, f1=0.2165
+  Client 3: loss=0.5850, acc=0.6894, bal_acc=0.3241, precision=0.2630, recall=0.3140, f1=0.2698
+  Client 4: loss=0.5792, acc=0.8049, bal_acc=0.3041, precision=0.2893, recall=0.3041, f1=0.2368
+  Client 5: loss=0.9508, acc=0.3807, bal_acc=0.2962, precision=0.2410, recall=0.2962, f1=0.1825
+DEBUG flwr 2026-07-26 17:58:00,962 | server.py:218 | fit_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 18:00:07,193 | server.py:232 | fit_round 10 received 5 results and 0 failures
+[Server] R10 final weights: C1=0.190, C2=0.190, C3=0.219, C4=0.240, C5=0.160
+[Server] R10: val_f1=0.2454, test_acc=0.6700, test_bal_acc=0.3084, test_precision=0.2795, test_recall=0.3084, test_f1=0.2431
+INFO flwr 2026-07-26 18:00:09,309 | server.py:119 | fit progress: (10, 0.6789869070053101, {'accuracy': 0.6699541060443316, 'balanced_accuracy': 0.30837851281849216, 'precision': 0.27947391869334637, 'recall': 0.30837851281849216, 'f1': 0.24312532442212637, 'val_f1': 0.2453586181720928}, 1086.0883433000417)
+DEBUG flwr 2026-07-26 18:00:09,309 | server.py:168 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-26 18:00:10,984 | server.py:182 | evaluate_round 10 received 5 results and 0 failures
+[Server] R10 individual client metrics:
+  Client 1: loss=0.5359, acc=0.7769, bal_acc=0.3142, precision=0.2590, recall=0.3142, f1=0.2329
+  Client 2: loss=0.9492, acc=0.5310, bal_acc=0.3384, precision=0.2842, recall=0.3384, f1=0.2418
+  Client 3: loss=0.5770, acc=0.6941, bal_acc=0.3322, precision=0.2692, recall=0.3218, f1=0.2769
+  Client 4: loss=0.5677, acc=0.8035, bal_acc=0.3202, precision=0.2757, recall=0.3202, f1=0.2488
+  Client 5: loss=0.8925, acc=0.4311, bal_acc=0.3144, precision=0.2327, recall=0.3144, f1=0.2007
+INFO flwr 2026-07-26 18:00:10,984 | server.py:147 | FL finished in 1087.7681155001046
+INFO flwr 2026-07-26 18:00:10,984 | app.py:218 | app_fit: losses_distributed [(1, 0.9892830372016174), (2, 0.89019482662797), (3, 0.8260212641454823), (4, 0.7891365194520386), (5, 0.7660844725349075), (6, 0.7507734028413989), (7, 0.7355481507724632), (8, 0.7213289578174868), (9, 0.7035526180884992), (10, 0.6810234902004665)]
+INFO flwr 2026-07-26 18:00:10,984 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-26 18:00:10,984 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-26 18:00:10,984 | app.py:221 | app_fit: losses_centralized [(0, 4.325889587402344), (1, 0.9881409406661987), (2, 0.8898056149482727), (3, 0.8248530626296997), (4, 0.787421703338623), (5, 0.7640275359153748), (6, 0.7486165165901184), (7, 0.7334498167037964), (8, 0.719270646572113), (9, 0.7015337347984314), (10, 0.6789869070053101)]
+INFO flwr 2026-07-26 18:00:10,984 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.03334191440821653), (1, 0.623151740034857), (2, 0.6382218829245487), (3, 0.647761671001589), (4, 0.6552775090027312), (5, 0.6523776974904795), (6, 0.6520995523046104), (7, 0.6540347326403375), (8, 0.6555023923444976), (9, 0.658378531926037), (10, 0.6699541060443316)], 'balanced_accuracy': [(0, 0.047202628954110724), (1, 0.2538762334815448), (2, 0.2639265885073981), (3, 0.28498759778355565), (4, 0.28781271687648724), (5, 0.28599864763635124), (6, 0.2895561975267307), (7, 0.2876401946157105), (8, 0.2910165555494305), (9, 0.2929614546150016), (10, 0.30837851281849216)], 'precision': [(0, 0.021766380473433378), (1, 0.23819658786589848), (2, 0.25122795924073826), (3, 0.2533046615101235), (4, 0.25249210003695216), (5, 0.2544399013917788), (6, 0.26230680793951483), (7, 0.27534482111129444), (8, 0.26267555995585573), (9, 0.266690678624198), (10, 0.27947391869334637)], 'recall': [(0, 0.047202628954110724), (1, 0.2538762334815448), (2, 0.2639265885073981), (3, 0.28498759778355565), (4, 0.28781271687648724), (5, 0.28599864763635124), (6, 0.2895561975267307), (7, 0.2876401946157105), (8, 0.2910165555494305), (9, 0.2929614546150016), (10, 0.30837851281849216)], 'f1': [(0, 0.010645811760325379), (1, 0.19890324353755365), (2, 0.20668804737632526), (3, 0.21613279160595356), (4, 0.2239639135855035), (5, 0.21614202784749814), (6, 0.22522150278402078), (7, 0.21985782250814023), (8, 0.22205346726833436), (9, 0.22785055987387293), (10, 0.24312532442212637)], 'val_f1': [(0, 0.00995582993772988), (1, 0.20031785051190432), (2, 0.20544339927715075), (3, 0.2155727128438653), (4, 0.2246891949940839), (5, 0.21701853635758706), (6, 0.22680637581827404), (7, 0.22024101853165717), (8, 0.2218998948009312), (9, 0.22932037035629396), (10, 0.2453586181720928)]}
+[Server] Best validation macro F1=0.2454 at round 10
+(fl-env) PS D:\fl_flower> 
+
+2026-07-26 16:32:36.434094: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16280560 exceeds 10% of free system memory.
+[Client 1] Round 2 global-model evaluation: loss=0.6896, acc=0.7311, bal_acc=0.2737, precision=0.2150, recall=0.2737, f1=0.1913
+[Client 1] Round 3: lr=0.00009025, mu=0.01
+2026-07-26 16:34:03.824125: W tensorflow/tsl/framework/cpu_allocator_impl.cc:83] Allocation of 16280560 exceeds 10% of free system memory.
+[Client 1] Round 3 local metrics: loss=0.5262, acc=0.8268, bal_acc=0.2967, precision=0.2813, recall=0.2967, f1=0.2657
+[Client 1] Round 3 global-model evaluation: loss=0.6221, acc=0.7715, bal_acc=0.2915, precision=0.2433, recall=0.2915, f1=0.2135
+[Client 1] Round 4: lr=0.00008574, mu=0.01
+[Client 1] Round 4 local metrics: loss=0.5023, acc=0.8362, bal_acc=0.2930, precision=0.2727, recall=0.2930, f1=0.2628
+[Client 1] Round 4 global-model evaluation: loss=0.5884, acc=0.7894, bal_acc=0.3041, precision=0.2432, recall=0.3041, f1=0.2232
+[Client 1] Round 5: lr=0.00008145, mu=0.01
+[Client 1] Round 5 local metrics: loss=0.4831, acc=0.8128, bal_acc=0.2949, precision=0.2557, recall=0.2949, f1=0.2535
+[Client 1] Round 5 global-model evaluation: loss=0.5693, acc=0.7568, bal_acc=0.2999, precision=0.2134, recall=0.2999, f1=0.2074
+[Client 1] Round 6: lr=0.00007738, mu=0.01
+[Client 1] Round 6 local metrics: loss=0.4702, acc=0.8205, bal_acc=0.2960, precision=0.2740, recall=0.2960, f1=0.2606
+[Client 1] Round 6 global-model evaluation: loss=0.5533, acc=0.7589, bal_acc=0.3009, precision=0.2340, recall=0.3009, f1=0.2068
+[Client 1] Round 7: lr=0.00007351, mu=0.01
+[Client 1] Round 7 local metrics: loss=0.4630, acc=0.8242, bal_acc=0.3089, precision=0.2856, recall=0.3089, f1=0.2702
+[Client 1] Round 7 global-model evaluation: loss=0.5450, acc=0.7603, bal_acc=0.3024, precision=0.2315, recall=0.3024, f1=0.2093
+[Client 1] Round 8: lr=0.00006983, mu=0.01
+[Client 1] Round 8 local metrics: loss=0.4479, acc=0.8374, bal_acc=0.3106, precision=0.2824, recall=0.3106, f1=0.2779
+[Client 1] Round 8 global-model evaluation: loss=0.5415, acc=0.7617, bal_acc=0.3042, precision=0.2197, recall=0.3042, f1=0.2097
+[Client 1] Round 9: lr=0.00006634, mu=0.01
+[Client 1] Round 9 local metrics: loss=0.4491, acc=0.8306, bal_acc=0.3198, precision=0.2861, recall=0.3198, f1=0.2818
+[Client 1] Round 9 global-model evaluation: loss=0.5233, acc=0.7642, bal_acc=0.3151, precision=0.2299, recall=0.3151, f1=0.2182
+[Client 1] Round 10: lr=0.00006302, mu=0.01
+[Client 1] Round 10 local metrics: loss=0.4336, acc=0.8286, bal_acc=0.3165, precision=0.2910, recall=0.3165, f1=0.2796
+[Client 1] Round 10 global-model evaluation: loss=0.5202, acc=0.7775, bal_acc=0.3153, precision=0.2553, recall=0.3153, f1=0.2276
+DEBUG flwr 2026-07-26 16:48:01,885 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 16:48:01,897 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E3" 
+(fl-env) PS D:\fl_flower> python client1.py 8080
+[Client 1] Loading D:\CAPSTONE\Dir_Client1.csv
+[Client 1] Train rows: 478,837; test rows: 119,710
+[Client 1] Class weights: {0: 5.0, 1: 0.35434838753601117, 2: 1.0, 3: 1.0, 4: 5.0, 5: 1.0, 6: 0.18070677760329926, 7: 5.0, 8: 0.6771296897294378, 9: 0.2594816187627346, 10: 1.0, 11: 5.0, 12: 2.1862606781998073, 13: 0.08425931351562416, 14: 0.6293737636613369, 15: 5.0, 16: 5.0, 17: 3.4888704306833667, 18: 5.0, 19: 5.0, 20: 5.0, 21: 1.306990823384266, 22: 0.4701795833321059, 23: 2.343002118716635, 24: 1.238601120035179, 25: 5.0, 26: 5.0, 27: 5.0, 28: 5.0, 29: 5.0, 30: 5.0, 32: 2.514768131925844, 33: 5.0}
+INFO flwr 2026-07-26 17:01:28,892 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:01:28,898 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:01:28,898 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:01:28,916 | connection.py:39 | ChannelConnectivity.READY
+[Client 1] Round 1: lr=0.00010000, mu=0.0
+[Client 1] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 1 local metrics: loss=0.6407, acc=0.8029, bal_acc=0.2457, precision=0.2516, recall=0.2457, f1=0.2338
+[Client 1] Round 1 global-model evaluation: loss=0.7780, acc=0.7119, bal_acc=0.2580, precision=0.1994, recall=0.2580, f1=0.1861
+[Client 1] Round 2: lr=0.00009500, mu=0.0
+[Client 1] Round 2 local metrics: loss=0.5691, acc=0.7974, bal_acc=0.2832, precision=0.2522, recall=0.2832, f1=0.2395
+[Client 1] Round 2 global-model evaluation: loss=0.6700, acc=0.7399, bal_acc=0.2788, precision=0.2344, recall=0.2788, f1=0.1950
+[Client 1] Round 3: lr=0.00009025, mu=0.0
+[Client 1] Round 3 local metrics: loss=0.5149, acc=0.8295, bal_acc=0.2951, precision=0.2863, recall=0.2951, f1=0.2640
+[Client 1] Round 3 global-model evaluation: loss=0.6047, acc=0.7940, bal_acc=0.2989, precision=0.2445, recall=0.2989, f1=0.2222
+[Client 1] Round 4: lr=0.00008574, mu=0.0
+[Client 1] Round 4 local metrics: loss=0.4856, acc=0.8262, bal_acc=0.2977, precision=0.2804, recall=0.2977, f1=0.2607
+[Client 1] Round 4 global-model evaluation: loss=0.5723, acc=0.7957, bal_acc=0.3041, precision=0.2452, recall=0.3041, f1=0.2261
+[Client 1] Round 5: lr=0.00008145, mu=0.0
+[Client 1] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 5 local metrics: loss=0.4794, acc=0.8289, bal_acc=0.2981, precision=0.2796, recall=0.2981, f1=0.2676
+[Client 1] Round 5 global-model evaluation: loss=0.5581, acc=0.7595, bal_acc=0.3008, precision=0.2429, recall=0.3008, f1=0.2087
+[Client 1] Round 6: lr=0.00007738, mu=0.0
+[Client 1] Round 6 local metrics: loss=0.4730, acc=0.8313, bal_acc=0.3098, precision=0.2889, recall=0.3098, f1=0.2714
+[Client 1] Round 6 global-model evaluation: loss=0.5498, acc=0.7607, bal_acc=0.3014, precision=0.2353, recall=0.3014, f1=0.2071
+[Client 1] Round 7: lr=0.00007351, mu=0.0
+[Client 1] Round 7 local metrics: loss=0.4460, acc=0.8306, bal_acc=0.3132, precision=0.2882, recall=0.3132, f1=0.2739
+[Client 1] Round 7 global-model evaluation: loss=0.5306, acc=0.7626, bal_acc=0.3041, precision=0.2318, recall=0.3041, f1=0.2112
+[Client 1] Round 8: lr=0.00006983, mu=0.0
+[Client 1] Round 8 local metrics: loss=0.4474, acc=0.8367, bal_acc=0.3193, precision=0.2881, recall=0.3193, f1=0.2818
+[Client 1] Round 8 global-model evaluation: loss=0.5219, acc=0.7629, bal_acc=0.3063, precision=0.2269, recall=0.3063, f1=0.2125
+[Client 1] Round 9: lr=0.00006634, mu=0.0
+[Client 1] Round 9 local metrics: loss=0.4360, acc=0.8354, bal_acc=0.3144, precision=0.2825, recall=0.3144, f1=0.2806
+[Client 1] Round 9 global-model evaluation: loss=0.5118, acc=0.7716, bal_acc=0.3114, precision=0.2490, recall=0.3114, f1=0.2218
+[Client 1] Round 10: lr=0.00006302, mu=0.0
+[Client 1] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 10 local metrics: loss=0.4271, acc=0.8577, bal_acc=0.3369, precision=0.3039, recall=0.3369, f1=0.3021
+[Client 1] Round 10 global-model evaluation: loss=0.5055, acc=0.7784, bal_acc=0.3255, precision=0.2828, recall=0.3255, f1=0.2328
+DEBUG flwr 2026-07-26 17:18:06,076 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:18:06,078 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E4" 
+(fl-env) PS D:\fl_flower> python client1.py 8080
+[Client 1] Loading D:\CAPSTONE\Dir_Client1.csv
+[Client 1] Train rows: 478,837; test rows: 119,710
+[Client 1] Class weights: {0: 5.0, 1: 0.35434838753601117, 2: 1.0, 3: 1.0, 4: 5.0, 5: 1.0, 6: 0.18070677760329926, 7: 5.0, 8: 0.6771296897294378, 9: 0.2594816187627346, 10: 1.0, 11: 5.0, 12: 2.1862606781998073, 13: 0.08425931351562416, 14: 0.6293737636613369, 15: 5.0, 16: 5.0, 17: 3.4888704306833667, 18: 5.0, 19: 5.0, 20: 5.0, 21: 1.306990823384266, 22: 0.4701795833321059, 23: 2.343002118716635, 24: 1.238601120035179, 25: 5.0, 26: 5.0, 27: 5.0, 28: 5.0, 29: 5.0, 30: 5.0, 32: 2.514768131925844, 33: 5.0}
+INFO flwr 2026-07-26 17:20:25,765 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:20:25,765 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:20:25,774 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:20:25,789 | connection.py:39 | ChannelConnectivity.READY
+[Client 1] Round 1: lr=0.00010000, mu=0.01
+[Client 1] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 1 local metrics: loss=0.6580, acc=0.8056, bal_acc=0.2424, precision=0.2418, recall=0.2424, f1=0.2212
+[Client 1] Round 1 global-model evaluation: loss=0.7958, acc=0.7199, bal_acc=0.2623, precision=0.2373, recall=0.2623, f1=0.1876
+[Client 1] Round 2: lr=0.00009500, mu=0.01
+[Client 1] Round 2 local metrics: loss=0.5818, acc=0.7554, bal_acc=0.2640, precision=0.2372, recall=0.2640, f1=0.2144
+[Client 1] Round 2 global-model evaluation: loss=0.6976, acc=0.7384, bal_acc=0.2731, precision=0.2213, recall=0.2731, f1=0.1968
+[Client 1] Round 3: lr=0.00009025, mu=0.01
+[Client 1] Round 3 local metrics: loss=0.5319, acc=0.8096, bal_acc=0.2890, precision=0.2647, recall=0.2890, f1=0.2441
+[Client 1] Round 3 global-model evaluation: loss=0.6330, acc=0.7482, bal_acc=0.2931, precision=0.2521, recall=0.2931, f1=0.2015
+[Client 1] Round 4: lr=0.00008574, mu=0.01
+[Client 1] Round 4 local metrics: loss=0.5015, acc=0.8101, bal_acc=0.2908, precision=0.2652, recall=0.2908, f1=0.2478
+[Client 1] Round 4 global-model evaluation: loss=0.5948, acc=0.7615, bal_acc=0.2931, precision=0.2473, recall=0.2931, f1=0.2125
+[Client 1] Round 5: lr=0.00008145, mu=0.01
+[Client 1] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 5 local metrics: loss=0.4947, acc=0.8126, bal_acc=0.2950, precision=0.2732, recall=0.2950, f1=0.2554
+[Client 1] Round 5 global-model evaluation: loss=0.5814, acc=0.7644, bal_acc=0.2950, precision=0.2494, recall=0.2950, f1=0.2171
+[Client 1] Round 6: lr=0.00007738, mu=0.01
+[Client 1] Round 6 local metrics: loss=0.4850, acc=0.8140, bal_acc=0.2947, precision=0.2741, recall=0.2947, f1=0.2525
+[Client 1] Round 6 global-model evaluation: loss=0.5712, acc=0.7577, bal_acc=0.2992, precision=0.2791, recall=0.2992, f1=0.2118
+[Client 1] Round 7: lr=0.00007351, mu=0.01
+[Client 1] Round 7 local metrics: loss=0.4663, acc=0.8179, bal_acc=0.3019, precision=0.2807, recall=0.3019, f1=0.2564
+[Client 1] Round 7 global-model evaluation: loss=0.5548, acc=0.7678, bal_acc=0.2967, precision=0.2652, recall=0.2967, f1=0.2214
+[Client 1] Round 8: lr=0.00006983, mu=0.01
+[Client 1] Round 8 local metrics: loss=0.4666, acc=0.8165, bal_acc=0.3085, precision=0.2719, recall=0.3085, f1=0.2600
+[Client 1] Round 8 global-model evaluation: loss=0.5466, acc=0.7677, bal_acc=0.2980, precision=0.2550, recall=0.2980, f1=0.2207
+[Client 1] Round 9: lr=0.00006634, mu=0.01
+[Client 1] Round 9 local metrics: loss=0.4563, acc=0.8215, bal_acc=0.3145, precision=0.2744, recall=0.3145, f1=0.2649
+[Client 1] Round 9 global-model evaluation: loss=0.5401, acc=0.7731, bal_acc=0.2994, precision=0.2546, recall=0.2994, f1=0.2236
+[Client 1] Round 10: lr=0.00006302, mu=0.01
+[Client 1] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 10 local metrics: loss=0.4507, acc=0.8208, bal_acc=0.3344, precision=0.3144, recall=0.3344, f1=0.2801
+[Client 1] Round 10 global-model evaluation: loss=0.5337, acc=0.7771, bal_acc=0.3128, precision=0.2602, recall=0.3128, f1=0.2315
+DEBUG flwr 2026-07-26 17:38:22,777 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:38:22,778 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E5" 
+(fl-env) PS D:\fl_flower> python client1.py 8080
+[Client 1] Loading D:\CAPSTONE\Dir_Client1.csv
+[Client 1] Train rows: 478,837; test rows: 119,710
+[Client 1] Class weights: {0: 5.0, 1: 0.35434838753601117, 2: 1.0, 3: 1.0, 4: 5.0, 5: 1.0, 6: 0.18070677760329926, 7: 5.0, 8: 0.6771296897294378, 9: 0.2594816187627346, 10: 1.0, 11: 5.0, 12: 2.1862606781998073, 13: 0.08425931351562416, 14: 0.6293737636613369, 15: 5.0, 16: 5.0, 17: 3.4888704306833667, 18: 5.0, 19: 5.0, 20: 5.0, 21: 1.306990823384266, 22: 0.4701795833321059, 23: 2.343002118716635, 24: 1.238601120035179, 25: 5.0, 26: 5.0, 27: 5.0, 28: 5.0, 29: 5.0, 30: 5.0, 32: 2.514768131925844, 33: 5.0}
+INFO flwr 2026-07-26 17:42:00,712 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:42:00,712 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:42:00,712 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:42:00,730 | connection.py:39 | ChannelConnectivity.READY
+[Client 1] Round 1: lr=0.00010000, mu=0.01
+[Client 1] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 1 local metrics: loss=0.6580, acc=0.8056, bal_acc=0.2424, precision=0.2418, recall=0.2424, f1=0.2212
+[Client 1] Round 1 global-model evaluation: loss=0.7972, acc=0.7194, bal_acc=0.2617, precision=0.2372, recall=0.2617, f1=0.1872
+[Client 1] Round 2: lr=0.00009500, mu=0.01
+[Client 1] Round 2 local metrics: loss=0.5821, acc=0.7564, bal_acc=0.2701, precision=0.2454, recall=0.2701, f1=0.2171
+[Client 1] Round 2 global-model evaluation: loss=0.7008, acc=0.7364, bal_acc=0.2721, precision=0.2196, recall=0.2721, f1=0.1950
+[Client 1] Round 3: lr=0.00009025, mu=0.01
+[Client 1] Round 3 local metrics: loss=0.5336, acc=0.8099, bal_acc=0.2893, precision=0.2648, recall=0.2893, f1=0.2440
+[Client 1] Round 3 global-model evaluation: loss=0.6348, acc=0.7476, bal_acc=0.2927, precision=0.2535, recall=0.2927, f1=0.2008
+[Client 1] Round 4: lr=0.00008574, mu=0.01
+[Client 1] Round 4 local metrics: loss=0.5013, acc=0.8122, bal_acc=0.2915, precision=0.2664, recall=0.2915, f1=0.2488
+[Client 1] Round 4 global-model evaluation: loss=0.5976, acc=0.7586, bal_acc=0.2961, precision=0.2536, recall=0.2961, f1=0.2173
+[Client 1] Round 5: lr=0.00008145, mu=0.01
+[Client 1] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 5 local metrics: loss=0.4952, acc=0.8125, bal_acc=0.2951, precision=0.2717, recall=0.2951, f1=0.2555
+[Client 1] Round 5 global-model evaluation: loss=0.5842, acc=0.7640, bal_acc=0.2949, precision=0.2491, recall=0.2949, f1=0.2172
+[Client 1] Round 6: lr=0.00007738, mu=0.01
+[Client 1] Round 6 local metrics: loss=0.4851, acc=0.8161, bal_acc=0.2953, precision=0.2750, recall=0.2953, f1=0.2535
+[Client 1] Round 6 global-model evaluation: loss=0.5730, acc=0.7570, bal_acc=0.2992, precision=0.2784, recall=0.2992, f1=0.2116
+[Client 1] Round 7: lr=0.00007351, mu=0.01
+[Client 1] Round 7 local metrics: loss=0.4661, acc=0.8180, bal_acc=0.3021, precision=0.2804, recall=0.3021, f1=0.2565
+[Client 1] Round 7 global-model evaluation: loss=0.5569, acc=0.7668, bal_acc=0.2967, precision=0.2660, recall=0.2967, f1=0.2215
+[Client 1] Round 8: lr=0.00006983, mu=0.01
+[Client 1] Round 8 local metrics: loss=0.4670, acc=0.8162, bal_acc=0.3088, precision=0.2695, recall=0.3088, f1=0.2599
+[Client 1] Round 8 global-model evaluation: loss=0.5487, acc=0.7675, bal_acc=0.2991, precision=0.2562, recall=0.2991, f1=0.2219
+[Client 1] Round 9: lr=0.00006634, mu=0.01
+[Client 1] Round 9 local metrics: loss=0.4563, acc=0.8217, bal_acc=0.3147, precision=0.2767, recall=0.3147, f1=0.2649
+[Client 1] Round 9 global-model evaluation: loss=0.5424, acc=0.7737, bal_acc=0.3001, precision=0.2550, recall=0.3001, f1=0.2254
+[Client 1] Round 10: lr=0.00006302, mu=0.01
+[Client 1] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 1] Round 10 local metrics: loss=0.4504, acc=0.8217, bal_acc=0.3345, precision=0.3125, recall=0.3345, f1=0.2804
+[Client 1] Round 10 global-model evaluation: loss=0.5359, acc=0.7769, bal_acc=0.3142, precision=0.2590, recall=0.3142, f1=0.2329
+DEBUG flwr 2026-07-26 18:00:11,021 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 18:00:11,023 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    [Client 2] Round 3 global-model evaluation: loss=1.1600, acc=0.4447, bal_acc=0.3095, precision=0.2128, recall=0.3095, f1=0.1992
+[Client 2] Round 4: lr=0.00008574, mu=0.01
+[Client 2] Round 4 local metrics: loss=0.8230, acc=0.6410, bal_acc=0.3261, precision=0.2834, recall=0.3261, f1=0.2700
+[Client 2] Round 4 global-model evaluation: loss=1.1017, acc=0.4473, bal_acc=0.3215, precision=0.2102, recall=0.3215, f1=0.1993
+[Client 2] Round 5: lr=0.00008145, mu=0.01
+[Client 2] Round 5 local metrics: loss=0.7874, acc=0.6465, bal_acc=0.3312, precision=0.2933, recall=0.3312, f1=0.2745
+[Client 2] Round 5 global-model evaluation: loss=1.0651, acc=0.4507, bal_acc=0.3173, precision=0.2016, recall=0.3173, f1=0.1929
+[Client 2] Round 6: lr=0.00007738, mu=0.01
+[Client 2] Round 6 local metrics: loss=0.7707, acc=0.6471, bal_acc=0.3511, precision=0.3041, recall=0.3511, f1=0.2915
+[Client 2] Round 6 global-model evaluation: loss=1.0380, acc=0.4519, bal_acc=0.3193, precision=0.2055, recall=0.3193, f1=0.1943
+[Client 2] Round 7: lr=0.00007351, mu=0.01
+[Client 2] Round 7 local metrics: loss=0.7377, acc=0.6607, bal_acc=0.3463, precision=0.2950, recall=0.3463, f1=0.2938
+[Client 2] Round 7 global-model evaluation: loss=0.9991, acc=0.4556, bal_acc=0.3211, precision=0.2356, recall=0.3211, f1=0.2048
+[Client 2] Round 8: lr=0.00006983, mu=0.01
+[Client 2] Round 8 local metrics: loss=0.7393, acc=0.6598, bal_acc=0.3502, precision=0.2949, recall=0.3502, f1=0.2901
+[Client 2] Round 8 global-model evaluation: loss=0.9802, acc=0.4569, bal_acc=0.3252, precision=0.2762, recall=0.3252, f1=0.2085
+[Client 2] Round 9: lr=0.00006634, mu=0.01
+[Client 2] Round 9 local metrics: loss=0.7173, acc=0.6609, bal_acc=0.3651, precision=0.3075, recall=0.3651, f1=0.3085
+[Client 2] Round 9 global-model evaluation: loss=0.9707, acc=0.4626, bal_acc=0.3380, precision=0.2598, recall=0.3380, f1=0.2175
+[Client 2] Round 10: lr=0.00006302, mu=0.01
+[Client 2] Round 10 local metrics: loss=0.7187, acc=0.6627, bal_acc=0.3585, precision=0.3025, recall=0.3585, f1=0.3004
+[Client 2] Round 10 global-model evaluation: loss=0.9624, acc=0.4620, bal_acc=0.3381, precision=0.3118, recall=0.3381, f1=0.2239
+DEBUG flwr 2026-07-26 16:48:01,879 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 16:48:01,893 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E3" 
+(fl-env) PS D:\fl_flower> python client2.py 8080
+[Client 2] Loading D:\CAPSTONE\Dir_Client2.csv
+[Client 2] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 2] Using non-stratified split.
+[Client 2] Train rows: 477,793; test rows: 119,449
+[Client 2] Class weights: {0: 1.0, 1: 5.0, 3: 5.0, 4: 5.0, 5: 5.0, 6: 1.407326570526415, 7: 1.5538286925923759, 8: 5.0, 9: 0.1852949366195162, 10: 5.0, 11: 5.0, 12: 0.39187419161436, 13: 0.24722655142366912, 14: 0.3291108984969372, 15: 5.0, 16: 5.0, 17: 5.0, 18: 5.0, 19: 0.30192634102631183, 20: 0.12139938084900521, 21: 0.4071590483007806, 22: 5.0, 23: 1.3916355014970931, 24: 3.101001447328284, 25: 5.0, 26: 2.4817579289639626, 27: 5.0, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 5.0, 33: 1.0}
+INFO flwr 2026-07-26 17:01:28,773 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:01:28,777 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:01:28,777 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:01:28,788 | connection.py:39 | ChannelConnectivity.READY
+[Client 2] Round 1: lr=0.00010000, mu=0.0
+[Client 2] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 1 local metrics: loss=0.9782, acc=0.5980, bal_acc=0.2877, precision=0.2540, recall=0.2877, f1=0.2264
+[Client 2] Round 1 global-model evaluation: loss=1.5006, acc=0.4186, bal_acc=0.2733, precision=0.2132, recall=0.2733, f1=0.1679
+[Client 2] Round 2: lr=0.00009500, mu=0.0
+[Client 2] Round 2 local metrics: loss=0.9041, acc=0.6293, bal_acc=0.2982, precision=0.2647, recall=0.2982, f1=0.2558
+[Client 2] Round 2 global-model evaluation: loss=1.2508, acc=0.4392, bal_acc=0.2941, precision=0.2040, recall=0.2941, f1=0.1881
+[Client 2] Round 3: lr=0.00009025, mu=0.0
+[Client 2] Round 3 local metrics: loss=0.8575, acc=0.6316, bal_acc=0.3143, precision=0.2881, recall=0.3143, f1=0.2684
+[Client 2] Round 3 global-model evaluation: loss=1.1506, acc=0.4456, bal_acc=0.3178, precision=0.2125, recall=0.3178, f1=0.2020
+[Client 2] Round 4: lr=0.00008574, mu=0.0
+[Client 2] Round 4 local metrics: loss=0.8050, acc=0.6374, bal_acc=0.3300, precision=0.2858, recall=0.3300, f1=0.2744
+[Client 2] Round 4 global-model evaluation: loss=1.0894, acc=0.4490, bal_acc=0.3208, precision=0.2109, recall=0.3208, f1=0.1987
+[Client 2] Round 5: lr=0.00008145, mu=0.0
+[Client 2] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 5 local metrics: loss=0.7778, acc=0.6437, bal_acc=0.3325, precision=0.2901, recall=0.3325, f1=0.2754
+[Client 2] Round 5 global-model evaluation: loss=1.0511, acc=0.4520, bal_acc=0.3183, precision=0.2093, recall=0.3183, f1=0.1967
+[Client 2] Round 6: lr=0.00007738, mu=0.0
+[Client 2] Round 6 local metrics: loss=0.7450, acc=0.6596, bal_acc=0.3435, precision=0.2909, recall=0.3435, f1=0.2894
+[Client 2] Round 6 global-model evaluation: loss=1.0170, acc=0.4548, bal_acc=0.3198, precision=0.2026, recall=0.3198, f1=0.1987
+[Client 2] Round 7: lr=0.00007351, mu=0.0
+[Client 2] Round 7 local metrics: loss=0.7394, acc=0.6513, bal_acc=0.3561, precision=0.3060, recall=0.3561, f1=0.2944
+[Client 2] Round 7 global-model evaluation: loss=1.0011, acc=0.4584, bal_acc=0.3212, precision=0.2199, recall=0.3212, f1=0.2073
+[Client 2] Round 8: lr=0.00006983, mu=0.0
+[Client 2] Round 8 local metrics: loss=0.7211, acc=0.6628, bal_acc=0.3519, precision=0.3067, recall=0.3519, f1=0.2983
+[Client 2] Round 8 global-model evaluation: loss=0.9898, acc=0.4617, bal_acc=0.3268, precision=0.2593, recall=0.3268, f1=0.2136
+[Client 2] Round 9: lr=0.00006634, mu=0.0
+[Client 2] Round 9 local metrics: loss=0.7091, acc=0.6643, bal_acc=0.3610, precision=0.3221, recall=0.3610, f1=0.3049
+[Client 2] Round 9 global-model evaluation: loss=0.9659, acc=0.4633, bal_acc=0.3323, precision=0.2458, recall=0.3323, f1=0.2178
+[Client 2] Round 10: lr=0.00006302, mu=0.0
+[Client 2] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 10 local metrics: loss=0.6810, acc=0.6864, bal_acc=0.3850, precision=0.3542, recall=0.3850, f1=0.3393
+[Client 2] Round 10 global-model evaluation: loss=0.9354, acc=0.4730, bal_acc=0.3518, precision=0.2807, recall=0.3518, f1=0.2315
+DEBUG flwr 2026-07-26 17:18:06,076 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:18:06,076 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E4" 
+(fl-env) PS D:\fl_flower> python client2.py 8080
+[Client 2] Loading D:\CAPSTONE\Dir_Client2.csv
+[Client 2] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 2] Using non-stratified split.
+[Client 2] Train rows: 477,793; test rows: 119,449
+[Client 2] Class weights: {0: 1.0, 1: 5.0, 3: 5.0, 4: 5.0, 5: 5.0, 6: 1.407326570526415, 7: 1.5538286925923759, 8: 5.0, 9: 0.1852949366195162, 10: 5.0, 11: 5.0, 12: 0.39187419161436, 13: 0.24722655142366912, 14: 0.3291108984969372, 15: 5.0, 16: 5.0, 17: 5.0, 18: 5.0, 19: 0.30192634102631183, 20: 0.12139938084900521, 21: 0.4071590483007806, 22: 5.0, 23: 1.3916355014970931, 24: 3.101001447328284, 25: 5.0, 26: 2.4817579289639626, 27: 5.0, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 5.0, 33: 1.0}
+INFO flwr 2026-07-26 17:20:28,653 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:20:28,653 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:20:28,653 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:20:28,672 | connection.py:39 | ChannelConnectivity.READY
+[Client 2] Round 1: lr=0.00010000, mu=0.01
+[Client 2] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 1 local metrics: loss=0.9887, acc=0.6050, bal_acc=0.2868, precision=0.2552, recall=0.2868, f1=0.2300
+[Client 2] Round 1 global-model evaluation: loss=1.5179, acc=0.4199, bal_acc=0.2775, precision=0.1889, recall=0.2775, f1=0.1693
+[Client 2] Round 2: lr=0.00009500, mu=0.01
+[Client 2] Round 2 local metrics: loss=0.9137, acc=0.6248, bal_acc=0.2961, precision=0.2636, recall=0.2961, f1=0.2434
+[Client 2] Round 2 global-model evaluation: loss=1.3068, acc=0.4386, bal_acc=0.2881, precision=0.1983, recall=0.2881, f1=0.1787
+[Client 2] Round 3: lr=0.00009025, mu=0.01
+[Client 2] Round 3 local metrics: loss=0.8663, acc=0.6306, bal_acc=0.3080, precision=0.2706, recall=0.3080, f1=0.2539
+[Client 2] Round 3 global-model evaluation: loss=1.1841, acc=0.4482, bal_acc=0.3122, precision=0.2293, recall=0.3122, f1=0.1925
+[Client 2] Round 4: lr=0.00008574, mu=0.01
+[Client 2] Round 4 local metrics: loss=0.8261, acc=0.6410, bal_acc=0.3269, precision=0.2778, recall=0.3269, f1=0.2709
+[Client 2] Round 4 global-model evaluation: loss=1.1213, acc=0.5053, bal_acc=0.3111, precision=0.2307, recall=0.3111, f1=0.2012
+[Client 2] Round 5: lr=0.00008145, mu=0.01
+[Client 2] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 5 local metrics: loss=0.7982, acc=0.6451, bal_acc=0.3310, precision=0.2854, recall=0.3310, f1=0.2724
+[Client 2] Round 5 global-model evaluation: loss=1.0853, acc=0.5077, bal_acc=0.3136, precision=0.2304, recall=0.3136, f1=0.2043
+[Client 2] Round 6: lr=0.00007738, mu=0.01
+[Client 2] Round 6 local metrics: loss=0.7725, acc=0.6543, bal_acc=0.3374, precision=0.2855, recall=0.3374, f1=0.2791
+[Client 2] Round 6 global-model evaluation: loss=1.0615, acc=0.4504, bal_acc=0.3164, precision=0.2248, recall=0.3164, f1=0.1927
+[Client 2] Round 7: lr=0.00007351, mu=0.01
+[Client 2] Round 7 local metrics: loss=0.7616, acc=0.6372, bal_acc=0.3396, precision=0.2782, recall=0.3396, f1=0.2634
+[Client 2] Round 7 global-model evaluation: loss=1.0461, acc=0.5100, bal_acc=0.3158, precision=0.2512, recall=0.3158, f1=0.2043
+[Client 2] Round 8: lr=0.00006983, mu=0.01
+[Client 2] Round 8 local metrics: loss=0.7447, acc=0.6544, bal_acc=0.3431, precision=0.2943, recall=0.3431, f1=0.2862
+[Client 2] Round 8 global-model evaluation: loss=1.0179, acc=0.5138, bal_acc=0.3186, precision=0.2508, recall=0.3186, f1=0.2095
+[Client 2] Round 9: lr=0.00006634, mu=0.01
+[Client 2] Round 9 local metrics: loss=0.7285, acc=0.6508, bal_acc=0.3485, precision=0.3023, recall=0.3485, f1=0.2884
+[Client 2] Round 9 global-model evaluation: loss=0.9983, acc=0.5160, bal_acc=0.3225, precision=0.2557, recall=0.3225, f1=0.2163
+[Client 2] Round 10: lr=0.00006302, mu=0.01
+[Client 2] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 10 local metrics: loss=0.7029, acc=0.6793, bal_acc=0.3756, precision=0.3248, recall=0.3756, f1=0.3226
+[Client 2] Round 10 global-model evaluation: loss=0.9536, acc=0.5311, bal_acc=0.3388, precision=0.2853, recall=0.3388, f1=0.2415
+DEBUG flwr 2026-07-26 17:38:22,778 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:38:22,778 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E5" 
+(fl-env) PS D:\fl_flower> python client2.py 8080
+[Client 2] Loading D:\CAPSTONE\Dir_Client2.csv
+[Client 2] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 2] Using non-stratified split.
+[Client 2] Train rows: 477,793; test rows: 119,449
+[Client 2] Class weights: {0: 1.0, 1: 5.0, 3: 5.0, 4: 5.0, 5: 5.0, 6: 1.407326570526415, 7: 1.5538286925923759, 8: 5.0, 9: 0.1852949366195162, 10: 5.0, 11: 5.0, 12: 0.39187419161436, 13: 0.24722655142366912, 14: 0.3291108984969372, 15: 5.0, 16: 5.0, 17: 5.0, 18: 5.0, 19: 0.30192634102631183, 20: 0.12139938084900521, 21: 0.4071590483007806, 22: 5.0, 23: 1.3916355014970931, 24: 3.101001447328284, 25: 5.0, 26: 2.4817579289639626, 27: 5.0, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 5.0, 33: 1.0}
+INFO flwr 2026-07-26 17:42:04,175 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:42:04,180 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:42:04,181 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:42:04,199 | connection.py:39 | ChannelConnectivity.READY
+[Client 2] Round 1: lr=0.00010000, mu=0.01
+[Client 2] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 1 local metrics: loss=0.9887, acc=0.6050, bal_acc=0.2868, precision=0.2552, recall=0.2868, f1=0.2300
+[Client 2] Round 1 global-model evaluation: loss=1.5133, acc=0.4199, bal_acc=0.2771, precision=0.1890, recall=0.2771, f1=0.1694
+[Client 2] Round 2: lr=0.00009500, mu=0.01
+[Client 2] Round 2 local metrics: loss=0.9137, acc=0.6250, bal_acc=0.2960, precision=0.2637, recall=0.2960, f1=0.2433
+[Client 2] Round 2 global-model evaluation: loss=1.3015, acc=0.4355, bal_acc=0.2868, precision=0.1954, recall=0.2868, f1=0.1765
+[Client 2] Round 3: lr=0.00009025, mu=0.01
+[Client 2] Round 3 local metrics: loss=0.8657, acc=0.6291, bal_acc=0.3092, precision=0.2715, recall=0.3092, f1=0.2551
+[Client 2] Round 3 global-model evaluation: loss=1.1787, acc=0.4467, bal_acc=0.3105, precision=0.2326, recall=0.3105, f1=0.1915
+[Client 2] Round 4: lr=0.00008574, mu=0.01
+[Client 2] Round 4 local metrics: loss=0.8260, acc=0.6417, bal_acc=0.3269, precision=0.2768, recall=0.3269, f1=0.2704
+[Client 2] Round 4 global-model evaluation: loss=1.1138, acc=0.4820, bal_acc=0.3129, precision=0.2298, recall=0.3129, f1=0.1979
+[Client 2] Round 5: lr=0.00008145, mu=0.01
+[Client 2] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 5 local metrics: loss=0.7983, acc=0.6448, bal_acc=0.3307, precision=0.2849, recall=0.3307, f1=0.2720
+[Client 2] Round 5 global-model evaluation: loss=1.0805, acc=0.5077, bal_acc=0.3132, precision=0.2256, recall=0.3132, f1=0.2041
+[Client 2] Round 6: lr=0.00007738, mu=0.01
+[Client 2] Round 6 local metrics: loss=0.7735, acc=0.6541, bal_acc=0.3374, precision=0.2879, recall=0.3374, f1=0.2791
+[Client 2] Round 6 global-model evaluation: loss=1.0583, acc=0.4498, bal_acc=0.3165, precision=0.2226, recall=0.3165, f1=0.1922
+[Client 2] Round 7: lr=0.00007351, mu=0.01
+[Client 2] Round 7 local metrics: loss=0.7618, acc=0.6372, bal_acc=0.3399, precision=0.2780, recall=0.3399, f1=0.2638
+[Client 2] Round 7 global-model evaluation: loss=1.0426, acc=0.5096, bal_acc=0.3165, precision=0.2559, recall=0.3165, f1=0.2040
+[Client 2] Round 8: lr=0.00006983, mu=0.01
+[Client 2] Round 8 local metrics: loss=0.7465, acc=0.6542, bal_acc=0.3431, precision=0.2947, recall=0.3431, f1=0.2865
+[Client 2] Round 8 global-model evaluation: loss=1.0137, acc=0.5136, bal_acc=0.3183, precision=0.2535, recall=0.3183, f1=0.2089
+[Client 2] Round 9: lr=0.00006634, mu=0.01
+[Client 2] Round 9 local metrics: loss=0.7285, acc=0.6503, bal_acc=0.3478, precision=0.3019, recall=0.3478, f1=0.2876
+[Client 2] Round 9 global-model evaluation: loss=0.9935, acc=0.5153, bal_acc=0.3227, precision=0.2547, recall=0.3227, f1=0.2165
+[Client 2] Round 10: lr=0.00006302, mu=0.01
+[Client 2] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 2] Round 10 local metrics: loss=0.7030, acc=0.6695, bal_acc=0.3594, precision=0.3081, recall=0.3594, f1=0.3003
+[Client 2] Round 10 global-model evaluation: loss=0.9492, acc=0.5310, bal_acc=0.3384, precision=0.2842, recall=0.3384, f1=0.2418
+DEBUG flwr 2026-07-26 18:00:11,019 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 18:00:11,019 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    on: loss=0.5845, acc=0.7558, bal_acc=0.3229, precision=0.2928, recall=0.3229, f1=0.2828
+[Client 3] Round 8: lr=0.00006983, mu=0.01
+[Client 3] Round 8 local metrics: loss=0.5566, acc=0.7597, bal_acc=0.3178, precision=0.3072, recall=0.3178, f1=0.2921
+[Client 3] Round 8 global-model evaluation: loss=0.5820, acc=0.7562, bal_acc=0.3258, precision=0.2799, recall=0.3258, f1=0.2831
+[Client 3] Round 9: lr=0.00006634, mu=0.01
+[Client 3] Round 9 local metrics: loss=0.5509, acc=0.7559, bal_acc=0.3204, precision=0.3128, recall=0.3204, f1=0.2981
+[Client 3] Round 9 global-model evaluation: loss=0.5797, acc=0.7598, bal_acc=0.3296, precision=0.2868, recall=0.3296, f1=0.2895
+[Client 3] Round 10: lr=0.00006302, mu=0.01
+[Client 3] Round 10 local metrics: loss=0.5487, acc=0.7582, bal_acc=0.3161, precision=0.2989, recall=0.3161, f1=0.2883
+[Client 3] Round 10 global-model evaluation: loss=0.5729, acc=0.7582, bal_acc=0.3312, precision=0.3133, recall=0.3312, f1=0.2947
+DEBUG flwr 2026-07-26 16:48:01,888 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 16:48:01,899 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E3" 
+(fl-env) PS D:\fl_flower> python client3.py 8080
+[Client 3] Loading D:\CAPSTONE\Dir_Client3.csv
+[Client 3] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 3] Using non-stratified split.
+[Client 3] Train rows: 597,080; test rows: 149,271
+[Client 3] Class weights: {0: 1.0, 1: 5.0, 2: 1.0, 3: 1.0, 4: 5.0, 5: 1.0, 6: 0.6368051807879115, 7: 3.4926763067995696, 8: 0.09964975384634898, 9: 0.33592548291960583, 10: 1.0, 11: 0.1470970094282216, 12: 0.219500987070661, 13: 1.5858024625779514, 14: 0.406857180237431, 15: 5.0, 16: 5.0, 17: 1.0, 18: 1.0, 19: 0.6424899012398286, 20: 5.0, 21: 5.0, 22: 2.4754971060879947, 23: 1.0505609278887433, 24: 1.0769763565919437, 25: 5.0, 26: 1.0, 27: 5.0, 28: 5.0, 29: 5.0, 30: 5.0, 31: 5.0, 32: 4.330746355262203, 33: 1.0}
+INFO flwr 2026-07-26 17:01:29,833 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:01:29,833 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:01:29,833 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:01:29,852 | connection.py:39 | ChannelConnectivity.READY
+[Client 3] Round 1: lr=0.00010000, mu=0.0
+[Client 3] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 1 local metrics: loss=0.6805, acc=0.7359, bal_acc=0.2808, precision=0.2768, recall=0.2808, f1=0.2552
+[Client 3] Round 1 global-model evaluation: loss=0.7139, acc=0.7320, bal_acc=0.2760, precision=0.2606, recall=0.2760, f1=0.2434
+[Client 3] Round 2: lr=0.00009500, mu=0.0
+[Client 3] Round 2 local metrics: loss=0.6253, acc=0.7509, bal_acc=0.2911, precision=0.2716, recall=0.2911, f1=0.2629
+[Client 3] Round 2 global-model evaluation: loss=0.6573, acc=0.7480, bal_acc=0.2991, precision=0.3079, recall=0.2991, f1=0.2724
+[Client 3] Round 3: lr=0.00009025, mu=0.0
+[Client 3] Round 3 local metrics: loss=0.6061, acc=0.7538, bal_acc=0.3000, precision=0.2802, recall=0.3000, f1=0.2710
+[Client 3] Round 3 global-model evaluation: loss=0.6357, acc=0.7479, bal_acc=0.3140, precision=0.2724, recall=0.3140, f1=0.2714
+[Client 3] Round 4: lr=0.00008574, mu=0.0
+[Client 3] Round 4 local metrics: loss=0.5883, acc=0.7537, bal_acc=0.3118, precision=0.2856, recall=0.3118, f1=0.2795
+[Client 3] Round 4 global-model evaluation: loss=0.6142, acc=0.7517, bal_acc=0.3220, precision=0.2722, recall=0.3220, f1=0.2735
+[Client 3] Round 5: lr=0.00008145, mu=0.0
+[Client 3] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 5 local metrics: loss=0.5758, acc=0.7569, bal_acc=0.3195, precision=0.3023, recall=0.3195, f1=0.2881
+[Client 3] Round 5 global-model evaluation: loss=0.5986, acc=0.7546, bal_acc=0.3210, precision=0.2733, recall=0.3210, f1=0.2748
+[Client 3] Round 6: lr=0.00007738, mu=0.0
+[Client 3] Round 6 local metrics: loss=0.5638, acc=0.7541, bal_acc=0.3149, precision=0.2964, recall=0.3149, f1=0.2836
+[Client 3] Round 6 global-model evaluation: loss=0.5879, acc=0.7554, bal_acc=0.3220, precision=0.2739, recall=0.3220, f1=0.2779
+[Client 3] Round 7: lr=0.00007351, mu=0.0
+[Client 3] Round 7 local metrics: loss=0.5538, acc=0.7508, bal_acc=0.3157, precision=0.2979, recall=0.3157, f1=0.2859
+[Client 3] Round 7 global-model evaluation: loss=0.5834, acc=0.7561, bal_acc=0.3236, precision=0.2791, recall=0.3236, f1=0.2823
+[Client 3] Round 8: lr=0.00006983, mu=0.0
+[Client 3] Round 8 local metrics: loss=0.5599, acc=0.7615, bal_acc=0.3229, precision=0.3104, recall=0.3229, f1=0.2982
+[Client 3] Round 8 global-model evaluation: loss=0.5816, acc=0.7552, bal_acc=0.3270, precision=0.2824, recall=0.3270, f1=0.2855
+[Client 3] Round 9: lr=0.00006634, mu=0.0
+[Client 3] Round 9 local metrics: loss=0.5470, acc=0.7564, bal_acc=0.3220, precision=0.3236, recall=0.3220, f1=0.2999
+[Client 3] Round 9 global-model evaluation: loss=0.5699, acc=0.7579, bal_acc=0.3296, precision=0.2880, recall=0.3296, f1=0.2897
+[Client 3] Round 10: lr=0.00006302, mu=0.0
+[Client 3] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 10 local metrics: loss=0.5402, acc=0.7614, bal_acc=0.3357, precision=0.3461, recall=0.3357, f1=0.3059
+[Client 3] Round 10 global-model evaluation: loss=0.5644, acc=0.7622, bal_acc=0.3431, precision=0.3027, recall=0.3431, f1=0.2985
+DEBUG flwr 2026-07-26 17:18:06,074 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:18:06,076 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E4" 
+(fl-env) PS D:\fl_flower> python client3.py 8080
+[Client 3] Loading D:\CAPSTONE\Dir_Client3.csv
+[Client 3] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 3] Using non-stratified split.
+[Client 3] Train rows: 597,080; test rows: 149,271
+[Client 3] Class weights: {0: 1.0, 1: 5.0, 2: 1.0, 3: 1.0, 4: 5.0, 5: 1.0, 6: 0.6368051807879115, 7: 3.4926763067995696, 8: 0.09964975384634898, 9: 0.33592548291960583, 10: 1.0, 11: 0.1470970094282216, 12: 0.219500987070661, 13: 1.5858024625779514, 14: 0.406857180237431, 15: 5.0, 16: 5.0, 17: 1.0, 18: 1.0, 19: 0.6424899012398286, 20: 5.0, 21: 5.0, 22: 2.4754971060879947, 23: 1.0505609278887433, 24: 1.0769763565919437, 25: 5.0, 26: 1.0, 27: 5.0, 28: 5.0, 29: 5.0, 30: 5.0, 31: 5.0, 32: 4.330746355262203, 33: 1.0}
+INFO flwr 2026-07-26 17:20:31,738 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:20:31,745 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:20:31,749 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:20:31,756 | connection.py:39 | ChannelConnectivity.READY
+[Client 3] Round 1: lr=0.00010000, mu=0.01
+[Client 3] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 1 local metrics: loss=0.7062, acc=0.6771, bal_acc=0.2811, precision=0.2652, recall=0.2811, f1=0.2510
+[Client 3] Round 1 global-model evaluation: loss=0.7064, acc=0.7420, bal_acc=0.2801, precision=0.2846, recall=0.2801, f1=0.2518
+[Client 3] Round 2: lr=0.00009500, mu=0.01
+[Client 3] Round 2 local metrics: loss=0.6495, acc=0.7529, bal_acc=0.2893, precision=0.2798, recall=0.2893, f1=0.2642
+[Client 3] Round 2 global-model evaluation: loss=0.6716, acc=0.7515, bal_acc=0.2912, precision=0.2927, recall=0.2912, f1=0.2637
+[Client 3] Round 3: lr=0.00009025, mu=0.01
+[Client 3] Round 3 local metrics: loss=0.6251, acc=0.7563, bal_acc=0.2935, precision=0.2848, recall=0.2935, f1=0.2672
+[Client 3] Round 3 global-model evaluation: loss=0.6455, acc=0.7589, bal_acc=0.3116, precision=0.2882, recall=0.3116, f1=0.2778
+[Client 3] Round 4: lr=0.00008574, mu=0.01
+[Client 3] Round 4 local metrics: loss=0.6050, acc=0.7553, bal_acc=0.3011, precision=0.2665, recall=0.3011, f1=0.2661
+[Client 3] Round 4 global-model evaluation: loss=0.6296, acc=0.6901, bal_acc=0.3132, precision=0.2777, recall=0.3132, f1=0.2662
+[Client 3] Round 5: lr=0.00008145, mu=0.01
+[Client 3] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 5 local metrics: loss=0.5887, acc=0.7472, bal_acc=0.3128, precision=0.2778, recall=0.3128, f1=0.2797
+[Client 3] Round 5 global-model evaluation: loss=0.6155, acc=0.6892, bal_acc=0.3137, precision=0.2591, recall=0.3137, f1=0.2668
+[Client 3] Round 6: lr=0.00007738, mu=0.01
+[Client 3] Round 6 local metrics: loss=0.5828, acc=0.7612, bal_acc=0.3149, precision=0.2885, recall=0.3149, f1=0.2841
+[Client 3] Round 6 global-model evaluation: loss=0.6042, acc=0.7588, bal_acc=0.3166, precision=0.2789, recall=0.3166, f1=0.2787
+[Client 3] Round 7: lr=0.00007351, mu=0.01
+[Client 3] Round 7 local metrics: loss=0.5718, acc=0.7651, bal_acc=0.3229, precision=0.3061, recall=0.3229, f1=0.2981
+[Client 3] Round 7 global-model evaluation: loss=0.6026, acc=0.6893, bal_acc=0.3132, precision=0.2613, recall=0.3132, f1=0.2673
+[Client 3] Round 8: lr=0.00006983, mu=0.01
+[Client 3] Round 8 local metrics: loss=0.5772, acc=0.6940, bal_acc=0.3202, precision=0.2855, recall=0.3202, f1=0.2901
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 8 global-model evaluation: loss=0.5981, acc=0.6887, bal_acc=0.3200, precision=0.2881, recall=0.3100, f1=0.2707
+[Client 3] Round 9: lr=0.00006634, mu=0.01
+[Client 3] Round 9 local metrics: loss=0.5660, acc=0.6958, bal_acc=0.3180, precision=0.2914, recall=0.3180, f1=0.2868
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 9 global-model evaluation: loss=0.5844, acc=0.6902, bal_acc=0.3204, precision=0.2634, recall=0.3104, f1=0.2702
+[Client 3] Round 10: lr=0.00006302, mu=0.01
+[Client 3] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 10 local metrics: loss=0.5542, acc=0.7624, bal_acc=0.3165, precision=0.2942, recall=0.3165, f1=0.2904
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 10 global-model evaluation: loss=0.5760, acc=0.6944, bal_acc=0.3276, precision=0.2657, recall=0.3174, f1=0.2756
+DEBUG flwr 2026-07-26 17:38:22,776 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:38:22,777 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E5" 
+(fl-env) PS D:\fl_flower> python client3.py 8080
+[Client 3] Loading D:\CAPSTONE\Dir_Client3.csv
+[Client 3] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 3] Using non-stratified split.
+[Client 3] Train rows: 597,080; test rows: 149,271
+[Client 3] Class weights: {0: 1.0, 1: 5.0, 2: 1.0, 3: 1.0, 4: 5.0, 5: 1.0, 6: 0.6368051807879115, 7: 3.4926763067995696, 8: 0.09964975384634898, 9: 0.33592548291960583, 10: 1.0, 11: 0.1470970094282216, 12: 0.219500987070661, 13: 1.5858024625779514, 14: 0.406857180237431, 15: 5.0, 16: 5.0, 17: 1.0, 18: 1.0, 19: 0.6424899012398286, 20: 5.0, 21: 5.0, 22: 2.4754971060879947, 23: 1.0505609278887433, 24: 1.0769763565919437, 25: 5.0, 26: 1.0, 27: 5.0, 28: 5.0, 29: 5.0, 30: 5.0, 31: 5.0, 32: 4.330746355262203, 33: 1.0}
+INFO flwr 2026-07-26 17:42:07,156 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:42:07,159 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:42:07,159 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:42:07,168 | connection.py:39 | ChannelConnectivity.READY
+[Client 3] Round 1: lr=0.00010000, mu=0.01
+[Client 3] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 1 local metrics: loss=0.7062, acc=0.6771, bal_acc=0.2811, precision=0.2652, recall=0.2811, f1=0.2510
+[Client 3] Round 1 global-model evaluation: loss=0.7068, acc=0.7419, bal_acc=0.2792, precision=0.2851, recall=0.2792, f1=0.2507
+[Client 3] Round 2: lr=0.00009500, mu=0.01
+[Client 3] Round 2 local metrics: loss=0.6491, acc=0.7529, bal_acc=0.2893, precision=0.2849, recall=0.2893, f1=0.2644
+[Client 3] Round 2 global-model evaluation: loss=0.6722, acc=0.7512, bal_acc=0.2903, precision=0.2925, recall=0.2903, f1=0.2626
+[Client 3] Round 3: lr=0.00009025, mu=0.01
+[Client 3] Round 3 local metrics: loss=0.6255, acc=0.7563, bal_acc=0.2934, precision=0.2847, recall=0.2934, f1=0.2670
+[Client 3] Round 3 global-model evaluation: loss=0.6464, acc=0.7585, bal_acc=0.3112, precision=0.2890, recall=0.3112, f1=0.2771
+[Client 3] Round 4: lr=0.00008574, mu=0.01
+[Client 3] Round 4 local metrics: loss=0.6052, acc=0.7554, bal_acc=0.3013, precision=0.2673, recall=0.3013, f1=0.2663
+[Client 3] Round 4 global-model evaluation: loss=0.6304, acc=0.7276, bal_acc=0.3159, precision=0.2827, recall=0.3159, f1=0.2792
+[Client 3] Round 5: lr=0.00008145, mu=0.01
+[Client 3] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 5 local metrics: loss=0.5888, acc=0.7039, bal_acc=0.3088, precision=0.2767, recall=0.3088, f1=0.2710
+[Client 3] Round 5 global-model evaluation: loss=0.6163, acc=0.6891, bal_acc=0.3136, precision=0.2590, recall=0.3136, f1=0.2665
+[Client 3] Round 6: lr=0.00007738, mu=0.01
+[Client 3] Round 6 local metrics: loss=0.5833, acc=0.7612, bal_acc=0.3156, precision=0.2885, recall=0.3156, f1=0.2848
+[Client 3] Round 6 global-model evaluation: loss=0.6051, acc=0.7583, bal_acc=0.3164, precision=0.2786, recall=0.3164, f1=0.2783
+[Client 3] Round 7: lr=0.00007351, mu=0.01
+[Client 3] Round 7 local metrics: loss=0.5724, acc=0.7645, bal_acc=0.3206, precision=0.3044, recall=0.3206, f1=0.2952
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 7 global-model evaluation: loss=0.6033, acc=0.6893, bal_acc=0.3132, precision=0.2531, recall=0.3035, f1=0.2589
+[Client 3] Round 8: lr=0.00006983, mu=0.01
+[Client 3] Round 8 local metrics: loss=0.5761, acc=0.7660, bal_acc=0.3265, precision=0.3132, recall=0.3265, f1=0.3063
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 8 global-model evaluation: loss=0.5987, acc=0.6888, bal_acc=0.3245, precision=0.2876, recall=0.3144, f1=0.2709
+[Client 3] Round 9: lr=0.00006634, mu=0.01
+[Client 3] Round 9 local metrics: loss=0.5652, acc=0.7682, bal_acc=0.3267, precision=0.3065, recall=0.3267, f1=0.3079
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 9 global-model evaluation: loss=0.5850, acc=0.6894, bal_acc=0.3241, precision=0.2630, recall=0.3140, f1=0.2698
+[Client 3] Round 10: lr=0.00006302, mu=0.01
+[Client 3] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 3] Round 10 local metrics: loss=0.5543, acc=0.7620, bal_acc=0.3161, precision=0.2898, recall=0.3161, f1=0.2866
+D:\fl-env\lib\site-packages\sklearn\metrics\_classification.py:2801: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+[Client 3] Round 10 global-model evaluation: loss=0.5770, acc=0.6941, bal_acc=0.3322, precision=0.2692, recall=0.3218, f1=0.2769
+DEBUG flwr 2026-07-26 18:00:11,019 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 18:00:11,021 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    01
+[Client 4] Round 4 local metrics: loss=0.6338, acc=0.7059, bal_acc=0.3098, precision=0.2743, recall=0.3098, f1=0.2586
+[Client 4] Round 4 global-model evaluation: loss=0.6607, acc=0.6781, bal_acc=0.3027, precision=0.2367, recall=0.3027, f1=0.2208
+[Client 4] Round 5: lr=0.00008145, mu=0.01
+[Client 4] Round 5 local metrics: loss=0.6317, acc=0.7023, bal_acc=0.3169, precision=0.2881, recall=0.3169, f1=0.2680
+[Client 4] Round 5 global-model evaluation: loss=0.6453, acc=0.6721, bal_acc=0.3014, precision=0.2135, recall=0.3014, f1=0.2063
+[Client 4] Round 6: lr=0.00007738, mu=0.01
+[Client 4] Round 6 local metrics: loss=0.6082, acc=0.7159, bal_acc=0.3249, precision=0.3047, recall=0.3249, f1=0.2784
+[Client 4] Round 6 global-model evaluation: loss=0.6238, acc=0.6766, bal_acc=0.3027, precision=0.2124, recall=0.3027, f1=0.2054
+[Client 4] Round 7: lr=0.00007351, mu=0.01
+[Client 4] Round 7 local metrics: loss=0.5866, acc=0.7212, bal_acc=0.3202, precision=0.2991, recall=0.3202, f1=0.2737
+[Client 4] Round 7 global-model evaluation: loss=0.6014, acc=0.6790, bal_acc=0.3042, precision=0.2288, recall=0.3042, f1=0.2109
+[Client 4] Round 8: lr=0.00006983, mu=0.01
+[Client 4] Round 8 local metrics: loss=0.5665, acc=0.7174, bal_acc=0.3298, precision=0.3057, recall=0.3298, f1=0.2775
+[Client 4] Round 8 global-model evaluation: loss=0.5954, acc=0.6810, bal_acc=0.3083, precision=0.2332, recall=0.3083, f1=0.2135
+[Client 4] Round 9: lr=0.00006634, mu=0.01
+[Client 4] Round 9 local metrics: loss=0.5650, acc=0.7146, bal_acc=0.3384, precision=0.3054, recall=0.3384, f1=0.2811
+[Client 4] Round 9 global-model evaluation: loss=0.5846, acc=0.6854, bal_acc=0.3179, precision=0.2445, recall=0.3179, f1=0.2214
+[Client 4] Round 10: lr=0.00006302, mu=0.01
+[Client 4] Round 10 local metrics: loss=0.5563, acc=0.7204, bal_acc=0.3489, precision=0.3059, recall=0.3489, f1=0.2953
+[Client 4] Round 10 global-model evaluation: loss=0.5795, acc=0.6893, bal_acc=0.3204, precision=0.2894, recall=0.3204, f1=0.2325
+DEBUG flwr 2026-07-26 16:48:01,885 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 16:48:01,894 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E3" 
+(fl-env) PS D:\fl_flower> python client4.py 8080
+[Client 4] Loading D:\CAPSTONE\Dir_Client4.csv
+[Client 4] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 4] Using non-stratified split.
+[Client 4] Train rows: 655,763; test rows: 163,941
+[Client 4] Class weights: {0: 5.0, 1: 1.156719866788025, 2: 5.0, 3: 5.0, 4: 3.7766099586496042, 5: 5.0, 6: 0.07289226320238071, 7: 1.9561001073857536, 8: 1.914737124870796, 9: 5.0, 10: 5.0, 11: 1.9026484224941826, 12: 0.19631483275475367, 13: 4.6241062236450565, 14: 0.13775844821204317, 15: 5.0, 16: 5.0, 17: 5.0, 18: 5.0, 19: 1.0299661998730925, 20: 0.7274051313906668, 21: 1.9873412734491014, 22: 4.825405819070185, 23: 3.474535589771848, 24: 2.638099720807486, 25: 5.0, 26: 5.0, 27: 5.0, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 2.013692530676919, 33: 5.0}
+INFO flwr 2026-07-26 17:01:30,215 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:01:30,224 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:01:30,224 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:01:30,236 | connection.py:39 | ChannelConnectivity.READY
+[Client 4] Round 1: lr=0.00010000, mu=0.0
+[Client 4] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 1 local metrics: loss=0.7795, acc=0.6668, bal_acc=0.2805, precision=0.2580, recall=0.2805, f1=0.2249
+[Client 4] Round 1 global-model evaluation: loss=0.8646, acc=0.6440, bal_acc=0.2574, precision=0.1875, recall=0.2574, f1=0.1815
+[Client 4] Round 2: lr=0.00009500, mu=0.0
+[Client 4] Round 2 local metrics: loss=0.6925, acc=0.6917, bal_acc=0.2983, precision=0.2969, recall=0.2983, f1=0.2532
+[Client 4] Round 2 global-model evaluation: loss=0.7391, acc=0.6642, bal_acc=0.2777, precision=0.2179, recall=0.2777, f1=0.1974
+[Client 4] Round 3: lr=0.00009025, mu=0.0
+[Client 4] Round 3 local metrics: loss=0.6528, acc=0.7053, bal_acc=0.3140, precision=0.2838, recall=0.3140, f1=0.2632
+[Client 4] Round 3 global-model evaluation: loss=0.6880, acc=0.6783, bal_acc=0.2982, precision=0.2274, recall=0.2982, f1=0.2205
+[Client 4] Round 4: lr=0.00008574, mu=0.0
+[Client 4] Round 4 local metrics: loss=0.6189, acc=0.7183, bal_acc=0.3201, precision=0.2988, recall=0.3201, f1=0.2746
+[Client 4] Round 4 global-model evaluation: loss=0.6462, acc=0.6851, bal_acc=0.3041, precision=0.2393, recall=0.3041, f1=0.2236
+[Client 4] Round 5: lr=0.00008145, mu=0.0
+[Client 4] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 5 local metrics: loss=0.6063, acc=0.7134, bal_acc=0.3133, precision=0.2775, recall=0.3133, f1=0.2627
+[Client 4] Round 5 global-model evaluation: loss=0.6237, acc=0.6773, bal_acc=0.3023, precision=0.2171, recall=0.3023, f1=0.2078
+[Client 4] Round 6: lr=0.00007738, mu=0.0
+[Client 4] Round 6 local metrics: loss=0.5878, acc=0.7146, bal_acc=0.3193, precision=0.2913, recall=0.3193, f1=0.2669
+[Client 4] Round 6 global-model evaluation: loss=0.6144, acc=0.6800, bal_acc=0.3031, precision=0.2152, recall=0.3031, f1=0.2078
+[Client 4] Round 7: lr=0.00007351, mu=0.0
+[Client 4] Round 7 local metrics: loss=0.5744, acc=0.7181, bal_acc=0.3252, precision=0.3069, recall=0.3252, f1=0.2750
+[Client 4] Round 7 global-model evaluation: loss=0.5957, acc=0.6826, bal_acc=0.3053, precision=0.2146, recall=0.3053, f1=0.2103
+[Client 4] Round 8: lr=0.00006983, mu=0.0
+[Client 4] Round 8 local metrics: loss=0.5692, acc=0.7136, bal_acc=0.3337, precision=0.3006, recall=0.3337, f1=0.2788
+[Client 4] Round 8 global-model evaluation: loss=0.5958, acc=0.6807, bal_acc=0.3101, precision=0.2329, recall=0.3101, f1=0.2151
+[Client 4] Round 9: lr=0.00006634, mu=0.0
+[Client 4] Round 9 local metrics: loss=0.5577, acc=0.7125, bal_acc=0.3351, precision=0.3172, recall=0.3351, f1=0.2793
+[Client 4] Round 9 global-model evaluation: loss=0.5760, acc=0.6874, bal_acc=0.3157, precision=0.2549, recall=0.3157, f1=0.2241
+[Client 4] Round 10: lr=0.00006302, mu=0.0
+[Client 4] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 10 local metrics: loss=0.5477, acc=0.7142, bal_acc=0.3584, precision=0.3274, recall=0.3584, f1=0.2940
+[Client 4] Round 10 global-model evaluation: loss=0.5685, acc=0.6895, bal_acc=0.3281, precision=0.2878, recall=0.3281, f1=0.2343
+DEBUG flwr 2026-07-26 17:18:06,074 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:18:06,076 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E4" 
+(fl-env) PS D:\fl_flower> python client4.py 8080
+[Client 4] Loading D:\CAPSTONE\Dir_Client4.csv
+[Client 4] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 4] Using non-stratified split.
+[Client 4] Train rows: 655,763; test rows: 163,941
+[Client 4] Class weights: {0: 5.0, 1: 1.156719866788025, 2: 5.0, 3: 5.0, 4: 3.7766099586496042, 5: 5.0, 6: 0.07289226320238071, 7: 1.9561001073857536, 8: 1.914737124870796, 9: 5.0, 10: 5.0, 11: 1.9026484224941826, 12: 0.19631483275475367, 13: 4.6241062236450565, 14: 0.13775844821204317, 15: 5.0, 16: 5.0, 17: 5.0, 18: 5.0, 19: 1.0299661998730925, 20: 0.7274051313906668, 21: 1.9873412734491014, 22: 4.825405819070185, 23: 3.474535589771848, 24: 2.638099720807486, 25: 5.0, 26: 5.0, 27: 5.0, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 2.013692530676919, 33: 5.0}
+INFO flwr 2026-07-26 17:20:34,136 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:20:34,143 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:20:34,143 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:20:34,152 | connection.py:39 | ChannelConnectivity.READY
+[Client 4] Round 1: lr=0.00010000, mu=0.01
+[Client 4] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 1 local metrics: loss=0.7928, acc=0.6762, bal_acc=0.2771, precision=0.2445, recall=0.2771, f1=0.2227
+[Client 4] Round 1 global-model evaluation: loss=0.8597, acc=0.6595, bal_acc=0.2624, precision=0.2172, recall=0.2624, f1=0.1822
+[Client 4] Round 2: lr=0.00009500, mu=0.01
+[Client 4] Round 2 local metrics: loss=0.7212, acc=0.6972, bal_acc=0.2913, precision=0.2649, recall=0.2913, f1=0.2375
+[Client 4] Round 2 global-model evaluation: loss=0.7607, acc=0.6912, bal_acc=0.2731, precision=0.2152, recall=0.2731, f1=0.1957
+[Client 4] Round 3: lr=0.00009025, mu=0.01
+[Client 4] Round 3 local metrics: loss=0.6657, acc=0.6982, bal_acc=0.3075, precision=0.2684, recall=0.3075, f1=0.2549
+[Client 4] Round 3 global-model evaluation: loss=0.6964, acc=0.6943, bal_acc=0.2945, precision=0.2629, recall=0.2945, f1=0.2031
+[Client 4] Round 4: lr=0.00008574, mu=0.01
+[Client 4] Round 4 local metrics: loss=0.6360, acc=0.7158, bal_acc=0.3086, precision=0.2771, recall=0.3086, f1=0.2624
+[Client 4] Round 4 global-model evaluation: loss=0.6558, acc=0.8047, bal_acc=0.2959, precision=0.2268, recall=0.2959, f1=0.2225
+[Client 4] Round 5: lr=0.00008145, mu=0.01
+[Client 4] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 5 local metrics: loss=0.6192, acc=0.7055, bal_acc=0.3110, precision=0.2903, recall=0.3110, f1=0.2532
+[Client 4] Round 5 global-model evaluation: loss=0.6322, acc=0.8038, bal_acc=0.2973, precision=0.2336, recall=0.2973, f1=0.2252
+[Client 4] Round 6: lr=0.00007738, mu=0.01
+[Client 4] Round 6 local metrics: loss=0.5969, acc=0.7082, bal_acc=0.3151, precision=0.2859, recall=0.3151, f1=0.2605
+[Client 4] Round 6 global-model evaluation: loss=0.6217, acc=0.6964, bal_acc=0.2991, precision=0.2398, recall=0.2991, f1=0.2140
+[Client 4] Round 7: lr=0.00007351, mu=0.01
+[Client 4] Round 7 local metrics: loss=0.5866, acc=0.8203, bal_acc=0.3176, precision=0.2777, recall=0.3176, f1=0.2791
+[Client 4] Round 7 global-model evaluation: loss=0.5993, acc=0.8060, bal_acc=0.2971, precision=0.2400, recall=0.2971, f1=0.2274
+[Client 4] Round 8: lr=0.00006983, mu=0.01
+[Client 4] Round 8 local metrics: loss=0.5769, acc=0.7078, bal_acc=0.3240, precision=0.2911, recall=0.3240, f1=0.2685
+[Client 4] Round 8 global-model evaluation: loss=0.5968, acc=0.8030, bal_acc=0.2999, precision=0.2475, recall=0.2999, f1=0.2275
+[Client 4] Round 9: lr=0.00006634, mu=0.01
+[Client 4] Round 9 local metrics: loss=0.5643, acc=0.7130, bal_acc=0.3379, precision=0.3038, recall=0.3379, f1=0.2776
+[Client 4] Round 9 global-model evaluation: loss=0.5786, acc=0.8056, bal_acc=0.3042, precision=0.2889, recall=0.3042, f1=0.2359
+[Client 4] Round 10: lr=0.00006302, mu=0.01
+[Client 4] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 10 local metrics: loss=0.5519, acc=0.7176, bal_acc=0.3490, precision=0.3061, recall=0.3490, f1=0.2854
+[Client 4] Round 10 global-model evaluation: loss=0.5673, acc=0.8037, bal_acc=0.3192, precision=0.2763, recall=0.3192, f1=0.2486
+DEBUG flwr 2026-07-26 17:38:22,789 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:38:22,792 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E5" 
+(fl-env) PS D:\fl_flower> python client4.py 8080
+[Client 4] Loading D:\CAPSTONE\Dir_Client4.csv
+[Client 4] Stratified split failed: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+[Client 4] Using non-stratified split.
+[Client 4] Train rows: 655,763; test rows: 163,941
+[Client 4] Class weights: {0: 5.0, 1: 1.156719866788025, 2: 5.0, 3: 5.0, 4: 3.7766099586496042, 5: 5.0, 6: 0.07289226320238071, 7: 1.9561001073857536, 8: 1.914737124870796, 9: 5.0, 10: 5.0, 11: 1.9026484224941826, 12: 0.19631483275475367, 13: 4.6241062236450565, 14: 0.13775844821204317, 15: 5.0, 16: 5.0, 17: 5.0, 18: 5.0, 19: 1.0299661998730925, 20: 0.7274051313906668, 21: 1.9873412734491014, 22: 4.825405819070185, 23: 3.474535589771848, 24: 2.638099720807486, 25: 5.0, 26: 5.0, 27: 5.0, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 2.013692530676919, 33: 5.0}
+INFO flwr 2026-07-26 17:42:10,435 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:42:10,436 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:42:10,436 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:42:10,436 | connection.py:39 | ChannelConnectivity.READY
+[Client 4] Round 1: lr=0.00010000, mu=0.01
+[Client 4] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 1 local metrics: loss=0.7928, acc=0.6762, bal_acc=0.2771, precision=0.2445, recall=0.2771, f1=0.2227
+[Client 4] Round 1 global-model evaluation: loss=0.8595, acc=0.6591, bal_acc=0.2616, precision=0.2170, recall=0.2616, f1=0.1813
+[Client 4] Round 2: lr=0.00009500, mu=0.01
+[Client 4] Round 2 local metrics: loss=0.7218, acc=0.6971, bal_acc=0.2913, precision=0.2656, recall=0.2913, f1=0.2376
+[Client 4] Round 2 global-model evaluation: loss=0.7610, acc=0.6859, bal_acc=0.2724, precision=0.2152, recall=0.2724, f1=0.1943
+[Client 4] Round 3: lr=0.00009025, mu=0.01
+[Client 4] Round 3 local metrics: loss=0.6671, acc=0.6974, bal_acc=0.3078, precision=0.2688, recall=0.3078, f1=0.2549
+[Client 4] Round 3 global-model evaluation: loss=0.6973, acc=0.6912, bal_acc=0.2946, precision=0.2642, recall=0.2946, f1=0.2022
+[Client 4] Round 4: lr=0.00008574, mu=0.01
+[Client 4] Round 4 local metrics: loss=0.6360, acc=0.7155, bal_acc=0.3081, precision=0.2768, recall=0.3081, f1=0.2621
+[Client 4] Round 4 global-model evaluation: loss=0.6559, acc=0.7626, bal_acc=0.2987, precision=0.2245, recall=0.2987, f1=0.2224
+[Client 4] Round 5: lr=0.00008145, mu=0.01
+[Client 4] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 5 local metrics: loss=0.6197, acc=0.7052, bal_acc=0.3112, precision=0.2908, recall=0.3112, f1=0.2534
+[Client 4] Round 5 global-model evaluation: loss=0.6332, acc=0.8037, bal_acc=0.2972, precision=0.2328, recall=0.2972, f1=0.2251
+[Client 4] Round 6: lr=0.00007738, mu=0.01
+[Client 4] Round 6 local metrics: loss=0.5964, acc=0.7076, bal_acc=0.3145, precision=0.2803, recall=0.3145, f1=0.2583
+[Client 4] Round 6 global-model evaluation: loss=0.6228, acc=0.6953, bal_acc=0.2992, precision=0.2389, recall=0.2992, f1=0.2138
+[Client 4] Round 7: lr=0.00007351, mu=0.01
+[Client 4] Round 7 local metrics: loss=0.5882, acc=0.8208, bal_acc=0.3175, precision=0.2772, recall=0.3175, f1=0.2792
+[Client 4] Round 7 global-model evaluation: loss=0.6003, acc=0.8059, bal_acc=0.2971, precision=0.2388, recall=0.2971, f1=0.2278
+[Client 4] Round 8: lr=0.00006983, mu=0.01
+[Client 4] Round 8 local metrics: loss=0.5776, acc=0.7077, bal_acc=0.3234, precision=0.2790, recall=0.3234, f1=0.2659
+[Client 4] Round 8 global-model evaluation: loss=0.5976, acc=0.8034, bal_acc=0.3007, precision=0.2507, recall=0.3007, f1=0.2282
+[Client 4] Round 9: lr=0.00006634, mu=0.01
+[Client 4] Round 9 local metrics: loss=0.5642, acc=0.7139, bal_acc=0.3391, precision=0.3039, recall=0.3391, f1=0.2783
+[Client 4] Round 9 global-model evaluation: loss=0.5792, acc=0.8049, bal_acc=0.3041, precision=0.2893, recall=0.3041, f1=0.2368
+[Client 4] Round 10: lr=0.00006302, mu=0.01
+[Client 4] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 4] Round 10 local metrics: loss=0.5512, acc=0.7188, bal_acc=0.3497, precision=0.3063, recall=0.3497, f1=0.2858
+[Client 4] Round 10 global-model evaluation: loss=0.5677, acc=0.8035, bal_acc=0.3202, precision=0.2757, recall=0.3202, f1=0.2488
+DEBUG flwr 2026-07-26 18:00:11,023 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 18:00:11,027 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    lr=0.00009500, mu=0.01
+[Client 5] Round 2 local metrics: loss=1.0921, acc=0.5131, bal_acc=0.2733, precision=0.2683, recall=0.2733, f1=0.2267
+[Client 5] Round 2 global-model evaluation: loss=1.1911, acc=0.5126, bal_acc=0.2704, precision=0.2135, recall=0.2704, f1=0.1822
+[Client 5] Round 3: lr=0.00009025, mu=0.01
+[Client 5] Round 3 local metrics: loss=1.0339, acc=0.5346, bal_acc=0.2979, precision=0.2690, recall=0.2979, f1=0.2454
+[Client 5] Round 3 global-model evaluation: loss=1.1449, acc=0.5188, bal_acc=0.2898, precision=0.2189, recall=0.2898, f1=0.1921
+[Client 5] Round 4: lr=0.00008574, mu=0.01
+[Client 5] Round 4 local metrics: loss=0.9917, acc=0.5416, bal_acc=0.3028, precision=0.2608, recall=0.3028, f1=0.2447
+[Client 5] Round 4 global-model evaluation: loss=1.1112, acc=0.5240, bal_acc=0.3008, precision=0.2171, recall=0.3008, f1=0.1998
+[Client 5] Round 5: lr=0.00008145, mu=0.01
+[Client 5] Round 5 local metrics: loss=0.9515, acc=0.5509, bal_acc=0.3048, precision=0.2693, recall=0.3048, f1=0.2485
+[Client 5] Round 5 global-model evaluation: loss=1.0612, acc=0.5371, bal_acc=0.2973, precision=0.2133, recall=0.2973, f1=0.2010
+[Client 5] Round 6: lr=0.00007738, mu=0.01
+[Client 5] Round 6 local metrics: loss=0.9277, acc=0.5611, bal_acc=0.3061, precision=0.2783, recall=0.3061, f1=0.2574
+[Client 5] Round 6 global-model evaluation: loss=1.0379, acc=0.5408, bal_acc=0.2995, precision=0.2139, recall=0.2995, f1=0.2053
+[Client 5] Round 7: lr=0.00007351, mu=0.01
+[Client 5] Round 7 local metrics: loss=0.9011, acc=0.5667, bal_acc=0.3295, precision=0.2870, recall=0.3295, f1=0.2676
+[Client 5] Round 7 global-model evaluation: loss=1.0148, acc=0.5422, bal_acc=0.3004, precision=0.2161, recall=0.3004, f1=0.2085
+[Client 5] Round 8: lr=0.00006983, mu=0.01
+[Client 5] Round 8 local metrics: loss=0.8893, acc=0.5634, bal_acc=0.3306, precision=0.2851, recall=0.3306, f1=0.2715
+[Client 5] Round 8 global-model evaluation: loss=0.9930, acc=0.5469, bal_acc=0.3040, precision=0.2212, recall=0.3040, f1=0.2141
+[Client 5] Round 9: lr=0.00006634, mu=0.01
+[Client 5] Round 9 local metrics: loss=0.8787, acc=0.5714, bal_acc=0.3333, precision=0.3015, recall=0.3333, f1=0.2838
+[Client 5] Round 9 global-model evaluation: loss=0.9830, acc=0.5467, bal_acc=0.3139, precision=0.2518, recall=0.3139, f1=0.2183
+[Client 5] Round 10: lr=0.00006302, mu=0.01
+[Client 5] Round 10 local metrics: loss=0.8396, acc=0.5916, bal_acc=0.3467, precision=0.3193, recall=0.3467, f1=0.3045
+[Client 5] Round 10 global-model evaluation: loss=0.9538, acc=0.5492, bal_acc=0.3145, precision=0.2563, recall=0.3145, f1=0.2232
+DEBUG flwr 2026-07-26 16:48:01,888 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 16:48:01,898 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E3" 
+(fl-env) PS D:\fl_flower> python client5.py 8080
+[Client 5] Loading D:\CAPSTONE\Dir_Client5.csv
+[Client 5] Train rows: 367,784; test rows: 91,947
+[Client 5] Class weights: {0: 5.0, 1: 5.0, 2: 1.0, 3: 1.0, 4: 2.501659683299777, 5: 5.0, 6: 0.8897167684313403, 7: 5.0, 8: 0.7370154984389341, 9: 0.3333593167921426, 10: 5.0, 11: 0.1663541171947441, 12: 5.0, 13: 5.0, 14: 0.23531971089863024, 15: 1.3838015185606032, 16: 5.0, 17: 3.0308704036391805, 18: 5.0, 19: 0.6671503929066385, 20: 5.0, 21: 0.08747090122255297, 22: 0.9531391726661588, 23: 4.980283826237677, 24: 1.2207624952700864, 25: 1.202309266487522, 26: 5.0, 27: 2.8541362719230174, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 5.0, 33: 5.0}
+INFO flwr 2026-07-26 17:01:28,234 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:01:28,236 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:01:28,236 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:01:28,256 | connection.py:39 | ChannelConnectivity.READY
+[Client 5] Round 1: lr=0.00010000, mu=0.0
+[Client 5] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 1 local metrics: loss=1.1650, acc=0.5142, bal_acc=0.2352, precision=0.2672, recall=0.2352, f1=0.1986
+[Client 5] Round 1 global-model evaluation: loss=1.2600, acc=0.5118, bal_acc=0.2602, precision=0.2018, recall=0.2602, f1=0.1862
+[Client 5] Round 2: lr=0.00009500, mu=0.0
+[Client 5] Round 2 local metrics: loss=1.0673, acc=0.5305, bal_acc=0.2769, precision=0.2812, recall=0.2769, f1=0.2389
+[Client 5] Round 2 global-model evaluation: loss=1.1792, acc=0.5170, bal_acc=0.2748, precision=0.2155, recall=0.2748, f1=0.1853
+[Client 5] Round 3: lr=0.00009025, mu=0.0
+[Client 5] Round 3 local metrics: loss=1.0332, acc=0.5300, bal_acc=0.2857, precision=0.2652, recall=0.2857, f1=0.2312
+[Client 5] Round 3 global-model evaluation: loss=1.1291, acc=0.5284, bal_acc=0.2974, precision=0.2224, recall=0.2974, f1=0.1979
+[Client 5] Round 4: lr=0.00008574, mu=0.0
+[Client 5] Round 4 local metrics: loss=0.9937, acc=0.5396, bal_acc=0.3010, precision=0.2575, recall=0.3010, f1=0.2413
+[Client 5] Round 4 global-model evaluation: loss=1.1069, acc=0.5284, bal_acc=0.3017, precision=0.2189, recall=0.3017, f1=0.2020
+[Client 5] Round 5: lr=0.00008145, mu=0.0
+[Client 5] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 5 local metrics: loss=0.9514, acc=0.5443, bal_acc=0.3024, precision=0.2597, recall=0.3024, f1=0.2467
+[Client 5] Round 5 global-model evaluation: loss=1.0639, acc=0.5379, bal_acc=0.2984, precision=0.2186, recall=0.2984, f1=0.2062
+[Client 5] Round 6: lr=0.00007738, mu=0.0
+[Client 5] Round 6 local metrics: loss=0.9191, acc=0.5568, bal_acc=0.3253, precision=0.2756, recall=0.3253, f1=0.2594
+[Client 5] Round 6 global-model evaluation: loss=1.0195, acc=0.5422, bal_acc=0.2994, precision=0.2179, recall=0.2994, f1=0.2100
+[Client 5] Round 7: lr=0.00007351, mu=0.0
+[Client 5] Round 7 local metrics: loss=0.8979, acc=0.5729, bal_acc=0.3368, precision=0.2920, recall=0.3368, f1=0.2810
+[Client 5] Round 7 global-model evaluation: loss=0.9968, acc=0.5476, bal_acc=0.3017, precision=0.2211, recall=0.3017, f1=0.2139
+[Client 5] Round 8: lr=0.00006983, mu=0.0
+[Client 5] Round 8 local metrics: loss=0.8731, acc=0.5672, bal_acc=0.3434, precision=0.2756, recall=0.3434, f1=0.2751
+[Client 5] Round 8 global-model evaluation: loss=0.9606, acc=0.5575, bal_acc=0.3051, precision=0.2218, recall=0.3051, f1=0.2183
+[Client 5] Round 9: lr=0.00006634, mu=0.0
+[Client 5] Round 9 local metrics: loss=0.8291, acc=0.5839, bal_acc=0.3405, precision=0.2971, recall=0.3405, f1=0.2899
+[Client 5] Round 9 global-model evaluation: loss=0.9316, acc=0.5556, bal_acc=0.3102, precision=0.2242, recall=0.3102, f1=0.2217
+[Client 5] Round 10: lr=0.00006302, mu=0.0
+[Client 5] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 10 local metrics: loss=0.7743, acc=0.6144, bal_acc=0.3513, precision=0.3151, recall=0.3513, f1=0.3102
+[Client 5] Round 10 global-model evaluation: loss=0.8624, acc=0.5786, bal_acc=0.3255, precision=0.2536, recall=0.3255, f1=0.2334
+DEBUG flwr 2026-07-26 17:18:06,074 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:18:06,076 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E4"  
+(fl-env) PS D:\fl_flower> python client5.py 8080
+[Client 5] Loading D:\CAPSTONE\Dir_Client5.csv
+[Client 5] Train rows: 367,784; test rows: 91,947
+[Client 5] Class weights: {0: 5.0, 1: 5.0, 2: 1.0, 3: 1.0, 4: 2.501659683299777, 5: 5.0, 6: 0.8897167684313403, 7: 5.0, 8: 0.7370154984389341, 9: 0.3333593167921426, 10: 5.0, 11: 0.1663541171947441, 12: 5.0, 13: 5.0, 14: 0.23531971089863024, 15: 1.3838015185606032, 16: 5.0, 17: 3.0308704036391805, 18: 5.0, 19: 0.6671503929066385, 20: 5.0, 21: 0.08747090122255297, 22: 0.9531391726661588, 23: 4.980283826237677, 24: 1.2207624952700864, 25: 1.202309266487522, 26: 5.0, 27: 2.8541362719230174, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 5.0, 33: 5.0}
+INFO flwr 2026-07-26 17:20:35,930 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:20:35,941 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:20:35,941 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:20:35,948 | connection.py:39 | ChannelConnectivity.READY
+[Client 5] Round 1: lr=0.00010000, mu=0.01
+[Client 5] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 1 local metrics: loss=1.1530, acc=0.5186, bal_acc=0.2427, precision=0.2125, recall=0.2427, f1=0.1881
+[Client 5] Round 1 global-model evaluation: loss=1.2499, acc=0.4987, bal_acc=0.2636, precision=0.2180, recall=0.2636, f1=0.1822
+[Client 5] Round 2: lr=0.00009500, mu=0.01
+[Client 5] Round 2 local metrics: loss=1.0565, acc=0.5242, bal_acc=0.2696, precision=0.2662, recall=0.2696, f1=0.2256
+[Client 5] Round 2 global-model evaluation: loss=1.1896, acc=0.4957, bal_acc=0.2718, precision=0.2403, recall=0.2718, f1=0.1810
+[Client 5] Round 3: lr=0.00009025, mu=0.01
+[Client 5] Round 3 local metrics: loss=1.0290, acc=0.5446, bal_acc=0.2946, precision=0.2725, recall=0.2946, f1=0.2420
+[Client 5] Round 3 global-model evaluation: loss=1.1410, acc=0.5169, bal_acc=0.2927, precision=0.2239, recall=0.2927, f1=0.1920
+[Client 5] Round 4: lr=0.00008574, mu=0.01
+[Client 5] Round 4 local metrics: loss=0.9941, acc=0.5392, bal_acc=0.2993, precision=0.2561, recall=0.2993, f1=0.2392
+[Client 5] Round 4 global-model evaluation: loss=1.1147, acc=0.3594, bal_acc=0.2914, precision=0.2300, recall=0.2914, f1=0.1721
+[Client 5] Round 5: lr=0.00008145, mu=0.01
+[Client 5] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 5 local metrics: loss=0.9611, acc=0.5557, bal_acc=0.3045, precision=0.2745, recall=0.3045, f1=0.2586
+[Client 5] Round 5 global-model evaluation: loss=1.0784, acc=0.3653, bal_acc=0.2938, precision=0.2303, recall=0.2938, f1=0.1754
+[Client 5] Round 6: lr=0.00007738, mu=0.01
+[Client 5] Round 6 local metrics: loss=0.9334, acc=0.5595, bal_acc=0.3095, precision=0.2786, recall=0.3095, f1=0.2654
+[Client 5] Round 6 global-model evaluation: loss=1.0512, acc=0.5228, bal_acc=0.2974, precision=0.2257, recall=0.2974, f1=0.2048
+[Client 5] Round 7: lr=0.00007351, mu=0.01
+[Client 5] Round 7 local metrics: loss=0.9027, acc=0.5678, bal_acc=0.3192, precision=0.2957, recall=0.3192, f1=0.2699
+[Client 5] Round 7 global-model evaluation: loss=1.0281, acc=0.3670, bal_acc=0.2944, precision=0.2319, recall=0.2944, f1=0.1788
+[Client 5] Round 8: lr=0.00006983, mu=0.01
+[Client 5] Round 8 local metrics: loss=0.8884, acc=0.5641, bal_acc=0.3357, precision=0.2941, recall=0.3357, f1=0.2808
+[Client 5] Round 8 global-model evaluation: loss=0.9883, acc=0.3764, bal_acc=0.2964, precision=0.2272, recall=0.2964, f1=0.1809
+[Client 5] Round 9: lr=0.00006634, mu=0.01
+[Client 5] Round 9 local metrics: loss=0.8415, acc=0.5810, bal_acc=0.3426, precision=0.3131, recall=0.3426, f1=0.2931
+[Client 5] Round 9 global-model evaluation: loss=0.9535, acc=0.3804, bal_acc=0.2996, precision=0.2417, recall=0.2996, f1=0.1832
+[Client 5] Round 10: lr=0.00006302, mu=0.01
+[Client 5] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 10 local metrics: loss=0.7847, acc=0.6397, bal_acc=0.3535, precision=0.3076, recall=0.3535, f1=0.3073
+[Client 5] Round 10 global-model evaluation: loss=0.8951, acc=0.4304, bal_acc=0.3145, precision=0.2326, recall=0.3145, f1=0.2002
+DEBUG flwr 2026-07-26 17:38:22,791 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 17:38:22,794 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E5" 
+(fl-env) PS D:\fl_flower> python client5.py 8080
+[Client 5] Loading D:\CAPSTONE\Dir_Client5.csv
+[Client 5] Train rows: 367,784; test rows: 91,947
+[Client 5] Class weights: {0: 5.0, 1: 5.0, 2: 1.0, 3: 1.0, 4: 2.501659683299777, 5: 5.0, 6: 0.8897167684313403, 7: 5.0, 8: 0.7370154984389341, 9: 0.3333593167921426, 10: 5.0, 11: 0.1663541171947441, 12: 5.0, 13: 5.0, 14: 0.23531971089863024, 15: 1.3838015185606032, 16: 5.0, 17: 3.0308704036391805, 18: 5.0, 19: 0.6671503929066385, 20: 5.0, 21: 0.08747090122255297, 22: 0.9531391726661588, 23: 4.980283826237677, 24: 1.2207624952700864, 25: 1.202309266487522, 26: 5.0, 27: 2.8541362719230174, 28: 1.0, 29: 5.0, 30: 5.0, 31: 1.0, 32: 5.0, 33: 5.0}
+INFO flwr 2026-07-26 17:42:11,285 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-26 17:42:11,285 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-26 17:42:11,289 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-26 17:42:11,290 | connection.py:39 | ChannelConnectivity.READY
+[Client 5] Round 1: lr=0.00010000, mu=0.01
+[Client 5] Calculating SHAP in round 1...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 1 local metrics: loss=1.1530, acc=0.5186, bal_acc=0.2427, precision=0.2125, recall=0.2427, f1=0.1881
+[Client 5] Round 1 global-model evaluation: loss=1.2486, acc=0.4991, bal_acc=0.2635, precision=0.2188, recall=0.2635, f1=0.1827
+[Client 5] Round 2: lr=0.00009500, mu=0.01
+[Client 5] Round 2 local metrics: loss=1.0557, acc=0.5243, bal_acc=0.2698, precision=0.2686, recall=0.2698, f1=0.2258
+[Client 5] Round 2 global-model evaluation: loss=1.1867, acc=0.4999, bal_acc=0.2713, precision=0.2392, recall=0.2713, f1=0.1815
+[Client 5] Round 3: lr=0.00009025, mu=0.01
+[Client 5] Round 3 local metrics: loss=1.0298, acc=0.5436, bal_acc=0.2949, precision=0.2730, recall=0.2949, f1=0.2416
+[Client 5] Round 3 global-model evaluation: loss=1.1378, acc=0.5193, bal_acc=0.2917, precision=0.2234, recall=0.2917, f1=0.1922
+[Client 5] Round 4: lr=0.00008574, mu=0.01
+[Client 5] Round 4 local metrics: loss=0.9949, acc=0.5389, bal_acc=0.2990, precision=0.2558, recall=0.2990, f1=0.2390
+[Client 5] Round 4 global-model evaluation: loss=1.1120, acc=0.4321, bal_acc=0.2950, precision=0.2289, recall=0.2950, f1=0.1898
+[Client 5] Round 5: lr=0.00008145, mu=0.01
+[Client 5] Calculating SHAP in round 5...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 5 local metrics: loss=0.9625, acc=0.5529, bal_acc=0.3017, precision=0.2740, recall=0.3017, f1=0.2555
+[Client 5] Round 5 global-model evaluation: loss=1.0745, acc=0.3655, bal_acc=0.2939, precision=0.2300, recall=0.2939, f1=0.1754
+[Client 5] Round 6: lr=0.00007738, mu=0.01
+[Client 5] Round 6 local metrics: loss=0.9322, acc=0.5618, bal_acc=0.3106, precision=0.2776, recall=0.3106, f1=0.2649
+[Client 5] Round 6 global-model evaluation: loss=1.0474, acc=0.5240, bal_acc=0.2975, precision=0.2260, recall=0.2975, f1=0.2053
+[Client 5] Round 7: lr=0.00007351, mu=0.01
+[Client 5] Round 7 local metrics: loss=0.9037, acc=0.5680, bal_acc=0.3195, precision=0.2956, recall=0.3195, f1=0.2699
+[Client 5] Round 7 global-model evaluation: loss=1.0251, acc=0.3675, bal_acc=0.2948, precision=0.2324, recall=0.2948, f1=0.1793
+[Client 5] Round 8: lr=0.00006983, mu=0.01
+[Client 5] Round 8 local metrics: loss=0.8881, acc=0.5625, bal_acc=0.3338, precision=0.2929, recall=0.3338, f1=0.2784
+[Client 5] Round 8 global-model evaluation: loss=0.9859, acc=0.3760, bal_acc=0.2963, precision=0.2275, recall=0.2963, f1=0.1813
+[Client 5] Round 9: lr=0.00006634, mu=0.01
+[Client 5] Round 9 local metrics: loss=0.8420, acc=0.5813, bal_acc=0.3421, precision=0.3141, recall=0.3421, f1=0.2916
+[Client 5] Round 9 global-model evaluation: loss=0.9508, acc=0.3807, bal_acc=0.2962, precision=0.2410, recall=0.2962, f1=0.1825
+[Client 5] Round 10: lr=0.00006302, mu=0.01
+[Client 5] Calculating SHAP in round 10...
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP output shape: (50, 39, 34)
+[Client 5] Round 10 local metrics: loss=0.7856, acc=0.6391, bal_acc=0.3533, precision=0.3066, recall=0.3533, f1=0.3066
+[Client 5] Round 10 global-model evaluation: loss=0.8925, acc=0.4311, bal_acc=0.3144, precision=0.2327, recall=0.3144, f1=0.2007
+DEBUG flwr 2026-07-26 18:00:11,019 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-26 18:00:11,021 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
