@@ -1,0 +1,255 @@
+classaware
+
+(fl-env) PS D:\fl_flower> python server.py 8080
+INFO flwr 2026-07-28 04:18:17,928 | app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+INFO flwr 2026-07-28 04:18:17,959 | app.py:168 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+INFO flwr 2026-07-28 04:18:17,960 | server.py:86 | Initializing global parameters
+INFO flwr 2026-07-28 04:18:17,960 | server.py:269 | Using initial parameters provided by strategy
+INFO flwr 2026-07-28 04:18:17,961 | server.py:88 | Evaluating initial parameters
+[Server] R0: test accuracy=0.1080, precision=0.0552, recall=0.0339, F1=0.0286
+INFO flwr 2026-07-28 04:18:20,461 | server.py:91 | initial parameters (loss, other metrics): 2.406644105911255, {'accuracy': 0.10797476770758253, 'balanced_accuracy': 0.03392779161688048, 'precision': 0.05523340373116236, 'recall': 0.03392779161688048, 'f1': 0.028607371350240572}
+INFO flwr 2026-07-28 04:18:20,461 | server.py:101 | FL starting
+DEBUG flwr 2026-07-28 04:18:28,528 | server.py:218 | fit_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:20:44,244 | server.py:232 | fit_round 1 received 5 results and 0 failures
+[Server] R1 SHAP weights: C1=0.2660, C2=0.1552, C3=0.2310, C4=0.1973, C5=0.1506
+[Server] R1: test accuracy=0.7720, precision=0.4662, recall=0.3973, F1=0.3313
+INFO flwr 2026-07-28 04:20:45,972 | server.py:119 | fit progress: (1, 0.525111734867096, {'accuracy': 0.7720209859367405, 'balanced_accuracy': 0.3972745805460424, 'precision': 0.46622595727103083, 'recall': 0.3972745805460424, 'f1': 0.33131520985618956}, 145.51374089997262)
+DEBUG flwr 2026-07-28 04:20:45,972 | server.py:168 | evaluate_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:20:48,290 | server.py:182 | evaluate_round 1 received 5 results and 0 failures
+WARNING flwr 2026-07-28 04:20:48,290 | fedavg.py:274 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2026-07-28 04:20:48,290 | server.py:218 | fit_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:23:07,119 | server.py:232 | fit_round 2 received 5 results and 0 failures
+[Server] R2 SHAP weights: C1=0.2690, C2=0.1545, C3=0.2309, C4=0.1925, C5=0.1531
+[Server] R2: test accuracy=0.7758, precision=0.4736, recall=0.4060, F1=0.3436
+INFO flwr 2026-07-28 04:23:08,811 | server.py:119 | fit progress: (2, 0.5069875717163086, {'accuracy': 0.7758203568056231, 'balanced_accuracy': 0.4059969345469993, 'precision': 0.47363549310945885, 'recall': 0.4059969345469993, 'f1': 0.3436242442661685}, 288.36064699990675)
+DEBUG flwr 2026-07-28 04:23:08,811 | server.py:168 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:23:10,996 | server.py:182 | evaluate_round 2 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:23:11,007 | server.py:218 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:25:33,075 | server.py:232 | fit_round 3 received 5 results and 0 failures
+[Server] R3 SHAP weights: C1=0.2640, C2=0.1560, C3=0.2316, C4=0.1962, C5=0.1523
+[Server] R3: test accuracy=0.7992, precision=0.4805, recall=0.4254, F1=0.3854
+INFO flwr 2026-07-28 04:25:34,758 | server.py:119 | fit progress: (3, 0.5062142014503479, {'accuracy': 0.7991753130290484, 'balanced_accuracy': 0.42538028375307246, 'precision': 0.48054170734075896, 'recall': 0.42538028375307246, 'f1': 0.385401311113963}, 434.3019293999532)
+DEBUG flwr 2026-07-28 04:25:34,758 | server.py:168 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:25:37,278 | server.py:182 | evaluate_round 3 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:25:37,284 | server.py:218 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:28:08,495 | server.py:232 | fit_round 4 received 5 results and 0 failures
+[Server] R4 SHAP weights: C1=0.2701, C2=0.1555, C3=0.2317, C4=0.1885, C5=0.1543
+[Server] R4: test accuracy=0.8002, precision=0.4887, recall=0.4217, F1=0.3812
+INFO flwr 2026-07-28 04:28:10,245 | server.py:119 | fit progress: (4, 0.4870701730251312, {'accuracy': 0.8002145527078899, 'balanced_accuracy': 0.4217006725733377, 'precision': 0.48872842694148305, 'recall': 0.4217006725733377, 'f1': 0.3811804482895425}, 589.7846297000069)
+DEBUG flwr 2026-07-28 04:28:10,245 | server.py:168 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:28:12,792 | server.py:182 | evaluate_round 4 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:28:12,792 | server.py:218 | fit_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:30:55,662 | server.py:232 | fit_round 5 received 5 results and 0 failures
+[Server] R5 SHAP weights: C1=0.2655, C2=0.1546, C3=0.2307, C4=0.1976, C5=0.1516
+[Server] R5: test accuracy=0.8055, precision=0.4923, recall=0.4414, F1=0.4098
+INFO flwr 2026-07-28 04:30:57,389 | server.py:119 | fit progress: (5, 0.4789239168167114, {'accuracy': 0.8054610368930086, 'balanced_accuracy': 0.4414390301875617, 'precision': 0.49233877629168904, 'recall': 0.4414390301875617, 'f1': 0.4098134771703166}, 756.9371994999237)
+DEBUG flwr 2026-07-28 04:30:57,389 | server.py:168 | evaluate_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:31:00,136 | server.py:182 | evaluate_round 5 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:31:00,145 | server.py:218 | fit_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:34:08,444 | server.py:232 | fit_round 6 received 5 results and 0 failures
+[Server] R6 SHAP weights: C1=0.2633, C2=0.1566, C3=0.2329, C4=0.1936, C5=0.1536
+[Server] R6: test accuracy=0.8048, precision=0.4974, recall=0.4419, F1=0.4063
+INFO flwr 2026-07-28 04:34:10,400 | server.py:119 | fit progress: (6, 0.47028398513793945, {'accuracy': 0.8047793850606503, 'balanced_accuracy': 0.44192483095940654, 'precision': 0.49736892563024765, 'recall': 0.44192483095940654, 'f1': 0.40634394864389844}, 949.9385937999468)
+DEBUG flwr 2026-07-28 04:34:10,400 | server.py:168 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:34:13,539 | server.py:182 | evaluate_round 6 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:34:13,556 | server.py:218 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:37:59,146 | server.py:232 | fit_round 7 received 5 results and 0 failures
+[Server] R7 SHAP weights: C1=0.2649, C2=0.1531, C3=0.2317, C4=0.1994, C5=0.1509
+[Server] R7: test accuracy=0.8069, precision=0.5003, recall=0.4481, F1=0.4173
+INFO flwr 2026-07-28 04:38:01,136 | server.py:119 | fit progress: (7, 0.46714091300964355, {'accuracy': 0.8068634517284344, 'balanced_accuracy': 0.44808078623245184, 'precision': 0.5002803663068669, 'recall': 0.44808078623245184, 'f1': 0.4173030134365028}, 1180.682957299985)
+DEBUG flwr 2026-07-28 04:38:01,136 | server.py:168 | evaluate_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:38:04,597 | server.py:182 | evaluate_round 7 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:38:04,611 | server.py:218 | fit_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:42:12,253 | server.py:232 | fit_round 8 received 5 results and 0 failures
+[Server] R8 SHAP weights: C1=0.2616, C2=0.1538, C3=0.2313, C4=0.1996, C5=0.1537
+[Server] R8: test accuracy=0.8056, precision=0.4950, recall=0.4508, F1=0.4239
+INFO flwr 2026-07-28 04:42:14,384 | server.py:119 | fit progress: (8, 0.47720101475715637, {'accuracy': 0.8056174815758449, 'balanced_accuracy': 0.4508067689655342, 'precision': 0.4949909446721718, 'recall': 0.4508067689655342, 'f1': 0.4238547210600905}, 1433.9306445999537)
+DEBUG flwr 2026-07-28 04:42:14,384 | server.py:168 | evaluate_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:42:18,114 | server.py:182 | evaluate_round 8 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:42:18,130 | server.py:218 | fit_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:46:42,598 | server.py:232 | fit_round 9 received 5 results and 0 failures
+[Server] R9 SHAP weights: C1=0.2478, C2=0.1589, C3=0.2351, C4=0.2022, C5=0.1560
+[Server] R9: test accuracy=0.8069, precision=0.4960, recall=0.4516, F1=0.4261
+INFO flwr 2026-07-28 04:46:44,598 | server.py:119 | fit progress: (9, 0.46661779284477234, {'accuracy': 0.8068746263486369, 'balanced_accuracy': 0.45158891099433474, 'precision': 0.49600632460954225, 'recall': 0.45158891099433474, 'f1': 0.4261353185887945}, 1704.1462420999305)
+DEBUG flwr 2026-07-28 04:46:44,598 | server.py:168 | evaluate_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:46:48,547 | server.py:182 | evaluate_round 9 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 04:46:48,557 | server.py:218 | fit_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:51:25,140 | server.py:232 | fit_round 10 received 5 results and 0 failures
+[Server] R10 SHAP weights: C1=0.2610, C2=0.1557, C3=0.2317, C4=0.1998, C5=0.1518
+[Server] R10: test accuracy=0.8077, precision=0.5026, recall=0.4502, F1=0.4274
+INFO flwr 2026-07-28 04:51:27,115 | server.py:119 | fit progress: (10, 0.4655816853046417, {'accuracy': 0.8077462467244394, 'balanced_accuracy': 0.45023896710340483, 'precision': 0.5026131077003371, 'recall': 0.45023896710340483, 'f1': 0.4274372866182117}, 1986.6551638999954)
+DEBUG flwr 2026-07-28 04:51:27,115 | server.py:168 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 04:55:08,830 | server.py:182 | evaluate_round 10 received 5 results and 0 failures
+INFO flwr 2026-07-28 04:55:08,850 | server.py:147 | FL finished in 2208.38858109992
+INFO flwr 2026-07-28 04:55:08,851 | app.py:218 | app_fit: losses_distributed [(1, 0.5263012322971969), (2, 0.5083902658472274), (3, 0.5080450202512199), (4, 0.488748715052175), (5, 0.48038941195539336), (6, 0.4718393279285295), (7, 0.46857154411315993), (8, 0.47882002215531916), (9, 0.4683074586080625), (10, 0.4671198261180325)]
+INFO flwr 2026-07-28 04:55:08,852 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-28 04:55:08,852 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-28 04:55:08,852 | app.py:221 | app_fit: losses_centralized [(0, 2.406644105911255), (1, 0.525111734867096), (2, 0.5069875717163086), (3, 0.5062142014503479), (4, 0.4870701730251312), (5, 0.4789239168167114), (6, 0.47028398513793945), (7, 0.46714091300964355), (8, 0.47720101475715637), (9, 0.46661779284477234), (10, 0.4655816853046417)]
+INFO flwr 2026-07-28 04:55:08,852 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.10797476770758253), (1, 0.7720209859367405), (2, 0.7758203568056231), (3, 0.7991753130290484), (4, 0.8002145527078899), (5, 0.8054610368930086), (6, 0.8047793850606503), (7, 0.8068634517284344), (8, 0.8056174815758449), (9, 0.8068746263486369), (10, 0.8077462467244394)], 'balanced_accuracy': [(0, 0.03392779161688048), (1, 0.3972745805460424), (2, 0.4059969345469993), (3, 0.42538028375307246), (4, 0.4217006725733377), (5, 0.4414390301875617), (6, 0.44192483095940654), (7, 0.44808078623245184), (8, 0.4508067689655342), (9, 0.45158891099433474), (10, 0.45023896710340483)], 'precision': [(0, 0.05523340373116236), (1, 0.46622595727103083), (2, 0.47363549310945885), (3, 0.48054170734075896), (4, 0.48872842694148305), (5, 0.49233877629168904), (6, 0.49736892563024765), (7, 0.5002803663068669), (8, 0.4949909446721718), (9, 0.49600632460954225), (10, 0.5026131077003371)], 'recall': [(0, 0.03392779161688048), (1, 0.3972745805460424), (2, 0.4059969345469993), (3, 0.42538028375307246), (4, 0.4217006725733377), (5, 0.4414390301875617), (6, 0.44192483095940654), (7, 0.44808078623245184), (8, 0.4508067689655342), (9, 0.45158891099433474), (10, 0.45023896710340483)], 'f1': [(0, 0.028607371350240572), (1, 0.33131520985618956), (2, 0.3436242442661685), (3, 0.385401311113963), (4, 0.3811804482895425), (5, 0.4098134771703166), (6, 0.40634394864389844), (7, 0.4173030134365028), (8, 0.4238547210600905), (9, 0.4261353185887945), (10, 0.4274372866182117)]}
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+
+Final server/client SHAP comparison:
+ client_id  server_round  cosine_similarity  spearman_rank_correlation  top_10_overlap
+         1            10             0.8579                     0.9580             0.7
+         2            10             0.9936                     0.9611             0.8
+         3            10             0.9913                     0.9707             0.8
+         4            10             0.9838                     0.9324             0.8
+         5            10             0.9482                     0.9650             0.8
+[Server] Best validation macro-F1=0.4329 at round 10
+(fl-env) PS D:\fl_flower> 
+
+
+    (fl-env) PS D:\fl_flower> python client1.py 8080
+INFO flwr 2026-07-28 04:18:26,254 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 04:18:26,256 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 04:18:26,256 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 04:18:26,268 | connection.py:39 | ChannelConnectivity.READY
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 1] Personalized final metrics: accuracy=0.9807, F1=0.4517
+DEBUG flwr 2026-07-28 04:55:08,874 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 04:55:08,875 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    (fl-env) PS D:\fl_flower> python client2.py 8080
+INFO flwr 2026-07-28 04:18:21,845 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 04:18:21,863 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 04:18:21,866 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 04:18:21,875 | connection.py:39 | ChannelConnectivity.READY
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 2] Personalized final metrics: accuracy=0.7016, F1=0.3445
+DEBUG flwr 2026-07-28 04:55:08,876 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 04:55:08,878 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    (fl-env) PS D:\fl_flower> python client3.py 8080
+INFO flwr 2026-07-28 04:18:27,446 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 04:18:27,446 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 04:18:27,446 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 04:18:27,458 | connection.py:39 | ChannelConnectivity.READY
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 3] Personalized final metrics: accuracy=0.9520, F1=0.4037
+DEBUG flwr 2026-07-28 04:55:08,876 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 04:55:08,878 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+    (fl-env) PS D:\fl_flower> python client4.py 8080
+INFO flwr 2026-07-28 04:18:28,510 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 04:18:28,510 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 04:18:28,510 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 04:18:28,527 | connection.py:39 | ChannelConnectivity.READY
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 4] Personalized final metrics: accuracy=0.8266, F1=0.3068
+DEBUG flwr 2026-07-28 04:55:08,874 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 04:55:08,876 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+
+    (fl-env) PS D:\fl_flower> python client5.py 8080
+INFO flwr 2026-07-28 04:18:27,183 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 04:18:27,193 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 04:18:27,193 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 04:18:27,200 | connection.py:39 | ChannelConnectivity.READY
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client 5] Personalized final metrics: accuracy=0.8433, F1=0.4529
+DEBUG flwr 2026-07-28 04:55:08,874 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 04:55:08,876 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+    
