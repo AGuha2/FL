@@ -1,0 +1,34 @@
+PS C:\Users\AKSH> 
+PS C:\Users\AKSH> cd D:\fl_flower  
+PS D:\fl_flower>  D:\fl-env\Scripts\Activate.ps1
+(fl-env) PS D:\fl_flower> python create_8class_split.py
+Loading source CSV files...
+Total rows loaded: 3,579,528
+Mapped classes: ['BENIGN', 'BRUTEFORCE', 'DDOS', 'DOS', 'MIRAI', 'RECON', 'SPOOFING', 'WEB']
+
+Client pool: 3,221,575
+Server test: 357,953
+Server test saved to D:\CAPSTONE\Server_Test_Class.csv
+Scaler saved to D:\CAPSTONE\global_scaler_Class.pkl
+Client 1 saved to D:\CAPSTONE\Dir_Client1.csv (1,531,397 rows)
+Client 2 saved to D:\CAPSTONE\Dir_Client2.csv (149,004 rows)
+Client 3 saved to D:\CAPSTONE\Dir_Client3.csv (883,586 rows)
+Client 4 saved to D:\CAPSTONE\Dir_Client4.csv (515,965 rows)
+Client 5 saved to D:\CAPSTONE\Dir_Client5.csv (141,623 rows)
+
+====================================================================================================
+EIGHT-CLASS DIRICHLET SPLIT | alpha=0.5| clients=5
+====================================================================================================
+client      Client1 Client2  Client3  Client4  Client5  present_in  heterogeneity_score
+label        
+RECON         41325     736      645   303     4240      51.893021
+DOS             571   73697    24178445080    10256      51.706424
+DDOS        1450049   30020   719749 47269    81548      51.334862
+MIRAI         12315   37630   116961  3181    10050      51.306946
+BRUTEFORCE        0      38      552   154      165      41.197996
+SPOOFING         36    6488     8427 17313     1324      51.023034
+BENIGN        27039      37    13048  2236    33202      50.974023
+WEB              62     358       26   429      838      50.956548
+
+Distribution saved to D:\CAPSTONE\Dir_Distribution.csv
+(fl-env) PS D:\fl_flower> 
