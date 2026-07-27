@@ -1,0 +1,312 @@
+y': 0.8114725219773039, 'balanced_accuracy': 0.39018751162283616, 'precision': 0.577906178168565, 'recall': 0.39018751162283616, 'f1': 0.39312633782678885, 'val_f1': 0.39321847162078083}, 2468.5136416000314)
+DEBUG flwr 2026-07-27 17:06:03,155 | server.py:168 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:06:15,303 | server.py:182 | evaluate_round 10 received 5 results and 0 failures
+[Server] R10 client metrics:
+  C1: acc=0.9676, bal_acc=0.4406, precision=0.4988, recall=0.4406, f1=0.4040
+  C2: acc=0.4973, bal_acc=0.3727, precision=0.4165, recall=0.3727, f1=0.2435
+  C3: acc=0.9577, bal_acc=0.3858, precision=0.4891, recall=0.3858, f1=0.3931
+  C4: acc=0.1786, bal_acc=0.3801, precision=0.4017, recall=0.3801, f1=0.2295
+  C5: acc=0.8406, bal_acc=0.3916, precision=0.5236, recall=0.3916, f1=0.4061
+DEBUG flwr 2026-07-27 17:06:15,305 | server.py:218 | fit_round 11: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:14:22,285 | server.py:232 | fit_round 11 received 5 results and 0 failures
+[Server] R11 final weights: C1=0.417, C2=0.073, C3=0.261, C4=0.163, C5=0.087
+[Server] R11: val_f1=0.3879, test_acc=0.8151, test_bal_acc=0.4069, test_precision=0.5840, test_recall=0.4069, test_f1=0.3926
+INFO flwr 2026-07-27 17:14:23,899 | server.py:119 | fit progress: (11, 0.4358239471912384, {'accuracy': 0.8150553765548907, 'balanced_accuracy': 0.4069435048882287, 'precision': 0.5840104282523826, 'recall': 0.4069435048882287, 'f1': 0.39258750934383846, 'val_f1': 0.3878885348728218}, 2969.2582563000033)
+DEBUG flwr 2026-07-27 17:14:23,899 | server.py:168 | evaluate_round 11: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:14:38,239 | server.py:182 | evaluate_round 11 received 5 results and 0 failures
+[Server] R11 client metrics:
+  C1: acc=0.9695, bal_acc=0.4589, precision=0.4896, recall=0.4589, f1=0.3966
+  C2: acc=0.4995, bal_acc=0.3910, precision=0.4281, recall=0.3910, f1=0.2464
+  C3: acc=0.9600, bal_acc=0.4048, precision=0.5021, recall=0.4048, f1=0.4036
+  C4: acc=0.1818, bal_acc=0.3997, precision=0.4034, recall=0.3997, f1=0.2321
+  C5: acc=0.8746, bal_acc=0.4097, precision=0.5413, recall=0.4097, f1=0.4170
+DEBUG flwr 2026-07-27 17:14:38,241 | server.py:218 | fit_round 12: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:22:48,761 | server.py:232 | fit_round 12 received 5 results and 0 failures
+[Server] R12 final weights: C1=0.415, C2=0.071, C3=0.266, C4=0.164, C5=0.085
+[Server] R12: val_f1=0.4073, test_acc=0.8172, test_bal_acc=0.4312, test_precision=0.5823, test_recall=0.4312, test_f1=0.4245
+INFO flwr 2026-07-27 17:22:50,199 | server.py:119 | fit progress: (12, 0.4277578294277191, {'accuracy': 0.8171721304488655, 'balanced_accuracy': 0.4311677752749612, 'precision': 0.5822538747040116, 'recall': 0.4311677752749612, 'f1': 0.42454980262459846, 'val_f1': 0.4073084608464953}, 3475.562078600051)
+DEBUG flwr 2026-07-27 17:22:50,199 | server.py:168 | evaluate_round 12: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:23:03,481 | server.py:182 | evaluate_round 12 received 5 results and 0 failures
+[Server] R12 client metrics:
+  C1: acc=0.9755, bal_acc=0.4870, precision=0.4839, recall=0.4870, f1=0.4400
+  C2: acc=0.4974, bal_acc=0.4136, precision=0.4351, recall=0.4136, f1=0.2649
+  C3: acc=0.9599, bal_acc=0.4238, precision=0.4978, recall=0.4238, f1=0.4077
+  C4: acc=0.1771, bal_acc=0.4183, precision=0.4059, recall=0.4183, f1=0.2350
+  C5: acc=0.8793, bal_acc=0.4309, precision=0.5266, recall=0.4309, f1=0.4405
+DEBUG flwr 2026-07-27 17:23:03,481 | server.py:218 | fit_round 13: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:31:37,222 | server.py:232 | fit_round 13 received 5 results and 0 failures
+[Server] R13 final weights: C1=0.416, C2=0.073, C3=0.259, C4=0.164, C5=0.088
+[Server] R13: val_f1=0.3894, test_acc=0.8020, test_bal_acc=0.3734, test_precision=0.5784, test_recall=0.3734, test_f1=0.3899
+INFO flwr 2026-07-27 17:31:38,575 | server.py:119 | fit progress: (13, 0.49965548515319824, {'accuracy': 0.8020394710672417, 'balanced_accuracy': 0.3734176383477152, 'precision': 0.5784057804712197, 'recall': 0.3734176383477152, 'f1': 0.3899308361275814, 'val_f1': 0.3894388022659336}, 4003.9421039000154)
+DEBUG flwr 2026-07-27 17:31:38,575 | server.py:168 | evaluate_round 13: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:31:55,172 | server.py:182 | evaluate_round 13 received 5 results and 0 failures
+[Server] R13 client metrics:
+  C1: acc=0.9671, bal_acc=0.4218, precision=0.5002, recall=0.4218, f1=0.4021
+  C2: acc=0.4557, bal_acc=0.3653, precision=0.4179, recall=0.3653, f1=0.2503
+  C3: acc=0.9355, bal_acc=0.3700, precision=0.4729, recall=0.3700, f1=0.3853
+  C4: acc=0.1765, bal_acc=0.3631, precision=0.3972, recall=0.3631, f1=0.2205
+  C5: acc=0.8263, bal_acc=0.3728, precision=0.4971, recall=0.3728, f1=0.3988
+DEBUG flwr 2026-07-27 17:31:55,180 | server.py:218 | fit_round 14: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:41:37,758 | server.py:232 | fit_round 14 received 5 results and 0 failures
+[Server] R14 final weights: C1=0.419, C2=0.075, C3=0.256, C4=0.164, C5=0.086
+[Server] R14: val_f1=0.3973, test_acc=0.8018, test_bal_acc=0.3638, test_precision=0.5659, test_recall=0.3638, test_f1=0.3868
+INFO flwr 2026-07-27 17:41:39,129 | server.py:119 | fit progress: (14, 0.4921644628047943, {'accuracy': 0.8018462640004091, 'balanced_accuracy': 0.3637546104517164, 'precision': 0.565881114248966, 'recall': 0.3637546104517164, 'f1': 0.3867635734408351, 'val_f1': 0.3973128903222228}, 4604.491751700058)
+DEBUG flwr 2026-07-27 17:41:39,129 | server.py:168 | evaluate_round 14: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:41:57,694 | server.py:182 | evaluate_round 14 received 5 results and 0 failures
+[Server] R14 client metrics:
+  C1: acc=0.9648, bal_acc=0.4113, precision=0.5156, recall=0.4113, f1=0.4003
+  C2: acc=0.4643, bal_acc=0.3673, precision=0.4266, recall=0.3673, f1=0.2541
+  C3: acc=0.9373, bal_acc=0.3622, precision=0.4859, recall=0.3622, f1=0.3855
+  C4: acc=0.1815, bal_acc=0.3546, precision=0.4009, recall=0.3546, f1=0.2284
+  C5: acc=0.8109, bal_acc=0.3666, precision=0.4954, recall=0.3666, f1=0.3913
+DEBUG flwr 2026-07-27 17:41:57,694 | server.py:218 | fit_round 15: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:52:45,764 | server.py:232 | fit_round 15 received 5 results and 0 failures
+[Server] R15 final weights: C1=0.415, C2=0.072, C3=0.265, C4=0.163, C5=0.085
+[Server] R15: val_f1=0.4415, test_acc=0.8193, test_bal_acc=0.4461, test_precision=0.5737, test_recall=0.4461, test_f1=0.4427
+INFO flwr 2026-07-27 17:52:47,162 | server.py:119 | fit progress: (15, 0.4083831310272217, {'accuracy': 0.81932582098797, 'balanced_accuracy': 0.4460858136635925, 'precision': 0.57365504295574, 'recall': 0.4460858136635925, 'f1': 0.4426966121785636, 'val_f1': 0.4414812120606477}, 5272.521698000026)
+DEBUG flwr 2026-07-27 17:52:47,162 | server.py:168 | evaluate_round 15: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 17:53:07,585 | server.py:182 | evaluate_round 15 received 5 results and 0 failures
+[Server] R15 client metrics:
+  C1: acc=0.9782, bal_acc=0.5019, precision=0.4846, recall=0.5019, f1=0.4640
+  C2: acc=0.5025, bal_acc=0.4383, precision=0.4318, recall=0.4383, f1=0.2761
+  C3: acc=0.9594, bal_acc=0.4454, precision=0.4952, recall=0.4454, f1=0.4123
+  C4: acc=0.1833, bal_acc=0.4270, precision=0.4050, recall=0.4270, f1=0.2382
+  C5: acc=0.8712, bal_acc=0.4494, precision=0.5205, recall=0.4494, f1=0.4493
+DEBUG flwr 2026-07-27 17:53:07,585 | server.py:218 | fit_round 16: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:04:49,328 | server.py:232 | fit_round 16 received 5 results and 0 failures
+[Server] R16 final weights: C1=0.416, C2=0.072, C3=0.261, C4=0.166, C5=0.085
+[Server] R16: val_f1=0.4088, test_acc=0.8136, test_bal_acc=0.4036, test_precision=0.5929, test_recall=0.4036, test_f1=0.4041
+INFO flwr 2026-07-27 18:04:50,732 | server.py:119 | fit progress: (16, 0.45677852630615234, {'accuracy': 0.8136233712360138, 'balanced_accuracy': 0.4036314847611291, 'precision': 0.5929481888931518, 'recall': 0.4036314847611291, 'f1': 0.40414658230848627, 'val_f1': 0.4088449467946723}, 5996.092100700014)
+DEBUG flwr 2026-07-27 18:04:50,732 | server.py:168 | evaluate_round 16: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:05:13,937 | server.py:182 | evaluate_round 16 received 5 results and 0 failures
+[Server] R16 client metrics:
+  C1: acc=0.9703, bal_acc=0.4568, precision=0.4949, recall=0.4568, f1=0.4131
+  C2: acc=0.4985, bal_acc=0.4044, precision=0.4662, recall=0.4044, f1=0.2672
+  C3: acc=0.9581, bal_acc=0.4035, precision=0.5094, recall=0.4035, f1=0.4115
+  C4: acc=0.1803, bal_acc=0.3948, precision=0.4071, recall=0.3948, f1=0.2389
+  C5: acc=0.8565, bal_acc=0.4066, precision=0.5119, recall=0.4066, f1=0.4227
+DEBUG flwr 2026-07-27 18:05:13,937 | server.py:218 | fit_round 17: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:19:45,028 | server.py:232 | fit_round 17 received 5 results and 0 failures
+[Server] R17 final weights: C1=0.417, C2=0.075, C3=0.255, C4=0.167, C5=0.086
+[Server] R17: val_f1=0.3753, test_acc=0.7879, test_bal_acc=0.3751, test_precision=0.5155, test_recall=0.3751, test_f1=0.3875
+INFO flwr 2026-07-27 18:19:46,631 | server.py:119 | fit progress: (17, 0.5374042987823486, {'accuracy': 0.7879154662257, 'balanced_accuracy': 0.3750856605731723, 'precision': 0.5155226988383034, 'recall': 0.3750856605731723, 'f1': 0.38747389694259315, 'val_f1': 0.37526353720043615}, 6891.990697300062)
+DEBUG flwr 2026-07-27 18:19:46,631 | server.py:168 | evaluate_round 17: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:20:17,552 | server.py:182 | evaluate_round 17 received 5 results and 0 failures
+[Server] R17 client metrics:
+  C1: acc=0.9736, bal_acc=0.4269, precision=0.4834, recall=0.4269, f1=0.4102
+  C2: acc=0.3639, bal_acc=0.3728, precision=0.3629, recall=0.3728, f1=0.2279
+  C3: acc=0.8880, bal_acc=0.3756, precision=0.4381, recall=0.3756, f1=0.3497
+  C4: acc=0.1750, bal_acc=0.3573, precision=0.4027, recall=0.3573, f1=0.1870
+  C5: acc=0.8359, bal_acc=0.3780, precision=0.4463, recall=0.3780, f1=0.3936
+DEBUG flwr 2026-07-27 18:20:17,554 | server.py:218 | fit_round 18: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:34:58,950 | server.py:232 | fit_round 18 received 5 results and 0 failures
+[Server] R18 final weights: C1=0.416, C2=0.074, C3=0.267, C4=0.164, C5=0.079
+[Server] R18: val_f1=0.4111, test_acc=0.8172, test_bal_acc=0.4248, test_precision=0.6040, test_recall=0.4248, test_f1=0.4127
+INFO flwr 2026-07-27 18:35:00,340 | server.py:119 | fit progress: (18, 0.42639175057411194, {'accuracy': 0.817189178131233, 'balanced_accuracy': 0.42480706700523096, 'precision': 0.6039715495157837, 'recall': 0.42480706700523096, 'f1': 0.41269417420067844, 'val_f1': 0.41113991352234214}, 7805.703675700002)
+DEBUG flwr 2026-07-27 18:35:00,340 | server.py:168 | evaluate_round 18: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:35:28,204 | server.py:182 | evaluate_round 18 received 5 results and 0 failures
+[Server] R18 client metrics:
+  C1: acc=0.9740, bal_acc=0.4791, precision=0.4894, recall=0.4791, f1=0.4184
+  C2: acc=0.4985, bal_acc=0.4100, precision=0.4825, recall=0.4100, f1=0.2747
+  C3: acc=0.9611, bal_acc=0.4241, precision=0.5303, recall=0.4241, f1=0.4227
+  C4: acc=0.1783, bal_acc=0.4178, precision=0.4181, recall=0.4178, f1=0.2460
+  C5: acc=0.8871, bal_acc=0.4268, precision=0.5824, recall=0.4268, f1=0.4393
+DEBUG flwr 2026-07-27 18:35:28,204 | server.py:218 | fit_round 19: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:50:18,914 | server.py:232 | fit_round 19 received 5 results and 0 failures
+[Server] R19 final weights: C1=0.415, C2=0.074, C3=0.265, C4=0.163, C5=0.084
+[Server] R19: val_f1=0.4232, test_acc=0.8177, test_bal_acc=0.4312, test_precision=0.5688, test_recall=0.4312, test_f1=0.4258
+INFO flwr 2026-07-27 18:50:20,291 | server.py:119 | fit progress: (19, 0.43214404582977295, {'accuracy': 0.8176778783591038, 'balanced_accuracy': 0.43120811299790796, 'precision': 0.5688092209175702, 'recall': 0.43120811299790796, 'f1': 0.42583845049465063, 'val_f1': 0.42318914659555706}, 8725.660715800012)
+DEBUG flwr 2026-07-27 18:50:20,291 | server.py:168 | evaluate_round 19: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 18:50:49,737 | server.py:182 | evaluate_round 19 received 5 results and 0 failures
+[Server] R19 client metrics:
+  C1: acc=0.9752, bal_acc=0.4893, precision=0.4817, recall=0.4893, f1=0.4402
+  C2: acc=0.5003, bal_acc=0.4193, precision=0.4334, recall=0.4193, f1=0.2690
+  C3: acc=0.9596, bal_acc=0.4317, precision=0.4963, recall=0.4317, f1=0.4119
+  C4: acc=0.1818, bal_acc=0.4239, precision=0.4034, recall=0.4239, f1=0.2370
+  C5: acc=0.8765, bal_acc=0.4324, precision=0.5215, recall=0.4324, f1=0.4412
+DEBUG flwr 2026-07-27 18:50:49,737 | server.py:218 | fit_round 20: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 19:07:57,083 | server.py:232 | fit_round 20 received 5 results and 0 failures
+[Server] R20 final weights: C1=0.418, C2=0.073, C3=0.262, C4=0.163, C5=0.084
+[Server] R20: val_f1=0.4158, test_acc=0.8159, test_bal_acc=0.4177, test_precision=0.6064, test_recall=0.4177, test_f1=0.4132
+INFO flwr 2026-07-27 19:07:58,430 | server.py:119 | fit progress: (20, 0.4358009994029999, {'accuracy': 0.8159248083556374, 'balanced_accuracy': 0.4176653011685394, 'precision': 0.6064201636472862, 'recall': 0.4176653011685394, 'f1': 0.4131780848989305, 'val_f1': 0.4157723480988499}, 9783.793158699991)
+DEBUG flwr 2026-07-27 19:07:58,430 | server.py:168 | evaluate_round 20: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-27 19:08:30,805 | server.py:182 | evaluate_round 20 received 5 results and 0 failures
+[Server] R20 client metrics:
+  C1: acc=0.9716, bal_acc=0.4729, precision=0.4912, recall=0.4729, f1=0.4207
+  C2: acc=0.5004, bal_acc=0.4080, precision=0.4647, recall=0.4080, f1=0.2703
+  C3: acc=0.9590, bal_acc=0.4191, precision=0.5127, recall=0.4191, f1=0.4194
+  C4: acc=0.1834, bal_acc=0.4050, precision=0.4051, recall=0.4050, f1=0.2369
+  C5: acc=0.8747, bal_acc=0.4196, precision=0.5736, recall=0.4196, f1=0.4372
+INFO flwr 2026-07-27 19:08:30,805 | server.py:147 | FL finished in 9816.169342200039
+INFO flwr 2026-07-27 19:08:30,805 | app.py:218 | app_fit: losses_distributed [(1, 0.8662511463065685), (2, 0.5871476664892825), (3, 0.5505083128895615), (4, 0.4953125269605519), (5, 0.5988663067756884), (6, 0.5166789557171773), (7, 0.4803851306681095), (8, 0.5341359337363768), (9, 0.4919398488880032), (10, 0.44433856495735347), (11, 0.4367335648347425), (12, 0.42832983721636864), (13, 0.5004370149801028), (14, 0.49262808929113866), (15, 0.4090979677411918), (16, 0.45724240955985795), (17, 0.5374856615727334), (18, 0.4265371623810794), (19, 0.4325321804468858), (20, 0.43591964757865587)]
+INFO flwr 2026-07-27 19:08:30,805 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-27 19:08:30,805 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-27 19:08:30,805 | app.py:221 | app_fit: losses_centralized [(0, 4269.01513671875), (1, 0.8651294112205505), (2, 0.5861170291900635), (3, 0.5494670271873474), (4, 0.4943077266216278), (5, 0.5983187556266785), (6, 0.5160809755325317), (7, 0.47978663444519043), (8, 0.5339474678039551), (9, 0.49094682931900024), (10, 0.4435129165649414), (11, 0.4358239471912384), (12, 0.4277578294277191), (13, 0.49965548515319824), (14, 0.4921644628047943), (15, 0.4083831310272217), (16, 0.45677852630615234), (17, 0.5374042987823486), (18, 0.42639175057411194), (19, 0.43214404582977295), (20, 0.4358009994029999)]
+INFO flwr 2026-07-27 19:08:30,816 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894980594054905), (1, 0.7963569102780477), (2, 0.8016246441296305), (3, 0.8044829722065951), (4, 0.8058041675900828), (5, 0.7734164123720714), (6, 0.8041761139239787), (7, 0.8072702682736949), (8, 0.7789512265807463), (9, 0.8050228154815686), (10, 0.8114725219773039), (11, 0.8150553765548907), (12, 0.8171721304488655), (13, 0.8020394710672417), (14, 0.8018462640004091), (15, 0.81932582098797), (16, 0.8136233712360138), (17, 0.7879154662257), (18, 0.817189178131233), (19, 0.8176778783591038), (20, 0.8159248083556374)], 'balanced_accuracy': [(0, 0.1662464378698547), (1, 0.3108049833203905), (2, 0.33223699713574995), (3, 0.3522079256215199), (4, 0.36158489946884376), (5, 0.27592210249994914), (6, 0.34442806355394606), (7, 0.37232220655283066), (8, 0.29421353032938496), (9, 0.3547550384364112), (10, 0.39018751162283616), (11, 0.4069435048882287), (12, 0.4311677752749612), (13, 0.3734176383477152), (14, 0.3637546104517164), (15, 0.4460858136635925), (16, 0.4036314847611291), (17, 0.3750856605731723), (18, 0.42480706700523096), (19, 0.43120811299790796), (20, 0.4176653011685394)], 'precision': [(0, 0.1510944763956826), (1, 0.41629649760611215), (2, 0.49025695252040047), (3, 0.521931775894777), (4, 0.5640057219742364), (5, 0.4866673481354479), (6, 0.5553380301062282), (7, 0.5997068139901431), (8, 0.532707581470793), (9, 0.5716416175872039), (10, 0.577906178168565), (11, 0.5840104282523826), (12, 0.5822538747040116), (13, 0.5784057804712197), (14, 0.565881114248966), (15, 0.57365504295574), (16, 0.5929481888931518), (17, 0.5155226988383034), (18, 0.6039715495157837), (19, 0.5688092209175702), (20, 0.6064201636472862)], 'recall': [(0, 0.1662464378698547), (1, 0.3108049833203905), (2, 0.33223699713574995), (3, 0.3522079256215199), (4, 0.36158489946884376), (5, 0.27592210249994914), (6, 0.34442806355394606), (7, 0.37232220655283066), (8, 0.29421353032938496), (9, 0.3547550384364112), (10, 0.39018751162283616), (11, 0.4069435048882287), (12, 0.4311677752749612), (13, 0.3734176383477152), (14, 0.3637546104517164), (15, 0.4460858136635925), (16, 0.4036314847611291), (17, 0.3750856605731723), (18, 0.42480706700523096), (19, 0.43120811299790796), (20, 0.4176653011685394)], 'f1': [(0, 0.07312249432053705), (1, 0.31776555444006294), (2, 0.3444800345191795), (3, 0.364410820459396), (4, 0.3782740109108129), (5, 0.3074182739115513), (6, 0.3538659985249789), (7, 0.3879502929619254), (8, 0.32605779563630066), (9, 0.3731832941034464), (10, 0.39312633782678885), (11, 0.39258750934383846), (12, 0.42454980262459846), (13, 0.3899308361275814), (14, 0.3867635734408351), (15, 0.4426966121785636), (16, 0.40414658230848627), (17, 0.38747389694259315), (18, 0.41269417420067844), (19, 0.42583845049465063), (20, 0.4131780848989305)], 'val_f1': [(0, 0.06965442823929274), (1, 0.3182835464537549), (2, 0.34451875113919495), (3, 0.3711518520669967), (4, 0.3749667467722375), (5, 0.3027341162544751), (6, 0.36521412240789863), (7, 0.3906387541778137), (8, 0.31665966852597327), (9, 0.3822811998397933), (10, 0.39321847162078083), (11, 0.3878885348728218), (12, 0.4073084608464953), (13, 0.3894388022659336), (14, 0.3973128903222228), (15, 0.4414812120606477), (16, 0.4088449467946723), (17, 0.37526353720043615), (18, 0.41113991352234214), (19, 0.42318914659555706), (20, 0.4157723480988499)]}
+[Server] Best validation macro F1=0.4415 at round 15
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E8B_MLP"
+(fl-env) PS D:\fl_flower> python client1.py 8080   
+[Client 1] Loading D:\CAPSTONE\Dir_Client1.csv
+[Client 1] Train rows: 1,225,117; test rows: 306,280
+[Client 1] Common SHAP background=20, sample=50
+INFO flwr 2026-07-27 16:24:55,293 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-27 16:24:55,303 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-27 16:24:55,306 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-27 16:24:55,320 | connection.py:39 | ChannelConnectivity.READY
+[Client 1] Calculating common-reference SHAP for round 1
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 1] Calculating common-reference SHAP for round 5
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 1] Calculating common-reference SHAP for round 10
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 1] Calculating common-reference SHAP for round 15
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 1] Calculating common-reference SHAP for round 20
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+DEBUG flwr 2026-07-27 19:08:30,872 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-27 19:08:30,887 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E8B_MLP"
+(fl-env) PS D:\fl_flower> python client2.py 8080   
+[Client 2] Loading D:\CAPSTONE\Dir_Client2.csv
+[Client 2] Train rows: 119,203; test rows: 29,801
+[Client 2] Common SHAP background=20, sample=50
+INFO flwr 2026-07-27 16:24:52,746 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-27 16:24:52,753 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-27 16:24:52,754 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-27 16:24:52,766 | connection.py:39 | ChannelConnectivity.READY
+[Client 2] Calculating common-reference SHAP for round 1
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 2] Calculating common-reference SHAP for round 5
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 2] Calculating common-reference SHAP for round 10
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 2] Calculating common-reference SHAP for round 15
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 2] Calculating common-reference SHAP for round 20
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+DEBUG flwr 2026-07-27 19:08:30,857 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-27 19:08:30,879 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E8B_MLP"
+(fl-env) PS D:\fl_flower> python client3.py 8080    
+[Client 3] Loading D:\CAPSTONE\Dir_Client3.csv
+[Client 3] Train rows: 706,868; test rows: 176,718
+[Client 3] Common SHAP background=20, sample=50
+INFO flwr 2026-07-27 16:24:59,889 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-27 16:24:59,897 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-27 16:24:59,897 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-27 16:24:59,905 | connection.py:39 | ChannelConnectivity.READY
+[Client 3] Calculating common-reference SHAP for round 1
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 3] Calculating common-reference SHAP for round 5
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 3] Calculating common-reference SHAP for round 10
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 3] Calculating common-reference SHAP for round 15
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 3] Calculating common-reference SHAP for round 20
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+DEBUG flwr 2026-07-27 19:08:30,874 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-27 19:08:30,887 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E8B_MLP"
+(fl-env) PS D:\fl_flower> python client4.py 8080    
+[Client 4] Loading D:\CAPSTONE\Dir_Client4.csv
+[Client 4] Train rows: 412,772; test rows: 103,193
+[Client 4] Common SHAP background=20, sample=50
+INFO flwr 2026-07-27 16:25:01,632 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-27 16:25:01,638 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-27 16:25:01,643 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-27 16:25:01,697 | connection.py:39 | ChannelConnectivity.READY
+[Client 4] Calculating common-reference SHAP for round 1
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 4] Calculating common-reference SHAP for round 5
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 4] Calculating common-reference SHAP for round 10
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 4] Calculating common-reference SHAP for round 15
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 4] Calculating common-reference SHAP for round 20
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+DEBUG flwr 2026-07-27 19:08:30,874 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-27 19:08:30,887 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> $env:EXPERIMENT="E8B_MLP"
+(fl-env) PS D:\fl_flower> python client5.py 8080      
+[Client 5] Loading D:\CAPSTONE\Dir_Client5.csv
+[Client 5] Train rows: 113,298; test rows: 28,325
+[Client 5] Common SHAP background=20, sample=50
+INFO flwr 2026-07-27 16:25:05,286 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-27 16:25:05,292 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-27 16:25:05,293 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-27 16:25:05,296 | connection.py:39 | ChannelConnectivity.READY
+[Client 5] Calculating common-reference SHAP for round 1
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 5] Calculating common-reference SHAP for round 5
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 5] Calculating common-reference SHAP for round 10
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 5] Calculating common-reference SHAP for round 15
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+[Client 5] Calculating common-reference SHAP for round 20
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Client] SHAP shape: (50, 39, 8)
+DEBUG flwr 2026-07-27 19:08:30,873 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-27 19:08:30,885 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
