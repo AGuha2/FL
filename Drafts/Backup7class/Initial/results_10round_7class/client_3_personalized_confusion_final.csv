@@ -1,0 +1,8 @@
+,pred_BENIGN,pred_DDOS,pred_DOS,pred_MIRAI,pred_RECON,pred_SPOOFING,pred_WEB
+true_BENIGN,1722,0,0,0,810,78,0
+true_DDOS,52,46388,328,165,29,4,0
+true_DOS,2,567,28,54,1,0,0
+true_MIRAI,1,27,2,1757,0,5,0
+true_RECON,694,0,1,0,2138,26,0
+true_SPOOFING,5,0,0,0,9,4,0
+true_WEB,32,0,0,0,64,3,0
