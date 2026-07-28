@@ -1,0 +1,7 @@
+experiment,model,seed,best_round,best_val_f1,test_accuracy,test_balanced_accuracy,test_macro_precision,test_macro_recall,test_macro_f1,notes
+E0,MLP,42,,,,,,,,Baseline FedAvg
+E1,MLP,42,,,,,,,,Class weights only
+E2,MLP,42,,,,,,,,Class weights plus FedProx
+E3,MLP,42,,,,,,,,SHAP consensus without FedProx
+E4,MLP,42,,,,,,,,SHAP consensus with FedProx
+E5,MLP,42,,,,,,,,Hybrid proposed method
