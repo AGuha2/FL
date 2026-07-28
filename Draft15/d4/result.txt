@@ -1,0 +1,88 @@
+(fl-env) PS D:\fl_flower> python server.py 8080
+INFO flwr 2026-07-28 20:14:17,364 | app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+INFO flwr 2026-07-28 20:14:17,404 | app.py:168 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+INFO flwr 2026-07-28 20:14:17,404 | server.py:86 | Initializing global parameters
+INFO flwr 2026-07-28 20:14:17,404 | server.py:269 | Using initial parameters provided by strategy
+INFO flwr 2026-07-28 20:14:17,404 | server.py:88 | Evaluating initial parameters
+[FedAvg Server] R0: accuracy=0.2167, balanced_accuracy=0.0916, F1=0.0779
+INFO flwr 2026-07-28 20:14:19,922 | server.py:91 | initial parameters (loss, other metrics): 2.095327854156494, {'accuracy': 0.2166591237980299, 'balanced_accuracy': 0.09159831875792997, 'precision': 0.10436731150440282, 'recall': 0.09159831875792997, 'f1': 0.0779460163000462}
+INFO flwr 2026-07-28 20:14:19,924 | server.py:101 | FL starting
+DEBUG flwr 2026-07-28 20:14:31,907 | server.py:218 | fit_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:16:08,767 | server.py:232 | fit_round 1 received 5 results and 0 failures
+[Reliable SHAP] R1: C1=0.2008, C2=0.2024, C3=0.2035, C4=0.2004, C5=0.1929
+[FedAvg Server] R1: accuracy=0.7778, balanced_accuracy=0.4623, F1=0.3944
+INFO flwr 2026-07-28 20:16:11,060 | server.py:119 | fit progress: (1, 0.5093007683753967, {'accuracy': 0.7778485503723942, 'balanced_accuracy': 0.4623436335755296, 'precision': 0.555492835211359, 'recall': 0.4623436335755296, 'f1': 0.3943674250294414}, 111.13487850001547)
+DEBUG flwr 2026-07-28 20:16:11,060 | server.py:168 | evaluate_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:16:12,981 | server.py:182 | evaluate_round 1 received 5 results and 0 failures
+WARNING flwr 2026-07-28 20:16:12,991 | fedavg.py:274 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2026-07-28 20:16:12,991 | server.py:218 | fit_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:17:35,857 | server.py:232 | fit_round 2 received 5 results and 0 failures
+[Reliable SHAP] R2: C1=0.2000, C2=0.2021, C3=0.2041, C4=0.1996, C5=0.1942
+[FedAvg Server] R2: accuracy=0.7986, balanced_accuracy=0.4768, F1=0.4282
+INFO flwr 2026-07-28 20:17:38,154 | server.py:119 | fit progress: (2, 0.48764607310295105, {'accuracy': 0.7985998200886147, 'balanced_accuracy': 0.47675824845755105, 'precision': 0.5712963594617249, 'recall': 0.47675824845755105, 'f1': 0.4282302960605403}, 198.2298985000234)
+DEBUG flwr 2026-07-28 20:17:38,154 | server.py:168 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:17:39,780 | server.py:182 | evaluate_round 2 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:17:39,797 | server.py:218 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:19:02,838 | server.py:232 | fit_round 3 received 5 results and 0 failures
+[Reliable SHAP] R3: C1=0.2010, C2=0.2019, C3=0.2034, C4=0.1987, C5=0.1949
+[FedAvg Server] R3: accuracy=0.8032, balanced_accuracy=0.4614, F1=0.4090
+INFO flwr 2026-07-28 20:19:05,572 | server.py:119 | fit progress: (3, 0.469592809677124, {'accuracy': 0.8032372874726921, 'balanced_accuracy': 0.46136459886954534, 'precision': 0.5644950774164151, 'recall': 0.46136459886954534, 'f1': 0.40899724567119017}, 285.64954500005115)
+DEBUG flwr 2026-07-28 20:19:05,572 | server.py:168 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:19:07,336 | server.py:182 | evaluate_round 3 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:19:07,359 | server.py:218 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:20:36,616 | server.py:232 | fit_round 4 received 5 results and 0 failures
+[Reliable SHAP] R4: C1=0.1997, C2=0.2034, C3=0.2037, C4=0.1984, C5=0.1949
+[FedAvg Server] R4: accuracy=0.8065, balanced_accuracy=0.4879, F1=0.4566
+INFO flwr 2026-07-28 20:20:39,031 | server.py:119 | fit progress: (4, 0.449060320854187, {'accuracy': 0.8065114511920526, 'balanced_accuracy': 0.48786079482511935, 'precision': 0.6074772417169628, 'recall': 0.48786079482511935, 'f1': 0.456622975316649}, 379.10615920007695)
+DEBUG flwr 2026-07-28 20:20:39,031 | server.py:168 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:20:40,799 | server.py:182 | evaluate_round 4 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:20:40,807 | server.py:218 | fit_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:24:00,829 | server.py:232 | fit_round 5 received 5 results and 0 failures
+[Reliable SHAP] R5: C1=0.2004, C2=0.2019, C3=0.2043, C4=0.1985, C5=0.1949
+[FedAvg Server] R5: accuracy=0.8067, balanced_accuracy=0.4828, F1=0.4484
+INFO flwr 2026-07-28 20:24:03,360 | server.py:119 | fit progress: (5, 0.4500082731246948, {'accuracy': 0.8066567212546863, 'balanced_accuracy': 0.4828085402502749, 'precision': 0.5832828248541506, 'recall': 0.4828085402502749, 'f1': 0.44837284562901075}, 583.43602750008)
+DEBUG flwr 2026-07-28 20:24:03,360 | server.py:168 | evaluate_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:24:05,299 | server.py:182 | evaluate_round 5 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:24:05,320 | server.py:218 | fit_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:26:02,322 | server.py:232 | fit_round 6 received 5 results and 0 failures
+[Reliable SHAP] R6: C1=0.2012, C2=0.2029, C3=0.2038, C4=0.1981, C5=0.1940
+[FedAvg Server] R6: accuracy=0.8066, balanced_accuracy=0.4976, F1=0.4731
+INFO flwr 2026-07-28 20:26:04,838 | server.py:119 | fit progress: (6, 0.4473172128200531, {'accuracy': 0.8065617369829643, 'balanced_accuracy': 0.49762820518936357, 'precision': 0.590421019963412, 'recall': 0.49762820518936357, 'f1': 0.4730793482374679}, 704.9206054999959)
+DEBUG flwr 2026-07-28 20:26:04,838 | server.py:168 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:26:07,093 | server.py:182 | evaluate_round 6 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:26:07,107 | server.py:218 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:30:10,035 | server.py:232 | fit_round 7 received 5 results and 0 failures
+[Reliable SHAP] R7: C1=0.2015, C2=0.2012, C3=0.2036, C4=0.1989, C5=0.1948
+[FedAvg Server] R7: accuracy=0.8148, balanced_accuracy=0.4991, F1=0.4813
+INFO flwr 2026-07-28 20:30:12,601 | server.py:119 | fit progress: (7, 0.4353395104408264, {'accuracy': 0.8147918447621761, 'balanced_accuracy': 0.49914119007123603, 'precision': 0.5989287441288418, 'recall': 0.49914119007123603, 'f1': 0.4812643611743703}, 952.6766253000824)
+DEBUG flwr 2026-07-28 20:30:12,601 | server.py:168 | evaluate_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:30:14,479 | server.py:182 | evaluate_round 7 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:30:14,484 | server.py:218 | fit_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:33:06,474 | server.py:232 | fit_round 8 received 5 results and 0 failures
+[Reliable SHAP] R8: C1=0.2002, C2=0.2016, C3=0.2033, C4=0.1986, C5=0.1963
+[FedAvg Server] R8: accuracy=0.8207, balanced_accuracy=0.5012, F1=0.4917
+INFO flwr 2026-07-28 20:33:09,064 | server.py:119 | fit progress: (8, 0.42251017689704895, {'accuracy': 0.8207199807796532, 'balanced_accuracy': 0.5011795295466334, 'precision': 0.6492897281921355, 'recall': 0.5011795295466334, 'f1': 0.4917039827755911}, 1129.1405215000268)
+DEBUG flwr 2026-07-28 20:33:09,064 | server.py:168 | evaluate_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:33:10,835 | server.py:182 | evaluate_round 8 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:33:10,852 | server.py:218 | fit_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:35:36,190 | server.py:232 | fit_round 9 received 5 results and 0 failures
+[Reliable SHAP] R9: C1=0.2018, C2=0.1981, C3=0.2049, C4=0.1994, C5=0.1958
+[FedAvg Server] R9: accuracy=0.8228, balanced_accuracy=0.5025, F1=0.4959
+INFO flwr 2026-07-28 20:35:40,470 | server.py:119 | fit progress: (9, 0.4135555028915405, {'accuracy': 0.8228096347575387, 'balanced_accuracy': 0.5024649398798277, 'precision': 0.6515432955581243, 'recall': 0.5024649398798277, 'f1': 0.4958664567349495}, 1280.548966600094)
+DEBUG flwr 2026-07-28 20:35:40,470 | server.py:168 | evaluate_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:35:42,847 | server.py:182 | evaluate_round 9 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 20:35:42,861 | server.py:218 | fit_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:38:46,426 | server.py:232 | fit_round 10 received 5 results and 0 failures
+[Reliable SHAP] R10: C1=0.2007, C2=0.2024, C3=0.2044, C4=0.1976, C5=0.1949
+[FedAvg Server] R10: accuracy=0.8219, balanced_accuracy=0.5075, F1=0.5008
+INFO flwr 2026-07-28 20:38:50,414 | server.py:119 | fit progress: (10, 0.41596680879592896, {'accuracy': 0.8218653793504194, 'balanced_accuracy': 0.5075468651225405, 'precision': 0.6406877107145889, 'recall': 0.5075468651225405, 'f1': 0.5007877653447963}, 1470.4894814)
+DEBUG flwr 2026-07-28 20:38:50,414 | server.py:168 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 20:38:52,639 | server.py:182 | evaluate_round 10 received 5 results and 0 failures
+INFO flwr 2026-07-28 20:38:52,665 | server.py:147 | FL finished in 1472.7403134000488
+INFO flwr 2026-07-28 20:38:52,665 | app.py:218 | app_fit: losses_distributed [(1, 0.5117597818374634), (2, 0.48961350321769714), (3, 0.4711612343788147), (4, 0.45045832395553587), (5, 0.45111839175224305), (6, 0.4484562039375305), (7, 0.4363697409629822), (8, 0.4233884453773499), (9, 0.4142375588417053), (10, 0.4165808618068695)]
+INFO flwr 2026-07-28 20:38:52,665 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-28 20:38:52,665 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-28 20:38:52,665 | app.py:221 | app_fit: losses_centralized [(0, 2.095327854156494), (1, 0.5093007683753967), (2, 0.48764607310295105), (3, 0.469592809677124), (4, 0.449060320854187), (5, 0.4500082731246948), (6, 0.4473172128200531), (7, 0.4353395104408264), (8, 0.42251017689704895), (9, 0.4135555028915405), (10, 0.41596680879592896)]
+INFO flwr 2026-07-28 20:38:52,665 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.2166591237980299), (1, 0.7778485503723942), (2, 0.7985998200886147), (3, 0.8032372874726921), (4, 0.8065114511920526), (5, 0.8066567212546863), (6, 0.8065617369829643), (7, 0.8147918447621761), (8, 0.8207199807796532), (9, 0.8228096347575387), (10, 0.8218653793504194)], 'balanced_accuracy': [(0, 0.09159831875792997), (1, 0.4623436335755296), (2, 0.47675824845755105), (3, 0.46136459886954534), (4, 0.48786079482511935), (5, 0.4828085402502749), (6, 0.49762820518936357), (7, 0.49914119007123603), (8, 0.5011795295466334), (9, 0.5024649398798277), (10, 0.5075468651225405)], 'precision': [(0, 0.10436731150440282), (1, 0.555492835211359), (2, 0.5712963594617249), (3, 0.5644950774164151), (4, 0.6074772417169628), (5, 0.5832828248541506), (6, 0.590421019963412), (7, 0.5989287441288418), (8, 0.6492897281921355), (9, 0.6515432955581243), (10, 0.6406877107145889)], 'recall': [(0, 0.09159831875792997), (1, 0.4623436335755296), (2, 0.47675824845755105), (3, 0.46136459886954534), (4, 0.48786079482511935), (5, 0.4828085402502749), (6, 0.49762820518936357), (7, 0.49914119007123603), (8, 0.5011795295466334), (9, 0.5024649398798277), (10, 0.5075468651225405)], 'f1': [(0, 0.0779460163000462), (1, 0.3943674250294414), (2, 0.4282302960605403), (3, 0.40899724567119017), (4, 0.456622975316649), (5, 0.44837284562901075), (6, 0.4730793482374679), (7, 0.4812643611743703), (8, 0.4917039827755911), (9, 0.4958664567349495), (10, 0.5007877653447963)]}
+[FedAvg Server] Best validation macro-F1=0.5012 at round 10
+(fl-env) PS D:\fl_flower> 
