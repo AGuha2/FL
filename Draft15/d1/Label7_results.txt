@@ -1,0 +1,30 @@
+(fl-env) PS D:\fl_flower> python create_7class_split.py
+Loading source CSV files...
+Total rows loaded: 3,579,528
+Mapped classes: ['BENIGN', 'DDOS', 'DOS', 'MIRAI', 'RECON','SPOOFING', 'WEB']
+
+Client pool: 3,221,575
+Server test: 357,953
+Server test saved to D:\CAPSTONE\Server_Test_7Class.csv
+Scaler saved to D:\CAPSTONE\global_scaler_7Class.pkl
+Client 1 saved to D:\CAPSTONE\Dir7_Client1.csv (552,435 rows)
+Client 2 saved to D:\CAPSTONE\Dir7_Client2.csv (120,656 rows)
+Client 3 saved to D:\CAPSTONE\Dir7_Client3.csv (274,979 rows)
+Client 4 saved to D:\CAPSTONE\Dir7_Client4.csv (402,769 rows)
+Client 5 saved to D:\CAPSTONE\Dir7_Client5.csv (1,870,736 rows)
+
+====================================================================================================
+SEVEN-CLASS DIRICHLET SPLIT | alpha=0.5| clients=5
+====================================================================================================
+client    Client1  Client2  Client3  Client4  Client5  present_in  heterogeneity_score
+label      
+DOS          4098 34572     3261    66665   445186    5             1.704273
+DDOS       427489 72477   234830   269005  1324834    5             1.066147
+BENIGN      27039    37    130482236    33202    5             0.974023
+MIRAI       68922  4144     8960    57122    40989    5             0.797330
+SPOOFING     8433  7554       913815    13695    5             0.761357
+RECON       16020  1858    142923160    11919    5             0.689618
+WEB           434    14      497 766      911    5             0.657443
+
+Distribution saved to D:\CAPSTONE\Dir7_Distribution.csv
+(fl-env) PS D:\fl_flower> 
