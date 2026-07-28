@@ -1,0 +1,30 @@
+fedavg equal split
+
+(fl-env) PS D:\fl_flower> python create_7class_equal_split.py
+Loading D:\CAPSTONE\Dir7_Client1.csv...
+Loading D:\CAPSTONE\Dir7_Client2.csv...
+Loading D:\CAPSTONE\Dir7_Client3.csv...
+Loading D:\CAPSTONE\Dir7_Client4.csv...
+Loading D:\CAPSTONE\Dir7_Client5.csv...
+Client 1: 644,315 rows saved to D:\CAPSTONE\Dir7Equal_Client1.csv
+Client 2: 644,315 rows saved to D:\CAPSTONE\Dir7Equal_Client2.csv
+Client 3: 644,315 rows saved to D:\CAPSTONE\Dir7Equal_Client3.csv
+Client 4: 644,315 rows saved to D:\CAPSTONE\Dir7Equal_Client4.csv
+Client 5: 644,315 rows saved to D:\CAPSTONE\Dir7Equal_Client5.csv
+
+====================================================================================================
+EQUAL-SIZE SEVEN-CLASS LABEL-SKEW SPLIT| alpha=0.5 | clients=5
+====================================================================================================
+client    Client1  Client2  Client3  Client4  Client5  present_in  heterogeneity_score
+label      
+BENIGN      34807 18152    152657170      168    5             0.864958
+DDOS       428849246279   405268   606459   641780    5             0.346177
+DOS         69960365866   106915    10132      909    5             1.346401
+MIRAI       88567  4370    807555590      855    5             1.235580
+RECON          22   761    31221    14743      502    5             1.445441
+SPOOFING    20271  8376     4819 102       20    5             1.242336
+WEB          1839   511       72 119       81    5             1.441365
+
+Distribution saved to D:\CAPSTONE\Dir7Equal_Distribution.csv
+Client targets: [644315, 644315, 644315, 644315, 644315]
+(fl-env) PS D:\fl_flower> 
