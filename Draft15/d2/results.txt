@@ -1,0 +1,124 @@
+(fl-env) PS D:\fl_flower> python server.py 8080
+INFO flwr 2026-07-28 18:40:52,821 | app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+INFO flwr 2026-07-28 18:40:52,870 | app.py:168 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+INFO flwr 2026-07-28 18:40:52,870 | server.py:86 | Initializing global parameters
+INFO flwr 2026-07-28 18:40:52,870 | server.py:269 | Using initial parameters provided by strategy
+INFO flwr 2026-07-28 18:40:52,870 | server.py:88 | Evaluating initial parameters
+[FedAvg Server] R0: accuracy=0.2167, balanced_accuracy=0.0916, F1=0.0779
+INFO flwr 2026-07-28 18:40:55,421 | server.py:91 | initial parameters (loss, other metrics): 2.095327854156494, {'accuracy': 0.2166591237980299, 'balanced_accuracy': 0.09159831875792997, 'precision': 0.10436731150440282, 'recall': 0.09159831875792997, 'f1': 0.0779460163000462}
+INFO flwr 2026-07-28 18:40:55,421 | server.py:101 | FL starting
+DEBUG flwr 2026-07-28 18:41:08,628 | server.py:218 | fit_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:43:26,603 | server.py:232 | fit_round 1 received 5 results and 0 failures
+WARNING flwr 2026-07-28 18:43:26,603 | fedavg.py:243 | No fit_metrics_aggregation_fn provided
+[FedAvg Server] R1: accuracy=0.7758, balanced_accuracy=0.5298, F1=0.4797
+INFO flwr 2026-07-28 18:43:28,377 | server.py:119 | fit progress: (1, 0.5154632925987244, {'accuracy': 0.7758259441157244, 'balanced_accuracy': 0.5298216668101764, 'precision': 0.5161054284626851, 'recall': 0.5298216668101764, 'f1': 0.4796576062139218}, 152.9600701999152)
+DEBUG flwr 2026-07-28 18:43:28,377 | server.py:168 | evaluate_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:43:30,762 | server.py:182 | evaluate_round 1 received 5 results and 0 failures
+WARNING flwr 2026-07-28 18:43:30,768 | fedavg.py:274 | No evaluate_metrics_aggregation_fn provided
+DEBUG flwr 2026-07-28 18:43:30,768 | server.py:218 | fit_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:45:54,934 | server.py:232 | fit_round 2 received 5 results and 0 failures
+[FedAvg Server] R2: accuracy=0.8074, balanced_accuracy=0.5364, F1=0.5158
+INFO flwr 2026-07-28 18:45:56,614 | server.py:119 | fit progress: (2, 0.4579337239265442, {'accuracy': 0.8073607223274499, 'balanced_accuracy': 0.5364285593613128, 'precision': 0.5568501394967577, 'recall': 0.5364285593613128, 'f1': 0.5157921183846766}, 301.19552319997456)
+DEBUG flwr 2026-07-28 18:45:56,614 | server.py:168 | evaluate_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:45:58,951 | server.py:182 | evaluate_round 2 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 18:45:58,951 | server.py:218 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:48:31,307 | server.py:232 | fit_round 3 received 5 results and 0 failures
+[FedAvg Server] R3: accuracy=0.8079, balanced_accuracy=0.5541, F1=0.5382
+INFO flwr 2026-07-28 18:48:33,099 | server.py:119 | fit progress: (3, 0.44553184509277344, {'accuracy': 0.807869167546668, 'balanced_accuracy': 0.5540953707792869, 'precision': 0.573511297456384, 'recall': 0.5540953707792869, 'f1': 0.5382172567459417}, 457.68783619999886)
+DEBUG flwr 2026-07-28 18:48:33,099 | server.py:168 | evaluate_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:48:35,750 | server.py:182 | evaluate_round 3 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 18:48:35,750 | server.py:218 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:51:14,124 | server.py:232 | fit_round 4 received 5 results and 0 failures
+[FedAvg Server] R4: accuracy=0.8228, balanced_accuracy=0.5590, F1=0.5572
+INFO flwr 2026-07-28 18:51:15,920 | server.py:119 | fit progress: (4, 0.4228948950767517, {'accuracy': 0.82281522206764, 'balanced_accuracy': 0.5589599740371576, 'precision': 0.590340461012714, 'recall': 0.5589599740371576, 'f1': 0.5572031697780164}, 620.5019036999438)
+DEBUG flwr 2026-07-28 18:51:15,920 | server.py:168 | evaluate_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:51:18,646 | server.py:182 | evaluate_round 4 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 18:51:18,646 | server.py:218 | fit_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:54:08,965 | server.py:232 | fit_round 5 received 5 results and 0 failures
+[FedAvg Server] R5: accuracy=0.8213, balanced_accuracy=0.5659, F1=0.5668
+INFO flwr 2026-07-28 18:54:10,775 | server.py:119 | fit progress: (5, 0.4146127700805664, {'accuracy': 0.8212507752392766, 'balanced_accuracy': 0.5659459655359436, 'precision': 0.5992631895341592, 'recall': 0.5659459655359436, 'f1': 0.5667699806677874}, 795.3661479000002)
+DEBUG flwr 2026-07-28 18:54:10,775 | server.py:168 | evaluate_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:54:13,716 | server.py:182 | evaluate_round 5 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 18:54:13,716 | server.py:218 | fit_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:57:17,257 | server.py:232 | fit_round 6 received 5 results and 0 failures
+[FedAvg Server] R6: accuracy=0.8255, balanced_accuracy=0.5670, F1=0.5714
+INFO flwr 2026-07-28 18:57:19,050 | server.py:119 | fit progress: (6, 0.41008153557777405, {'accuracy': 0.8255250674667695, 'balanced_accuracy': 0.5670352379614502, 'precision': 0.609747404513901, 'recall': 0.5670352379614502, 'f1': 0.5714142227188393}, 983.6283830999164)
+DEBUG flwr 2026-07-28 18:57:19,050 | server.py:168 | evaluate_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 18:57:22,224 | server.py:182 | evaluate_round 6 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 18:57:22,235 | server.py:218 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:00:44,539 | server.py:232 | fit_round 7 received 5 results and 0 failures
+[FedAvg Server] R7: accuracy=0.8171, balanced_accuracy=0.5845, F1=0.5826
+INFO flwr 2026-07-28 19:00:46,277 | server.py:119 | fit progress: (7, 0.4170643985271454, {'accuracy': 0.8171273403845187, 'balanced_accuracy': 0.5845358376158504, 'precision': 0.5933583859173651, 'recall': 0.5845358376158504, 'f1': 0.5825907811996807}, 1190.866911899997)
+DEBUG flwr 2026-07-28 19:00:46,277 | server.py:168 | evaluate_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:00:49,565 | server.py:182 | evaluate_round 7 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 19:00:49,583 | server.py:218 | fit_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:04:26,937 | server.py:232 | fit_round 8 received 5 results and 0 failures
+[FedAvg Server] R8: accuracy=0.8159, balanced_accuracy=0.5840, F1=0.5806
+INFO flwr 2026-07-28 19:04:28,670 | server.py:119 | fit progress: (8, 0.4161219596862793, {'accuracy': 0.8159428306430435, 'balanced_accuracy': 0.5839744261386535, 'precision': 0.6015252665506179, 'recall': 0.5839744261386535, 'f1': 0.5806246970667476}, 1413.2515136000002)
+DEBUG flwr 2026-07-28 19:04:28,670 | server.py:168 | evaluate_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:04:32,297 | server.py:182 | evaluate_round 8 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 19:04:32,310 | server.py:218 | fit_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:08:31,558 | server.py:232 | fit_round 9 received 5 results and 0 failures
+[FedAvg Server] R9: accuracy=0.8262, balanced_accuracy=0.5820, F1=0.5850
+INFO flwr 2026-07-28 19:08:33,386 | server.py:119 | fit progress: (9, 0.40520361065864563, {'accuracy': 0.8261676081284187, 'balanced_accuracy': 0.5819943794907733, 'precision': 0.6008823293933707, 'recall': 0.5819943794907733, 'f1': 0.5849966784194471}, 1657.9712539999746)
+DEBUG flwr 2026-07-28 19:08:33,386 | server.py:168 | evaluate_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:08:37,483 | server.py:182 | evaluate_round 9 received 5 results and 0 failures
+DEBUG flwr 2026-07-28 19:08:37,499 | server.py:218 | fit_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:13:18,625 | server.py:232 | fit_round 10 received 5 results and 0 failures
+[FedAvg Server] R10: accuracy=0.8185, balanced_accuracy=0.5897, F1=0.5882
+INFO flwr 2026-07-28 19:13:20,442 | server.py:119 | fit progress: (10, 0.4094448983669281, {'accuracy': 0.8185185805997419, 'balanced_accuracy': 0.5897320516913629, 'precision': 0.6056337808892396, 'recall': 0.5897320516913629, 'f1': 0.5881619351386697}, 1945.0204512999626)
+DEBUG flwr 2026-07-28 19:13:20,443 | server.py:168 | evaluate_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-28 19:13:25,080 | server.py:182 | evaluate_round 10 received 5 results and 0 failures
+INFO flwr 2026-07-28 19:13:25,080 | server.py:147 | FL finished in 1949.6686075999169
+INFO flwr 2026-07-28 19:13:25,080 | app.py:218 | app_fit: losses_distributed [(1, 0.517411689150701), (2, 0.4582698371268418), (3, 0.44631093800491867), (4, 0.423440287887556), (5, 0.4148851602874428), (6, 0.41028654557937844), (7, 0.4173331366151208), (8, 0.4163018454397189), (9, 0.40551287286195187), (10, 0.40971318347178654)]
+INFO flwr 2026-07-28 19:13:25,080 | app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-28 19:13:25,080 | app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-28 19:13:25,080 | app.py:221 | app_fit: losses_centralized [(0, 2.095327854156494), (1, 0.5154632925987244), (2, 0.4579337239265442), (3, 0.44553184509277344), (4, 0.4228948950767517), (5, 0.4146127700805664), (6, 0.41008153557777405), (7, 0.4170643985271454), (8, 0.4161219596862793), (9, 0.40520361065864563), (10, 0.4094448983669281)]
+INFO flwr 2026-07-28 19:13:25,080 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.2166591237980299), (1, 0.7758259441157244), (2, 0.8073607223274499), (3, 0.807869167546668), (4, 0.82281522206764), (5, 0.8212507752392766), (6, 0.8255250674667695), (7, 0.8171273403845187), (8, 0.8159428306430435), (9, 0.8261676081284187), (10, 0.8185185805997419)], 'balanced_accuracy': [(0, 0.09159831875792997), (1, 0.5298216668101764), (2, 0.5364285593613128), (3, 0.5540953707792869), (4, 0.5589599740371576), (5, 0.5659459655359436), (6, 0.5670352379614502), (7, 0.5845358376158504), (8, 0.5839744261386535), (9, 0.5819943794907733), (10, 0.5897320516913629)], 'precision': [(0, 0.10436731150440282), (1, 0.5161054284626851), (2, 0.5568501394967577), (3, 0.573511297456384), (4, 0.590340461012714), (5, 0.5992631895341592), (6, 0.609747404513901), (7, 0.5933583859173651), (8, 0.6015252665506179), (9, 0.6008823293933707), (10, 0.6056337808892396)], 'recall': [(0, 0.09159831875792997), (1, 0.5298216668101764), (2, 0.5364285593613128), (3, 0.5540953707792869), (4, 0.5589599740371576), (5, 0.5659459655359436), (6, 0.5670352379614502), (7, 0.5845358376158504), (8, 0.5839744261386535), (9, 0.5819943794907733), (10, 0.5897320516913629)], 'f1': [(0, 0.0779460163000462), (1, 0.4796576062139218), (2, 0.5157921183846766), (3, 0.5382172567459417), (4, 0.5572031697780164), (5, 0.5667699806677874), (6, 0.5714142227188393), (7, 0.5825907811996807), (8, 0.5806246970667476), (9, 0.5849966784194471), (10, 0.5881619351386697)]}
+[FedAvg Server] Best validation macro-F1=0.5896 at round 10
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> python client1.py 8080
+INFO flwr 2026-07-28 18:40:55,097 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 18:40:55,120 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 18:40:55,122 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 18:40:55,157 | connection.py:39 | ChannelConnectivity.READY
+DEBUG flwr 2026-07-28 19:13:25,129 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 19:13:25,141 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> python client2.py 8080
+INFO flwr 2026-07-28 18:40:55,729 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 18:40:55,733 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 18:40:55,733 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 18:40:55,741 | connection.py:39 | ChannelConnectivity.READY
+DEBUG flwr 2026-07-28 19:13:25,129 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 19:13:25,139 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> python client3.py 8080
+INFO flwr 2026-07-28 18:40:58,710 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 18:40:58,713 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 18:40:58,713 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 18:40:58,713 | connection.py:39 | ChannelConnectivity.READY
+DEBUG flwr 2026-07-28 19:13:25,129 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 19:13:25,142 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> python client4.py 8080
+INFO flwr 2026-07-28 18:41:00,727 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 18:41:00,727 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 18:41:00,727 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 18:41:00,741 | connection.py:39 | ChannelConnectivity.READY
+DEBUG flwr 2026-07-28 19:13:25,127 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 19:13:25,139 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
+
+(fl-env) PS D:\fl_flower> python client5.py 8080
+INFO flwr 2026-07-28 18:41:08,610 | grpc.py:50 | Opened insecure gRPC connection (no certificates were passed)
+DEBUG flwr 2026-07-28 18:41:08,614 | connection.py:39 | ChannelConnectivity.IDLE
+DEBUG flwr 2026-07-28 18:41:08,628 | connection.py:39 | ChannelConnectivity.CONNECTING
+DEBUG flwr 2026-07-28 18:41:08,635 | connection.py:39 | ChannelConnectivity.READY
+DEBUG flwr 2026-07-28 19:13:25,127 | connection.py:113 | gRPC channel closed
+INFO flwr 2026-07-28 19:13:25,141 | app.py:185 | Disconnect and shut down
+(fl-env) PS D:\fl_flower> 
