@@ -1,0 +1,90 @@
+(fl-env) PS D:\fl_flower> python server.py 8080
+INFO flwr 2026-07-29 05:16:01,151 |app.py:148 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+INFO flwr 2026-07-29 05:16:01,212 |app.py:168 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+INFO flwr 2026-07-29 05:16:01,212 |server.py:86 | Initializing global parameters
+INFO flwr 2026-07-29 05:16:01,212 |server.py:269 | Using initial parameters provided by strategy
+INFO flwr 2026-07-29 05:16:01,212 |server.py:88 | Evaluating initial parameters
+INFO flwr 2026-07-29 05:16:01,214 |server.py:101 | FL starting
+DEBUG flwr 2026-07-29 05:16:15,141 | server.py:218 | fit_round 1: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:17:58,225 | server.py:232 | fit_round 1 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R1: C1=0.1985, C2=0.1945, C3=0.1936, C4=0.2144, C5=0.1990
+[Consensus SHAP Server] R1: validation_accuracy=0.7763, validation_F1=0.3857
+INFO flwr 2026-07-29 05:18:00,026 |server.py:119 | fit progress: (1, 0.5100715160369873,{'accuracy': 0.7762828535669587, 'balanced_accuracy':0.45706411719738416, 'precision': 0.5662377624162979,'recall': 0.45706411719738416, 'f1': 0.38572556265915975}, 118.81682429998182)
+DEBUG flwr 2026-07-29 05:18:00,026 | server.py:168 | evaluate_round 1: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:18:02,035 | server.py:182 | evaluate_round 1 received 5 results and 0 failures
+WARNING flwr 2026-07-29 05:18:02,035 | fedavg.py:274 | No evaluate_metrics_aggregation_fnprovided
+DEBUG flwr 2026-07-29 05:18:02,035 | server.py:218 | fit_round 2: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:19:55,664 | server.py:232 | fit_round 2 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R2: C1=0.2002, C2=0.1946, C3=0.1960, C4=0.2087, C5=0.2005
+[Consensus SHAP Server] R2: validation_accuracy=0.7981, validation_F1=0.4228
+INFO flwr 2026-07-29 05:19:56,675 |server.py:119 | fit progress: (2, 0.48846378922462463, {'accuracy': 0.7980734847130342, 'balanced_accuracy': 0.47325178205352614, 'precision': 0.5747543046200777, 'recall': 0.47325178205352614, 'f1': 0.42275183221145285}, 235.46338359999936)
+DEBUG flwr 2026-07-29 05:19:56,675 | server.py:168 | evaluate_round 2: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:19:58,473 | server.py:182 | evaluate_round 2 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:19:58,496 | server.py:218 | fit_round 3: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:21:51,979 | server.py:232 | fit_round 3 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R3: C1=0.2023, C2=0.1975, C3=0.1999, C4=0.1991, C5=0.2012
+[Consensus SHAP Server] R3: validation_accuracy=0.8024, validation_F1=0.4018
+INFO flwr 2026-07-29 05:21:52,984 |server.py:119 | fit progress: (3, 0.47074180841445923, {'accuracy': 0.8023869122116932, 'balanced_accuracy': 0.4587474822609105, 'precision': 0.583390042011189, 'recall': 0.4587474822609105, 'f1': 0.4018315935243023}, 351.77335579996)
+DEBUG flwr 2026-07-29 05:21:52,984 | server.py:168 | evaluate_round 3: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:21:54,950 | server.py:182 | evaluate_round 3 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:21:54,961 | server.py:218 | fit_round 4: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:23:50,746 | server.py:232 | fit_round 4 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R4: C1=0.2024, C2=0.1977, C3=0.2007, C4=0.1974, C5=0.2019
+[Consensus SHAP Server] R4: validation_accuracy=0.8054, validation_F1=0.4560
+INFO flwr 2026-07-29 05:23:51,945 |server.py:119 | fit progress: (4, 0.4496929347515106,{'accuracy': 0.8053873145002682, 'balanced_accuracy':0.48777177631586666, 'precision': 0.6236677171561007,'recall': 0.48777177631586666, 'f1': 0.4560209847144975}, 470.7314569000155)
+DEBUG flwr 2026-07-29 05:23:51,945 | server.py:168 | evaluate_round 4: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:23:54,374 | server.py:182 | evaluate_round 4 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:23:54,403 | server.py:218 | fit_round 5: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:25:53,399 | server.py:232 | fit_round 5 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R5: C1=0.2032, C2=0.1993, C3=0.2028, C4=0.1951, C5=0.1997
+[Consensus SHAP Server] R5: validation_accuracy=0.8060, validation_F1=0.4548
+INFO flwr 2026-07-29 05:25:54,409 |server.py:119 | fit progress: (5, 0.45107510685920715, {'accuracy': 0.8059516359735384, 'balanced_accuracy': 0.4864924254204661, 'precision': 0.6368707812950131,'recall': 0.4864924254204661, 'f1':0.45484712792853943}, 593.1961679999949)
+DEBUG flwr 2026-07-29 05:25:54,409 | server.py:168 | evaluate_round 5: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:25:56,349 | server.py:182 | evaluate_round 5 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:25:56,375 | server.py:218 | fit_round 6: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:30:04,586 | server.py:232 | fit_round 6 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R6: C1=0.2056, C2=0.2000, C3=0.1991, C4=0.1969, C5=0.1985
+[Consensus SHAP Server] R6: validation_accuracy=0.8061, validation_F1=0.4754
+INFO flwr 2026-07-29 05:30:06,123 |server.py:119 | fit progress: (6, 0.4485391080379486,{'accuracy': 0.806113668871804, 'balanced_accuracy': 0.498655216923204,'precision': 0.6453683307041638, 'recall': 0.498655216923204, 'f1': 0.47540991678279065},844.9210069999099)
+DEBUG flwr 2026-07-29 05:30:06,123 | server.py:168 | evaluate_round 6: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:30:11,655 | server.py:182 | evaluate_round 6 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:30:11,687 | server.py:218 | fit_round 7: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:32:31,147 | server.py:232 | fit_round 7 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R7: C1=0.2051, C2=0.1972, C3=0.2006, C4=0.1966, C5=0.2005
+[Consensus SHAP Server] R7: validation_accuracy=0.8152, validation_F1=0.4847
+INFO flwr 2026-07-29 05:32:32,134 |server.py:119 | fit progress: (7, 0.43619295954704285, {'accuracy': 0.8151595744680851, 'balanced_accuracy': 0.5005291538026182, 'precision': 0.6579804930903128,'recall': 0.5005291538026182, 'f1':0.4846914821384104}, 990.9228597999318)
+DEBUG flwr 2026-07-29 05:32:32,134 | server.py:168 | evaluate_round 7: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:32:34,133 | server.py:182 | evaluate_round 7 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:32:34,156 | server.py:218 | fit_round 8: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:34:39,394 | server.py:232 | fit_round 8 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R8: C1=0.2007, C2=0.1968, C3=0.2032, C4=0.1978, C5=0.2015
+[Consensus SHAP Server] R8: validation_accuracy=0.8211, validation_F1=0.4946
+INFO flwr 2026-07-29 05:34:40,449 |server.py:119 | fit progress: (8, 0.4228131175041199,{'accuracy': 0.8210542195601644, 'balanced_accuracy':0.5022390898772665, 'precision': 0.6836997961864192, 'recall': 0.5022390898772665, 'f1': 0.49459182474001856}, 1119.2347924999194)
+DEBUG flwr 2026-07-29 05:34:40,449 | server.py:168 | evaluate_round 8: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:34:42,319 | server.py:182 | evaluate_round 8 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:34:42,354 | server.py:218 | fit_round 9: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:36:54,655 | server.py:232 | fit_round 9 received 5 results and 0failures
+[Consensus SHAP +previous server F1] R9: C1=0.2007, C2=0.1974, C3=0.2041, C4=0.1987, C5=0.1991
+[Consensus SHAP Server] R9: validation_accuracy=0.8233, validation_F1=0.4992
+INFO flwr 2026-07-29 05:36:55,702 |server.py:119 | fit progress: (9, 0.41367805004119873, {'accuracy': 0.823266806722689, 'balanced_accuracy':0.5039331525308215, 'precision': 0.6907653549998968, 'recall': 0.5039331525308215, 'f1': 0.4991818579492424}, 1254.4945143000223)
+DEBUG flwr 2026-07-29 05:36:55,702 | server.py:168 | evaluate_round 9: strategy sampled 5clients (out of 5)
+DEBUG flwr 2026-07-29 05:36:57,705 | server.py:182 | evaluate_round 9 received 5 results and 0 failures
+DEBUG flwr 2026-07-29 05:36:57,743 | server.py:218 | fit_round 10: strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:40:09,706 | server.py:232 | fit_round 10 received 5 results and 0 failures
+D:\fl-env\lib\site-packages\keras\backend.py:452: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False valueto the `training`argument of the `__call__` method of your layer or model.
+  warnings.warn(
+[Final post-hoc SHAP] Saved server/client analysis: final_posthoc_server_shap_by_feature.csv, final_posthoc_client_shap_by_feature.csv, final_posthoc_server_client_by_feature.csv,final_posthoc_server_client_comparison.csv, final_posthoc_client_summary.csv, final_posthoc_class_summary.csv, final_posthoc_global_feature_summary.csv, final_posthoc_top_features.csv, final_posthoc_manifest.json
+[Consensus SHAP +previous server F1] R10: C1=0.2018,C2=0.1946, C3=0.2068, C4=0.2014, C5=0.1954
+[Consensus SHAP Server] Final test:accuracy=0.8220, macro_F1=0.5004
+[Consensus SHAP Server] R10: validation_accuracy=0.8225, validation_F1=0.5007
+INFO flwr 2026-07-29 05:40:36,639 |server.py:119 | fit progress: (10, 0.41596782207489014, {'accuracy': 0.8225404523511533, 'balanced_accuracy': 0.5071602811832426, 'precision': 0.6570344791529312, 'recall': 0.5071602811832426, 'f1': 0.5006943837026814}, 1475.4315016999608)
+DEBUG flwr 2026-07-29 05:40:36,639 | server.py:168 | evaluate_round 10:strategy sampled 5 clients (out of 5)
+DEBUG flwr 2026-07-29 05:40:38,574 | server.py:182 | evaluate_round 10 received 5 resultsand 0 failures
+INFO flwr 2026-07-29 05:40:38,587 |server.py:147 | FL finished in 1477.3741649999283
+INFO flwr 2026-07-29 05:40:38,587 |app.py:218 | app_fit: losses_distributed [(1, 0.5101512372493744), (2, 0.48852264881134033), (3, 0.4708637535572052), (4, 0.4499305963516235), (5, 0.4511736035346985), (6, 0.4486570358276367), (7, 0.4364823818206787), (8, 0.42318022847175596), (9, 0.41420129537582395),(10, 0.41640140414237975)]
+INFO flwr 2026-07-29 05:40:38,587 |app.py:219 | app_fit: metrics_distributed_fit {}
+INFO flwr 2026-07-29 05:40:38,587 |app.py:220 | app_fit: metrics_distributed {}
+INFO flwr 2026-07-29 05:40:38,587 |app.py:221 | app_fit: losses_centralized [(1, 0.5100715160369873), (2, 0.48846378922462463), (3, 0.47074180841445923), (4, 0.4496929347515106),(5, 0.45107510685920715), (6, 0.4485391080379486), (7, 0.43619295954704285), (8, 0.4228131175041199), (9, 0.41367805004119873), (10, 0.41596782207489014)]
+INFO flwr 2026-07-29 05:40:38,587 |app.py:222 | app_fit: metrics_centralized {'accuracy': [(1, 0.7762828535669587), (2, 0.7980734847130342), (3, 0.8023869122116932), (4, 0.8053873145002682), (5, 0.8059516359735384), (6, 0.806113668871804), (7, 0.8151595744680851), (8,0.8210542195601644), (9, 0.823266806722689), (10, 0.8225404523511533)],'balanced_accuracy': [(1, 0.45706411719738416), (2, 0.47325178205352614), (3, 0.4587474822609105), (4, 0.48777177631586666), (5, 0.4864924254204661), (6, 0.498655216923204), (7, 0.5005291538026182), (8, 0.5022390898772665), (9, 0.5039331525308215), (10, 0.5071602811832426)], 'precision': [(1, 0.5662377624162979), (2, 0.5747543046200777), (3, 0.583390042011189), (4, 0.6236677171561007), (5, 0.6368707812950131),(6, 0.6453683307041638), (7, 0.6579804930903128), (8,0.6836997961864192), (9, 0.6907653549998968), (10, 0.6570344791529312)], 'recall': [(1, 0.45706411719738416), (2, 0.47325178205352614), (3, 0.4587474822609105), (4, 0.48777177631586666), (5, 0.4864924254204661), (6,0.498655216923204), (7, 0.5005291538026182), (8, 0.5022390898772665), (9, 0.5039331525308215), (10, 0.5071602811832426)], 'f1': [(1, 0.38572556265915975), (2, 0.42275183221145285), (3, 0.4018315935243023), (4, 0.4560209847144975), (5, 0.45484712792853943), (6, 0.47540991678279065), (7, 0.4846914821384104), (8, 0.49459182474001856), (9, 0.4991818579492424), (10, 0.5006943837026814)]}
+[Class-specific SHAP Server] Best validation macro-F1=0.5007 at round 10
+(fl-env) PS D:\fl_flower> 
