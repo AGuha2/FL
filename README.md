@@ -1,6 +1,7 @@
 # FedSHAPBlend
 
 This repository contains the implementation of the FedSHAPBlend federated learning framework for IoT intrusion detection using the CICIoT2023 dataset.
+https://cicresearch.ca/IOTDataset/CIC_IOT_Dataset2023/
 
 ## Files
 
